@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()  //LoadDone
-        self.performSegue(withIdentifier: "LoadDone", sender: nil)
+       // self.performSegue(withIdentifier: "LoadDone", sender: nil)
         
     }
 
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

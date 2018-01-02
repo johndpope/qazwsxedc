@@ -9,14 +9,25 @@
 /* Begin PBXBuildFile section */
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
 		A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46741FD8280000F70DC6 /* ViewController.swift */; };
-		A80A46781FD8280000F70DC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80A46761FD8280000F70DC6 /* Main.storyboard */; };
 		A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */; };
 		A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80A467C1FD8280000F70DC6 /* Assets.xcassets */; };
 		A80A46801FD8280000F70DC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80A467E1FD8280000F70DC6 /* LaunchScreen.storyboard */; };
 		A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A468B1FD82B4600F70DC6 /* UIImagePreloader.swift */; };
-		A840301F1FE6FC2E00FFD282 /* UIProtols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A840301E1FE6FC2E00FFD282 /* UIProtols.swift */; };
+		A825D0771FEC1F6F0086A10D /* PresetntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825D0761FEC1F6F0086A10D /* PresetntView.swift */; };
+		A825D0791FEC2F0A0086A10D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825D0781FEC2F0A0086A10D /* CreateAccountViewController.swift */; };
+		A825D07F1FEC32A50086A10D /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825D07E1FEC32A50086A10D /* WalletViewController.swift */; };
+		A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82BAE7A1FF6783000616D29 /* Main.storyboard */; };
+		A82BAE7D1FF67AB200616D29 /* ExchangeRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82BAE7C1FF67AB200616D29 /* ExchangeRatesViewController.swift */; };
+		A82FC63E1FF11D1900499645 /* StartCustomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC63D1FF11D1900499645 /* StartCustomElements.swift */; };
+		A82FC6421FF1211600499645 /* WalletCustomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6411FF1211600499645 /* WalletCustomElements.swift */; };
+		A82FC6451FF1224E00499645 /* WalletUIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6441FF1224E00499645 /* WalletUIProtocols.swift */; };
+		A840301F1FE6FC2E00FFD282 /* StartUIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A840301E1FE6FC2E00FFD282 /* StartUIProtocols.swift */; };
 		A84030221FE6FD3300FFD282 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84030211FE6FD3300FFD282 /* LoginViewController.swift */; };
 		A890E3F21FEAECC60005C74F /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = A890E3F11FEAECC60005C74F /* Rectangle.png */; };
+		A89CFEA31FF504E300C9F2BC /* SettingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A89CFEA21FF504E300C9F2BC /* SettingsIcon.png */; };
+		A89CFEA51FF506B700C9F2BC /* DefaultRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = A89CFEA41FF506B700C9F2BC /* DefaultRectangle.png */; };
+		A89CFEA71FF54FFE00C9F2BC /* CyanRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = A89CFEA61FF54FFE00C9F2BC /* CyanRectangle.png */; };
+		A89CFEAE1FF5599C00C9F2BC /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89CFEAD1FF5599C00C9F2BC /* BalanceUIView.swift */; };
 		A8EB0DBE1FEAC432006FEB83 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A8EB0DBD1FEAC432006FEB83 /* Logo.png */; };
 /* End PBXBuildFile section */
 
@@ -24,15 +35,26 @@
 		A80A466F1FD8280000F70DC6 /* YourCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46721FD8280000F70DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A80A46741FD8280000F70DC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A80A46771FD8280000F70DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A80A467A1FD8280000F70DC6 /* YourCoin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YourCoin.xcdatamodel; sourceTree = "<group>"; };
 		A80A467C1FD8280000F70DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80A467F1FD8280000F70DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80A46811FD8280000F70DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80A468B1FD82B4600F70DC6 /* UIImagePreloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePreloader.swift; sourceTree = "<group>"; };
-		A840301E1FE6FC2E00FFD282 /* UIProtols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProtols.swift; sourceTree = "<group>"; };
+		A825D0761FEC1F6F0086A10D /* PresetntView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetntView.swift; sourceTree = "<group>"; };
+		A825D0781FEC2F0A0086A10D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A825D07E1FEC32A50086A10D /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		A82BAE7A1FF6783000616D29 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A82BAE7C1FF67AB200616D29 /* ExchangeRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewController.swift; sourceTree = "<group>"; };
+		A82FC63D1FF11D1900499645 /* StartCustomElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCustomElements.swift; sourceTree = "<group>"; };
+		A82FC6411FF1211600499645 /* WalletCustomElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCustomElements.swift; sourceTree = "<group>"; };
+		A82FC6441FF1224E00499645 /* WalletUIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletUIProtocols.swift; sourceTree = "<group>"; };
+		A840301E1FE6FC2E00FFD282 /* StartUIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUIProtocols.swift; sourceTree = "<group>"; };
 		A84030211FE6FD3300FFD282 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A890E3F11FEAECC60005C74F /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
+		A89CFEA21FF504E300C9F2BC /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsIcon.png; sourceTree = "<group>"; };
+		A89CFEA41FF506B700C9F2BC /* DefaultRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultRectangle.png; sourceTree = "<group>"; };
+		A89CFEA61FF54FFE00C9F2BC /* CyanRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CyanRectangle.png; sourceTree = "<group>"; };
+		A89CFEAD1FF5599C00C9F2BC /* BalanceUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
 		A8EB0DBD1FEAC432006FEB83 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = YourCoin/Assets.xcassets/Image/BigLogo.imageset/Logo.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -66,7 +88,8 @@
 		A80A46711FD8280000F70DC6 /* YourCoin */ = {
 			isa = PBXGroup;
 			children = (
-				A84030201FE6FCE400FFD282 /* Protols */,
+				A82BAE7A1FF6783000616D29 /* Main.storyboard */,
+				A825D07C1FEC32280086A10D /* Wallet */,
 				A8571F911FD9B075003430F3 /* StartApp */,
 				A80A46721FD8280000F70DC6 /* AppDelegate.swift */,
 				A80A467C1FD8280000F70DC6 /* Assets.xcassets */,
@@ -78,20 +101,92 @@
 			path = YourCoin;
 			sourceTree = "<group>";
 		};
-		A84030201FE6FCE400FFD282 /* Protols */ = {
+		A825D07C1FEC32280086A10D /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				A840301E1FE6FC2E00FFD282 /* UIProtols.swift */,
+				A82FC6431FF1221D00499645 /* Protocols */,
+				A82FC6401FF1210000499645 /* Resurse */,
+				A82FC63F1FF120F100499645 /* Elements */,
+				A825D07D1FEC32520086A10D /* Controllers */,
 			);
-			path = Protols;
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		A825D07D1FEC32520086A10D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A89CFEA81FF555A300C9F2BC /* ContainerViews */,
+				A825D07E1FEC32A50086A10D /* WalletViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A82BAE7E1FF6832000616D29 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				A89CFEAD1FF5599C00C9F2BC /* BalanceUIView.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		A82BAE7F1FF6832C00616D29 /* Exchange Rates */ = {
+			isa = PBXGroup;
+			children = (
+				A82BAE7C1FF67AB200616D29 /* ExchangeRatesViewController.swift */,
+			);
+			path = "Exchange Rates";
+			sourceTree = "<group>";
+		};
+		A82FC63C1FF11CC500499645 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				A82FC63D1FF11D1900499645 /* StartCustomElements.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		A82FC63F1FF120F100499645 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				A82FC6411FF1211600499645 /* WalletCustomElements.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		A82FC6401FF1210000499645 /* Resurse */ = {
+			isa = PBXGroup;
+			children = (
+				A89CFEA61FF54FFE00C9F2BC /* CyanRectangle.png */,
+				A89CFEA41FF506B700C9F2BC /* DefaultRectangle.png */,
+				A89CFEA21FF504E300C9F2BC /* SettingsIcon.png */,
+			);
+			path = Resurse;
+			sourceTree = "<group>";
+		};
+		A82FC6431FF1221D00499645 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A82FC6441FF1224E00499645 /* WalletUIProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A84030201FE6FCE400FFD282 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A825D0761FEC1F6F0086A10D /* PresetntView.swift */,
+				A840301E1FE6FC2E00FFD282 /* StartUIProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A8571F911FD9B075003430F3 /* StartApp */ = {
 			isa = PBXGroup;
 			children = (
+				A84030201FE6FCE400FFD282 /* Protocols */,
+				A82FC63C1FF11CC500499645 /* Elements */,
 				A8EB0DBC1FEAC3EB006FEB83 /* Resurse */,
 				A8571F921FD9B0A1003430F3 /* Controllers */,
-				A80A46761FD8280000F70DC6 /* Main.storyboard */,
 			);
 			path = StartApp;
 			sourceTree = "<group>";
@@ -101,8 +196,18 @@
 			children = (
 				A80A46741FD8280000F70DC6 /* ViewController.swift */,
 				A84030211FE6FD3300FFD282 /* LoginViewController.swift */,
+				A825D0781FEC2F0A0086A10D /* CreateAccountViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A89CFEA81FF555A300C9F2BC /* ContainerViews */ = {
+			isa = PBXGroup;
+			children = (
+				A82BAE7F1FF6832C00616D29 /* Exchange Rates */,
+				A82BAE7E1FF6832000616D29 /* Balance */,
+			);
+			path = ContainerViews;
 			sourceTree = "<group>";
 		};
 		A8EB0DBC1FEAC3EB006FEB83 /* Resurse */ = {
@@ -176,8 +281,11 @@
 				A80A46801FD8280000F70DC6 /* LaunchScreen.storyboard in Resources */,
 				A890E3F21FEAECC60005C74F /* Rectangle.png in Resources */,
 				A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */,
+				A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */,
 				A8EB0DBE1FEAC432006FEB83 /* Logo.png in Resources */,
-				A80A46781FD8280000F70DC6 /* Main.storyboard in Resources */,
+				A89CFEA51FF506B700C9F2BC /* DefaultRectangle.png in Resources */,
+				A89CFEA71FF54FFE00C9F2BC /* CyanRectangle.png in Resources */,
+				A89CFEA31FF504E300C9F2BC /* SettingsIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,9 +298,17 @@
 			files = (
 				A84030221FE6FD3300FFD282 /* LoginViewController.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
-				A840301F1FE6FC2E00FFD282 /* UIProtols.swift in Sources */,
+				A840301F1FE6FC2E00FFD282 /* StartUIProtocols.swift in Sources */,
+				A82FC63E1FF11D1900499645 /* StartCustomElements.swift in Sources */,
+				A825D0771FEC1F6F0086A10D /* PresetntView.swift in Sources */,
+				A825D0791FEC2F0A0086A10D /* CreateAccountViewController.swift in Sources */,
+				A825D07F1FEC32A50086A10D /* WalletViewController.swift in Sources */,
+				A82BAE7D1FF67AB200616D29 /* ExchangeRatesViewController.swift in Sources */,
+				A89CFEAE1FF5599C00C9F2BC /* BalanceUIView.swift in Sources */,
+				A82FC6451FF1224E00499645 /* WalletUIProtocols.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
 				A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */,
+				A82FC6421FF1211600499645 /* WalletCustomElements.swift in Sources */,
 				A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,14 +316,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A80A46761FD8280000F70DC6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A80A46771FD8280000F70DC6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A80A467E1FD8280000F70DC6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
