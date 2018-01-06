@@ -58,31 +58,6 @@ class WalletViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    //    lazy var balanceUIView: BalanceUIView = {
-    //        let vc = BalanceUIView()
-    //        self.addAsChildVC(childVC: vc)
-    //        return vc
-    //    }()
-    //
-    //    lazy var exchangeRatesViewController: ExchangeRatesViewController = {
-    //        let vc = ExchangeRatesViewController()
-    //        self.addAsChildVC(childVC: vc)
-    //        return vc
-    //    }()
-
-//    private func addAsChildVC(childVC: UIViewController) {
-//        addChildViewController(childVC)
-//        containerView.addSubview(childVC.view)
-//        childVC.view.frame = self.view.frame
-//        childVC.didMove(toParentViewController: self)
-//    }
-//    
-//    private func removeAsChildVC(childVC: UIViewController) {
-//        childVC.willMove(toParentViewController: nil)
-//        childVC.view.removeFromSuperview()
-//        childVC.removeFromParentViewController()
-//    }
-    
     @objc func SwitchButtonAction(_ sender: UIButton) {
         if sender.titleLabel?.text == "Balance"{
             balanceSwichButton.setTitleColor(UIColor.cyan, for: .normal)
