@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D8C445093E16FE6E525D014 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
+		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
+		628C0F772000F39E0001E7AA /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* Balance.swift */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
 		A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46741FD8280000F70DC6 /* ViewController.swift */; };
 		A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */; };
@@ -27,11 +30,14 @@
 		A89CFEA31FF504E300C9F2BC /* SettingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A89CFEA21FF504E300C9F2BC /* SettingsIcon.png */; };
 		A89CFEA51FF506B700C9F2BC /* DefaultRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = A89CFEA41FF506B700C9F2BC /* DefaultRectangle.png */; };
 		A89CFEA71FF54FFE00C9F2BC /* CyanRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = A89CFEA61FF54FFE00C9F2BC /* CyanRectangle.png */; };
-		A89CFEAE1FF5599C00C9F2BC /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89CFEAD1FF5599C00C9F2BC /* BalanceUIView.swift */; };
+		A89CFEAE1FF5599C00C9F2BC /* BalanceUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89CFEAD1FF5599C00C9F2BC /* BalanceUIViewController.swift */; };
 		A8EB0DBE1FEAC432006FEB83 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A8EB0DBD1FEAC432006FEB83 /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		628C0F762000F39E0001E7AA /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A466F1FD8280000F70DC6 /* YourCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46721FD8280000F70DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A80A46741FD8280000F70DC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +60,10 @@
 		A89CFEA21FF504E300C9F2BC /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsIcon.png; sourceTree = "<group>"; };
 		A89CFEA41FF506B700C9F2BC /* DefaultRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultRectangle.png; sourceTree = "<group>"; };
 		A89CFEA61FF54FFE00C9F2BC /* CyanRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CyanRectangle.png; sourceTree = "<group>"; };
-		A89CFEAD1FF5599C00C9F2BC /* BalanceUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
+		A89CFEAD1FF5599C00C9F2BC /* BalanceUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceUIViewController.swift; sourceTree = "<group>"; };
 		A8EB0DBD1FEAC432006FEB83 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = YourCoin/Assets.xcassets/Image/BigLogo.imageset/Logo.png; sourceTree = SOURCE_ROOT; };
+		B897C86793645DFB1AF42156 /* Pods-YourCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourCoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourCoin/Pods-YourCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		C816055B54D11345200417DC /* Pods-YourCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourCoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourCoin/Pods-YourCoin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8C445093E16FE6E525D014 /* Pods_YourCoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		738D7AD546768CBE06174356 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A631B7EE43095BAAD4280C01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B897C86793645DFB1AF42156 /* Pods-YourCoin.debug.xcconfig */,
+				C816055B54D11345200417DC /* Pods-YourCoin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A80A46661FD8280000F70DC6 = {
 			isa = PBXGroup;
 			children = (
 				A80A46711FD8280000F70DC6 /* YourCoin */,
 				A80A46701FD8280000F70DC6 /* Products */,
+				A631B7EE43095BAAD4280C01 /* Pods */,
+				738D7AD546768CBE06174356 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +125,7 @@
 				A80A46811FD8280000F70DC6 /* Info.plist */,
 				A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */,
 				A80A468B1FD82B4600F70DC6 /* UIImagePreloader.swift */,
+				6203CD362000F8E100768BB3 /* Podfile */,
 			);
 			path = YourCoin;
 			sourceTree = "<group>";
@@ -124,7 +153,7 @@
 		A82BAE7E1FF6832000616D29 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
-				A89CFEAD1FF5599C00C9F2BC /* BalanceUIView.swift */,
+				628C0F762000F39E0001E7AA /* Balance.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -132,7 +161,6 @@
 		A82BAE7F1FF6832C00616D29 /* Exchange Rates */ = {
 			isa = PBXGroup;
 			children = (
-				A82BAE7C1FF67AB200616D29 /* ExchangeRatesViewController.swift */,
 			);
 			path = "Exchange Rates";
 			sourceTree = "<group>";
@@ -204,6 +232,8 @@
 		A89CFEA81FF555A300C9F2BC /* ContainerViews */ = {
 			isa = PBXGroup;
 			children = (
+				A82BAE7C1FF67AB200616D29 /* ExchangeRatesViewController.swift */,
+				A89CFEAD1FF5599C00C9F2BC /* BalanceUIViewController.swift */,
 				A82BAE7F1FF6832C00616D29 /* Exchange Rates */,
 				A82BAE7E1FF6832000616D29 /* Balance */,
 			);
@@ -226,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A80A46841FD8280000F70DC6 /* Build configuration list for PBXNativeTarget "YourCoin" */;
 			buildPhases = (
+				0F8036E6C4719AF0347970E3 /* [CP] Check Pods Manifest.lock */,
 				A80A466B1FD8280000F70DC6 /* Sources */,
 				A80A466C1FD8280000F70DC6 /* Frameworks */,
 				A80A466D1FD8280000F70DC6 /* Resources */,
+				153057614D2AAA461CBE0C76 /* [CP] Embed Pods Frameworks */,
+				C17F495ED848DAFFDC3622DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,6 +317,7 @@
 				A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */,
 				A8EB0DBE1FEAC432006FEB83 /* Logo.png in Resources */,
 				A89CFEA51FF506B700C9F2BC /* DefaultRectangle.png in Resources */,
+				6203CD372000F8E100768BB3 /* Podfile in Resources */,
 				A89CFEA71FF54FFE00C9F2BC /* CyanRectangle.png in Resources */,
 				A89CFEA31FF504E300C9F2BC /* SettingsIcon.png in Resources */,
 			);
@@ -291,12 +325,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F8036E6C4719AF0347970E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YourCoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		153057614D2AAA461CBE0C76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YourCoin/Pods-YourCoin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YourCoin/Pods-YourCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17F495ED848DAFFDC3622DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YourCoin/Pods-YourCoin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A80A466B1FD8280000F70DC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A84030221FE6FD3300FFD282 /* LoginViewController.swift in Sources */,
+				628C0F772000F39E0001E7AA /* Balance.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
 				A840301F1FE6FC2E00FFD282 /* StartUIProtocols.swift in Sources */,
 				A82FC63E1FF11D1900499645 /* StartCustomElements.swift in Sources */,
@@ -304,7 +393,7 @@
 				A825D0791FEC2F0A0086A10D /* CreateAccountViewController.swift in Sources */,
 				A825D07F1FEC32A50086A10D /* WalletViewController.swift in Sources */,
 				A82BAE7D1FF67AB200616D29 /* ExchangeRatesViewController.swift in Sources */,
-				A89CFEAE1FF5599C00C9F2BC /* BalanceUIView.swift in Sources */,
+				A89CFEAE1FF5599C00C9F2BC /* BalanceUIViewController.swift in Sources */,
 				A82FC6451FF1224E00499645 /* WalletUIProtocols.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
 				A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */,
@@ -436,6 +525,7 @@
 		};
 		A80A46851FD8280000F70DC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B897C86793645DFB1AF42156 /* Pods-YourCoin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +541,7 @@
 		};
 		A80A46861FD8280000F70DC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C816055B54D11345200417DC /* Pods-YourCoin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

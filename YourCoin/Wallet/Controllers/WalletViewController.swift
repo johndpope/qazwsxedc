@@ -12,36 +12,26 @@ import UIKit
 
 class WalletViewController: UIViewController {
 
-    let containerView = UIView()
-
-    lazy var balanceUIView: BalanceUIView = {
-        let vc = BalanceUIView()
-        self.addAsChildVC(childVC: vc)
-        return vc
-    }()
-    
-    lazy var exchangeRatesViewController: ExchangeRatesViewController = {
-        let vc = ExchangeRatesViewController()
-        self.addAsChildVC(childVC: vc)
-        return vc
-    }()
-    
     let settingsButton = UIButton()
     let balanceSwichButton = UIButton()
     let exchangeRatesSwitchButton = UIButton()
     let defaultRectangleImageView = UIImageView(image: UIImage(named: "DefaultRectangle.png"))
     let cyanRectangleImageView = UIImageView(image: UIImage(named: "CyanRectangle.png"))
     
+    private var balanceUIView = BalanceUIViewController()
+    private var exchangeRatesView = ExchangeRatesViewController();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupViews()
         SetLayutConstrain()
         balanceUIView.view.isHidden = false
+        
     }
     
     func SetupViews(){
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(containerView)
+        self.view.addSubview(balanceUIView.view)
+        self.view.addSubview(exchangeRatesView.view)
         
         settingsButton.SetSettingsCustomButtonWallet()
         self.view.addSubview(settingsButton)
@@ -68,30 +58,42 @@ class WalletViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    private func addAsChildVC(childVC: UIViewController) {
-        addChildViewController(childVC)
-        containerView.addSubview(childVC.view)
-        childVC.view.frame = self.view.frame
-        childVC.didMove(toParentViewController: self)
-    }
-    
-    private func removeAsChildVC(childVC: UIViewController) {
-        childVC.willMove(toParentViewController: nil)
-        childVC.view.removeFromSuperview()
-        childVC.removeFromParentViewController()
-    }
+    //    lazy var balanceUIView: BalanceUIView = {
+    //        let vc = BalanceUIView()
+    //        self.addAsChildVC(childVC: vc)
+    //        return vc
+    //    }()
+    //
+    //    lazy var exchangeRatesViewController: ExchangeRatesViewController = {
+    //        let vc = ExchangeRatesViewController()
+    //        self.addAsChildVC(childVC: vc)
+    //        return vc
+    //    }()
+
+//    private func addAsChildVC(childVC: UIViewController) {
+//        addChildViewController(childVC)
+//        containerView.addSubview(childVC.view)
+//        childVC.view.frame = self.view.frame
+//        childVC.didMove(toParentViewController: self)
+//    }
+//    
+//    private func removeAsChildVC(childVC: UIViewController) {
+//        childVC.willMove(toParentViewController: nil)
+//        childVC.view.removeFromSuperview()
+//        childVC.removeFromParentViewController()
+//    }
     
     @objc func SwitchButtonAction(_ sender: UIButton) {
         if sender.titleLabel?.text == "Balance"{
             balanceSwichButton.setTitleColor(UIColor.cyan, for: .normal)
             exchangeRatesSwitchButton.setTitleColor(UIColor.white, for: .normal)
-            exchangeRatesViewController.view.isHidden = true
-            balanceUIView.view.isHidden = false
+            exchangeRatesView.view.isHidden = true
+           balanceUIView.view.isHidden = false
         }
         else if sender.titleLabel?.text == "Exchange Rates"{
             balanceSwichButton.setTitleColor(UIColor.white, for: .normal)
             exchangeRatesSwitchButton.setTitleColor(UIColor.cyan, for: .normal)
-            exchangeRatesViewController.view.isHidden = false
+            exchangeRatesView.view.isHidden = false
             balanceUIView.view.isHidden = true
         }
         else{
