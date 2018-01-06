@@ -10,9 +10,12 @@ import UIKit
 
 class ExchangeRatesViewController: UIViewController {
 
+    var chartUIView = ChartUIView()
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        SetUIView(viewFragmet: chartUIView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,13 +23,12 @@ class ExchangeRatesViewController: UIViewController {
 
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    public func SetUIView(viewFragmet:UIView)
+    {
+        let some:ViewFragmet = viewFragmet as! ViewFragmet
+        self.view.addSubview(some as! UIView)
+        (some as! UIView).autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
+        some.SetupViews()
+        some.SetLayutConstrain()
     }
-    */
 }

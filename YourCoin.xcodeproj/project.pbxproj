@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		3D8C445093E16FE6E525D014 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
-		628C0F772000F39E0001E7AA /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* Balance.swift */; };
+		625B0677200111F4000145A9 /* ViewFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B0676200111F4000145A9 /* ViewFragment.swift */; };
+		625B067920011595000145A9 /* ChartUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067820011595000145A9 /* ChartUIView.swift */; };
+		628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* BalanceUIView.swift */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
 		A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46741FD8280000F70DC6 /* ViewController.swift */; };
 		A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */; };
@@ -36,7 +38,9 @@
 
 /* Begin PBXFileReference section */
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		628C0F762000F39E0001E7AA /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		625B0676200111F4000145A9 /* ViewFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFragment.swift; sourceTree = "<group>"; };
+		625B067820011595000145A9 /* ChartUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUIView.swift; sourceTree = "<group>"; };
+		628C0F762000F39E0001E7AA /* BalanceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
 		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A466F1FD8280000F70DC6 /* YourCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46721FD8280000F70DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,7 +157,7 @@
 		A82BAE7E1FF6832000616D29 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
-				628C0F762000F39E0001E7AA /* Balance.swift */,
+				628C0F762000F39E0001E7AA /* BalanceUIView.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -161,6 +165,7 @@
 		A82BAE7F1FF6832C00616D29 /* Exchange Rates */ = {
 			isa = PBXGroup;
 			children = (
+				625B067820011595000145A9 /* ChartUIView.swift */,
 			);
 			path = "Exchange Rates";
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				A82FC6441FF1224E00499645 /* WalletUIProtocols.swift */,
+				625B0676200111F4000145A9 /* ViewFragment.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -385,8 +391,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84030221FE6FD3300FFD282 /* LoginViewController.swift in Sources */,
-				628C0F772000F39E0001E7AA /* Balance.swift in Sources */,
+				628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
+				625B0677200111F4000145A9 /* ViewFragment.swift in Sources */,
 				A840301F1FE6FC2E00FFD282 /* StartUIProtocols.swift in Sources */,
 				A82FC63E1FF11D1900499645 /* StartCustomElements.swift in Sources */,
 				A825D0771FEC1F6F0086A10D /* PresetntView.swift in Sources */,
@@ -396,6 +403,7 @@
 				A89CFEAE1FF5599C00C9F2BC /* BalanceUIViewController.swift in Sources */,
 				A82FC6451FF1224E00499645 /* WalletUIProtocols.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
+				625B067920011595000145A9 /* ChartUIView.swift in Sources */,
 				A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */,
 				A82FC6421FF1211600499645 /* WalletCustomElements.swift in Sources */,
 				A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */,

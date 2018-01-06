@@ -9,7 +9,7 @@
 import UIKit
 import PureLayout
 
-class BalanceUIView: UIView {
+class BalanceUIView: UIView, ViewFragmet {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -19,11 +19,9 @@ class BalanceUIView: UIView {
     }
     */
     
-    var shouldSetupConstraints = true
-    
     let acceptPayButton = UIButton()
-        let payNowButton = UIButton()
-        let historyLabel = UILabel()
+    let payNowButton = UIButton()
+    let historyLabel = UILabel()
     
     func SetupViews(){
         acceptPayButton.SetBaseCustomButtonStart()

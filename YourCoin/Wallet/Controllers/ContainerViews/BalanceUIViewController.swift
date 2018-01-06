@@ -11,17 +11,23 @@ import UIKit
 class BalanceUIViewController:  UIViewController {
     
     var balanceUIView = BalanceUIView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(balanceUIView)
-        balanceUIView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
-        balanceUIView.SetupViews()
-        balanceUIView.SetLayutConstrain()
+        SetUIView(viewFragmet: balanceUIView)
     }
  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    public func SetUIView(viewFragmet:UIView)
+    {
+        let some:ViewFragmet = viewFragmet as! ViewFragmet
+        self.view.addSubview(some as! UIView)
+        (some as! UIView).autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
+        some.SetupViews()
+        some.SetLayutConstrain()
     }
     
 
