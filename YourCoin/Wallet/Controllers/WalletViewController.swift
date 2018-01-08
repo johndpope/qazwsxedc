@@ -19,13 +19,15 @@ class WalletViewController: UIViewController {
     let cyanRectangleImageView = UIImageView(image: UIImage(named: "CyanRectangle.png"))
     
     
-     let Balance = BalanceUIView()
+    let Balance = BalanceUIView()
+    let chartUIView = ChartUIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupViews()
         SetLayutConstrain()
         generalBalanceUIView.SetUIView(viewFragmet:Balance)
+        generalExchangeRatesView.SetUIView(viewFragmet: chartUIView)
         generalExchangeRatesView.view.isHidden = true
         generalBalanceUIView.view.isHidden = false
 
