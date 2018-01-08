@@ -101,7 +101,6 @@ class WalletViewController: UIViewController {
         exchangeRatesSwitchButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 78).isActive = true
         exchangeRatesSwitchButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100).isActive = true
         exchangeRatesSwitchButton.widthAnchor.constraint(equalToConstant: 125).isActive = true
-        
     }
 
 }

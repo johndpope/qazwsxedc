@@ -23,12 +23,17 @@ class BalanceUIViewController:  UIViewController {
     
     public func SetUIView(viewFragmet:UIView)
     {
+        if self.view.subviews.count != 0 {
+            self.view.subviews[self.view.subviews.count-1].removeFromSuperview()
+        }
         let some:ViewFragmet = viewFragmet as! ViewFragmet
+        print(self.view.subviews.count)
         self.view.addSubview(some as! UIView)
         //self.view = some as! UIView
         (some as! UIView).autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
         some.SetupViews()
         some.SetLayutConstrain()
+        print(self.view.subviews.count)
     }
     
 
