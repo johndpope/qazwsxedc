@@ -18,8 +18,6 @@ class WalletViewController: UIViewController {
     let defaultRectangleImageView = UIImageView(image: UIImage(named: "DefaultRectangle.png"))
     let cyanRectangleImageView = UIImageView(image: UIImage(named: "CyanRectangle.png"))
     
-    private var balanceUIView = BalanceUIViewController()
-    private var exchangeRatesView = ExchangeRatesViewController();
     
      let Balance = BalanceUIView()
     
@@ -27,16 +25,16 @@ class WalletViewController: UIViewController {
         super.viewDidLoad()
         SetupViews()
         SetLayutConstrain()
-        balanceUIView.SetUIView(viewFragmet:Balance)
-        exchangeRatesView.view.isHidden = true
-        balanceUIView.view.isHidden = false
+        generalBalanceUIView.SetUIView(viewFragmet:Balance)
+        generalExchangeRatesView.view.isHidden = true
+        generalBalanceUIView.view.isHidden = false
 
         
     }
     
     func SetupViews(){
-        self.view.addSubview(balanceUIView.view)
-        self.view.addSubview(exchangeRatesView.view)
+        self.view.addSubview(generalBalanceUIView.view)
+        self.view.addSubview(generalExchangeRatesView.view)
         
         settingsButton.SetSettingsCustomButtonWallet()
         self.view.addSubview(settingsButton)
@@ -67,14 +65,14 @@ class WalletViewController: UIViewController {
         if sender.titleLabel?.text == "Balance"{
             balanceSwichButton.setTitleColor(UIColor.cyan, for: .normal)
             exchangeRatesSwitchButton.setTitleColor(UIColor.white, for: .normal)
-            exchangeRatesView.view.isHidden = true
-           balanceUIView.view.isHidden = false
+            generalExchangeRatesView.view.isHidden = true
+           generalBalanceUIView.view.isHidden = false
         }
         else if sender.titleLabel?.text == "Exchange Rates"{
             balanceSwichButton.setTitleColor(UIColor.white, for: .normal)
             exchangeRatesSwitchButton.setTitleColor(UIColor.cyan, for: .normal)
-            exchangeRatesView.view.isHidden = false
-            balanceUIView.view.isHidden = true
+            generalExchangeRatesView.view.isHidden = false
+            generalBalanceUIView.view.isHidden = true
         }
         else{
             print("Error")

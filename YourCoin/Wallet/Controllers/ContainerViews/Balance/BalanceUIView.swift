@@ -80,8 +80,11 @@ class BalanceUIView: UIView, ViewFragmet {
         self.addSubview(balanceStack)
     }
     
+    let some = AllWallets()
     @objc func PayNowAction(_ sender: UIButton) {
         print("->Pay Now")
+        //some.backgroundColor = UIColor.brown
+        generalBalanceUIView.SetUIView(viewFragmet: some)
     }
     
     @objc func AcceptPayAction(_ sender: UIButton) {
@@ -89,8 +92,7 @@ class BalanceUIView: UIView, ViewFragmet {
     }
     
     @objc func GoToListWallets(_ sender:UITapGestureRecognizer){
-        print("->GoToListWallets") 
-        
+        print("->GoToListWallets")
     }
     
     @objc func GoToListHistory(_ sender:UITapGestureRecognizer){

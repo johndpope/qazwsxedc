@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+var generalBalanceUIView = BalanceUIViewController()
+var generalExchangeRatesView = ExchangeRatesViewController();
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

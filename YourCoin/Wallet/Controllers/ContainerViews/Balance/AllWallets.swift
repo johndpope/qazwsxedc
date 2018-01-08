@@ -11,18 +11,15 @@ import PureLayout
 
 class AllWallets: UIView, ViewFragmet {
     
-    let label = UILabel()
+    let acceptPayButton = UIButton()
     
     
     func SetupViews() {
-        label.text = "Some text"
-        label.textColor = UIColor.white
-        self.addSubview(label)
+
     }
     
     func SetLayutConstrain() {
-        label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+
     }
     
 

@@ -26,7 +26,8 @@ class ExchangeRatesViewController: UIViewController {
     public func SetUIView(viewFragmet:UIView)
     {
         let some:ViewFragmet = viewFragmet as! ViewFragmet
-        self.view.addSubview(some as! UIView)
+        //self.view.addSubview(some as! UIView)
+        self.view = some as! UIView
         (some as! UIView).autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
         some.SetupViews()
         some.SetLayutConstrain()
