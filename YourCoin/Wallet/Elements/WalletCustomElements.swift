@@ -18,6 +18,7 @@ extension UIButton : CoinButtonWallet{
         self.backgroundColor = UIColor.cyan
         self.setTitleColor(UIColor.black, for: .normal)
         self.titleLabel?.font = UIFont(name: "SFUIDisplay-Bold", size: 24)!
+        self.titleLabel?.font = self.titleLabel?.font.withSize(CGFloat(24))
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     
@@ -34,6 +35,7 @@ extension UIButton : CoinButtonWallet{
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = .clear
         self.titleLabel?.font =  UIFont(name: "SFUIDisplay-Regular", size: 16)
+        self.titleLabel?.font = self.titleLabel?.font.withSize(CGFloat(16))
         
     }
     
@@ -48,15 +50,14 @@ extension UILabel : CoinLabelWallet {
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func SetInfoCustomLabelWallet() {
-        self.textColor = UIColor.white
-        self.font = UIFont(name: "Roboto-Light", size: 16)
+    func SetInfoCustomLabelWallet(text:String, size:GLfloat, color:UIColor) {
+        self.text = text
+        self.textColor = color
+        self.font = UIFont(name: "Roboto-Light", size: CGFloat(size))
+        self.font = self.font.withSize(CGFloat(size))
         self.translatesAutoresizingMaskIntoConstraints = false
     }
-    
-    func SetColorCustomLabelWallet() {
-        self.translatesAutoresizingMaskIntoConstraints = false
-    }
+ 
 }
 
 extension UITextField : CoinTextFieldWallet {

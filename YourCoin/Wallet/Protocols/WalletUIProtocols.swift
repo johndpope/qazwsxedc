@@ -22,6 +22,5 @@ protocol CoinTextFieldWallet {
 
 protocol CoinLabelWallet {
     func SetBaseCustomLabelWallet()
-    func SetInfoCustomLabelWallet()
-    func SetColorCustomLabelWallet()
+    func SetInfoCustomLabelWallet(text:String, size:GLfloat, color:UIColor)
 }

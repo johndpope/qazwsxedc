@@ -11,7 +11,9 @@
 		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
 		625B0677200111F4000145A9 /* ViewFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B0676200111F4000145A9 /* ViewFragment.swift */; };
 		625B067920011595000145A9 /* ChartUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067820011595000145A9 /* ChartUIView.swift */; };
+		625B067B20011948000145A9 /* AllWallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067A20011948000145A9 /* AllWallets.swift */; };
 		628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* BalanceUIView.swift */; };
+		62E98F0A20036A5D00E60A35 /* ProgressClock.png in Resources */ = {isa = PBXBuildFile; fileRef = 62E98F0920036A5D00E60A35 /* ProgressClock.png */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
 		A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46741FD8280000F70DC6 /* ViewController.swift */; };
 		A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */; };
@@ -40,7 +42,9 @@
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		625B0676200111F4000145A9 /* ViewFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFragment.swift; sourceTree = "<group>"; };
 		625B067820011595000145A9 /* ChartUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUIView.swift; sourceTree = "<group>"; };
+		625B067A20011948000145A9 /* AllWallets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWallets.swift; sourceTree = "<group>"; };
 		628C0F762000F39E0001E7AA /* BalanceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
+		62E98F0920036A5D00E60A35 /* ProgressClock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ProgressClock.png; path = "../../../../../../Downloads/Untitled-2/ProgressClock.png"; sourceTree = "<group>"; };
 		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A466F1FD8280000F70DC6 /* YourCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46721FD8280000F70DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				628C0F762000F39E0001E7AA /* BalanceUIView.swift */,
+				625B067A20011948000145A9 /* AllWallets.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 		A82FC6401FF1210000499645 /* Resurse */ = {
 			isa = PBXGroup;
 			children = (
+				62E98F0920036A5D00E60A35 /* ProgressClock.png */,
 				A89CFEA61FF54FFE00C9F2BC /* CyanRectangle.png */,
 				A89CFEA41FF506B700C9F2BC /* DefaultRectangle.png */,
 				A89CFEA21FF504E300C9F2BC /* SettingsIcon.png */,
@@ -319,6 +325,7 @@
 			files = (
 				A80A46801FD8280000F70DC6 /* LaunchScreen.storyboard in Resources */,
 				A890E3F21FEAECC60005C74F /* Rectangle.png in Resources */,
+				62E98F0A20036A5D00E60A35 /* ProgressClock.png in Resources */,
 				A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */,
 				A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */,
 				A8EB0DBE1FEAC432006FEB83 /* Logo.png in Resources */,
@@ -394,6 +401,7 @@
 				628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
 				625B0677200111F4000145A9 /* ViewFragment.swift in Sources */,
+				625B067B20011948000145A9 /* AllWallets.swift in Sources */,
 				A840301F1FE6FC2E00FFD282 /* StartUIProtocols.swift in Sources */,
 				A82FC63E1FF11D1900499645 /* StartCustomElements.swift in Sources */,
 				A825D0771FEC1F6F0086A10D /* PresetntView.swift in Sources */,

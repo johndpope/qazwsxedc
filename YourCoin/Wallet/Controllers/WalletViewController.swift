@@ -21,11 +21,16 @@ class WalletViewController: UIViewController {
     private var balanceUIView = BalanceUIViewController()
     private var exchangeRatesView = ExchangeRatesViewController();
     
+     let Balance = BalanceUIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupViews()
         SetLayutConstrain()
+        balanceUIView.SetUIView(viewFragmet:Balance)
+        exchangeRatesView.view.isHidden = true
         balanceUIView.view.isHidden = false
+
         
     }
     

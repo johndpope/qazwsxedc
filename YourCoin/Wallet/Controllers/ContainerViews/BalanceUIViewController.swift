@@ -10,11 +10,11 @@ import UIKit
 
 class BalanceUIViewController:  UIViewController {
     
-    var balanceUIView = BalanceUIView()
+   // var balanceUIView = BalanceUIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SetUIView(viewFragmet: balanceUIView)
+      // SetUIView(viewFragmet: balanceUIView)
     }
  
     override func didReceiveMemoryWarning() {
