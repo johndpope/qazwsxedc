@@ -26,5 +26,6 @@ protocol CoinLabelWallet {
 }
 
 protocol CoinUIView {
-    func SetWalletCards(wallet:String, currency:GLfloat, typeCoin:String)
+    func SetWalletCards(wallet:String, currency:Float, typeCoin:String)->WalletCardObject
 }
+

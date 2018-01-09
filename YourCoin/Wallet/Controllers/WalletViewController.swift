@@ -26,12 +26,17 @@ class WalletViewController: UIViewController {
         super.viewDidLoad()
         SetupViews()
         SetLayutConstrain()
+        self.view.backgroundColor  = UIColor(patternImage: UIImage(named:"BaseBackround.png")!)
         generalBalanceUIView.SetUIView(viewFragmet:Balance)
         generalExchangeRatesView.SetUIView(viewFragmet: chartUIView)
         generalExchangeRatesView.view.isHidden = true
         generalBalanceUIView.view.isHidden = false
-
         
+        
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func SetupViews(){

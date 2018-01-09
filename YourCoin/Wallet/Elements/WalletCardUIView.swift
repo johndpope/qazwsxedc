@@ -39,14 +39,9 @@ func SetLabelNameValue(text:String) -> UILabel {
     return some
 }
 
-extension UITextField : CoinTextFieldWallet {
-    func SetCustomTextFieldWallet(placeholder: String) {
-        self.translatesAutoresizingMaskIntoConstraints = false
-    }
-}
 
 extension UIView : CoinUIView{
-    func SetWalletCards(wallet: String, currency: GLfloat, typeCoin: String) {
+    func SetWalletCards(wallet: String, currency: Float, typeCoin: String) ->WalletCardObject  {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor(red: 0.02, green: 0.16, blue: 0.21, alpha: 1)
         self.layer.cornerRadius = 10
@@ -73,17 +68,30 @@ extension UIView : CoinUIView{
         self.addSubview(wallelUILabel)
         wallelUILabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 99).isActive = true
         wallelUILabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 27).isActive = true
+        wallelUILabel.widthAnchor.constraint(equalToConstant: 209).isActive = true
         
-        let currencyUILabel = SetLabelValue(text:"CURRENCY:")
-        self.addSubview(currencyUILabel)
-        currencyUILabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 122).isActive = true
-        currencyUILabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 58).isActive = true
+        let vauleCurrencyUILabel = SetLabelValue(text:String(currency))
+        self.addSubview(vauleCurrencyUILabel)
+        vauleCurrencyUILabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 122).isActive = true
+        vauleCurrencyUILabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 58).isActive = true
         
-        let vauleUILabel = SetLabelValue(text:"VALUE:")
+        let vauleUILabel = SetLabelValue(text:String(currency+13))
         self.addSubview(vauleUILabel)
         vauleUILabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 84).isActive = true
         vauleUILabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 89).isActive = true
         
+        //////
         
+        let typeCoinCurrencyUILabel = SetLabelNameValue(text:typeCoin)
+        self.addSubview(typeCoinCurrencyUILabel)
+        typeCoinCurrencyUILabel.leftAnchor.constraint(equalTo: vauleCurrencyUILabel.rightAnchor, constant: 10).isActive = true
+        typeCoinCurrencyUILabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 58).isActive = true
+        
+        let typeCoinUILabel = SetLabelNameValue(text:"USD")
+        self.addSubview(typeCoinUILabel)
+        typeCoinUILabel.leftAnchor.constraint(equalTo: vauleUILabel.rightAnchor, constant: 10).isActive = true
+        typeCoinUILabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 89).isActive = true
+        
+        return WalletCardObject(Wallet:wallet, Balance:currency, BalanceToUSD:currency+13)
     }
 }

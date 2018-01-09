@@ -60,7 +60,11 @@ extension UILabel : CoinLabelWallet {
  
 }
 
-
+extension UITextField : CoinTextFieldWallet {
+    func SetCustomTextFieldWallet(placeholder: String) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+    }
+}
 
 
 
