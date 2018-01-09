@@ -8,38 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3D8C445093E16FE6E525D014 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
-		55F1052320054ECF008EF83B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050520054ECF008EF83B /* Account.swift */; };
-		55F1052420054ECF008EF83B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050620054ECF008EF83B /* Address.swift */; };
-		55F1052520054ECF008EF83B /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050720054ECF008EF83B /* Balance.swift */; };
-		55F1052620054ECF008EF83B /* BalanceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050820054ECF008EF83B /* BalanceCoordinator.swift */; };
-		55F1052720054ECF008EF83B /* BalancePrototcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050920054ECF008EF83B /* BalancePrototcol.swift */; };
-		55F1052820054ECF008EF83B /* BalanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050A20054ECF008EF83B /* BalanceRequest.swift */; };
-		55F1052920054ECF008EF83B /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050B20054ECF008EF83B /* BigInt.swift */; };
-		55F1052A20054ECF008EF83B /* BlockNumberRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050C20054ECF008EF83B /* BlockNumberRequest.swift */; };
-		55F1052B20054ECF008EF83B /* CastError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050D20054ECF008EF83B /* CastError.swift */; };
-		55F1052C20054ECF008EF83B /* ChainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050E20054ECF008EF83B /* ChainState.swift */; };
-		55F1052D20054ECF008EF83B /* CoinMarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1050F20054ECF008EF83B /* CoinMarketService.swift */; };
-		55F1052E20054ECF008EF83B /* CoinTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051020054ECF008EF83B /* CoinTicker.swift */; };
-		55F1052F20054ECF008EF83B /* CoinTickerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051120054ECF008EF83B /* CoinTickerID.swift */; };
-		55F1053020054ECF008EF83B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051220054ECF008EF83B /* Config.swift */; };
-		55F1053120054ECF008EF83B /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051320054ECF008EF83B /* CurrencyRate.swift */; };
-		55F1053220054ECF008EF83B /* EthereumConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051420054ECF008EF83B /* EthereumConverter.swift */; };
-		55F1053320054ECF008EF83B /* EthereumUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051520054ECF008EF83B /* EthereumUnit.swift */; };
-		55F1053420054ECF008EF83B /* EtherKeystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051620054ECF008EF83B /* EtherKeystore.swift */; };
-		55F1053520054ECF008EF83B /* EtherServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051720054ECF008EF83B /* EtherServiceRequest.swift */; };
-		55F1053620054ECF008EF83B /* ExchangeRateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051820054ECF008EF83B /* ExchangeRateCoordinator.swift */; };
-		55F1053720054ECF008EF83B /* Keystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051920054ECF008EF83B /* Keystore.swift */; };
-		55F1053820054ECF008EF83B /* KeyStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051A20054ECF008EF83B /* KeyStoreError.swift */; };
-		55F1053920054ECF008EF83B /* SendRawTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051B20054ECF008EF83B /* SendRawTransactionRequest.swift */; };
-		55F1053A20054ECF008EF83B /* SignTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051C20054ECF008EF83B /* SignTransaction.swift */; };
-		55F1053B20054ECF008EF83B /* TransactionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051D20054ECF008EF83B /* TransactionConfiguration.swift */; };
-		55F1053C20054ECF008EF83B /* TransactionSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051E20054ECF008EF83B /* TransactionSpeed.swift */; };
-		55F1053D20054ECF008EF83B /* WalletSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1051F20054ECF008EF83B /* WalletSession.swift */; };
-		55F1053E20054ECF008EF83B /* Web3Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1052020054ECF008EF83B /* Web3Request.swift */; };
-		55F1053F20054ECF008EF83B /* Web3RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1052120054ECF008EF83B /* Web3RequestType.swift */; };
-		55F1054020054ECF008EF83B /* Web3Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1052220054ECF008EF83B /* Web3Swift.swift */; };
+		55F1059220055F3F008EF83B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058320055F3F008EF83B /* Account.swift */; };
+		55F1059320055F3F008EF83B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058420055F3F008EF83B /* Address.swift */; };
+		55F1059420055F3F008EF83B /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058520055F3F008EF83B /* BigInt.swift */; };
+		55F1059520055F3F008EF83B /* CastError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058620055F3F008EF83B /* CastError.swift */; };
+		55F1059620055F3F008EF83B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058720055F3F008EF83B /* Config.swift */; };
+		55F1059720055F3F008EF83B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058820055F3F008EF83B /* Data.swift */; };
+		55F1059820055F3F008EF83B /* EtherKeystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058920055F3F008EF83B /* EtherKeystore.swift */; };
+		55F1059920055F3F008EF83B /* EtherServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058A20055F3F008EF83B /* EtherServiceRequest.swift */; };
+		55F1059A20055F3F008EF83B /* ImportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058B20055F3F008EF83B /* ImportType.swift */; };
+		55F1059B20055F3F008EF83B /* Keystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058C20055F3F008EF83B /* Keystore.swift */; };
+		55F1059C20055F3F008EF83B /* KeyStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058D20055F3F008EF83B /* KeyStoreError.swift */; };
+		55F1059D20055F3F008EF83B /* RPCServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058E20055F3F008EF83B /* RPCServer.swift */; };
+		55F1059E20055F3F008EF83B /* SendRawTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058F20055F3F008EF83B /* SendRawTransactionRequest.swift */; };
+		55F1059F20055F3F008EF83B /* SignTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1059020055F3F008EF83B /* SignTransaction.swift */; };
+		55F105A020055F3F008EF83B /* TransactionSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1059120055F3F008EF83B /* TransactionSpeed.swift */; };
 		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
-		628C0F772000F39E0001E7AA /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* Balance.swift */; };
+		628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* BalanceUIView.swift */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
 		A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46741FD8280000F70DC6 /* ViewController.swift */; };
 		A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */; };
@@ -65,38 +50,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		55F1050520054ECF008EF83B /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		55F1050620054ECF008EF83B /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		55F1050720054ECF008EF83B /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
-		55F1050820054ECF008EF83B /* BalanceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCoordinator.swift; sourceTree = "<group>"; };
-		55F1050920054ECF008EF83B /* BalancePrototcol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalancePrototcol.swift; sourceTree = "<group>"; };
-		55F1050A20054ECF008EF83B /* BalanceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceRequest.swift; sourceTree = "<group>"; };
-		55F1050B20054ECF008EF83B /* BigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
-		55F1050C20054ECF008EF83B /* BlockNumberRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockNumberRequest.swift; sourceTree = "<group>"; };
-		55F1050D20054ECF008EF83B /* CastError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastError.swift; sourceTree = "<group>"; };
-		55F1050E20054ECF008EF83B /* ChainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainState.swift; sourceTree = "<group>"; };
-		55F1050F20054ECF008EF83B /* CoinMarketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinMarketService.swift; sourceTree = "<group>"; };
-		55F1051020054ECF008EF83B /* CoinTicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinTicker.swift; sourceTree = "<group>"; };
-		55F1051120054ECF008EF83B /* CoinTickerID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinTickerID.swift; sourceTree = "<group>"; };
-		55F1051220054ECF008EF83B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		55F1051320054ECF008EF83B /* CurrencyRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
-		55F1051420054ECF008EF83B /* EthereumConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumConverter.swift; sourceTree = "<group>"; };
-		55F1051520054ECF008EF83B /* EthereumUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumUnit.swift; sourceTree = "<group>"; };
-		55F1051620054ECF008EF83B /* EtherKeystore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherKeystore.swift; sourceTree = "<group>"; };
-		55F1051720054ECF008EF83B /* EtherServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherServiceRequest.swift; sourceTree = "<group>"; };
-		55F1051820054ECF008EF83B /* ExchangeRateCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateCoordinator.swift; sourceTree = "<group>"; };
-		55F1051920054ECF008EF83B /* Keystore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keystore.swift; sourceTree = "<group>"; };
-		55F1051A20054ECF008EF83B /* KeyStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStoreError.swift; sourceTree = "<group>"; };
-		55F1051B20054ECF008EF83B /* SendRawTransactionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendRawTransactionRequest.swift; sourceTree = "<group>"; };
-		55F1051C20054ECF008EF83B /* SignTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignTransaction.swift; sourceTree = "<group>"; };
-		55F1051D20054ECF008EF83B /* TransactionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionConfiguration.swift; sourceTree = "<group>"; };
-		55F1051E20054ECF008EF83B /* TransactionSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionSpeed.swift; sourceTree = "<group>"; };
-		55F1051F20054ECF008EF83B /* WalletSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletSession.swift; sourceTree = "<group>"; };
-		55F1052020054ECF008EF83B /* Web3Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Request.swift; sourceTree = "<group>"; };
-		55F1052120054ECF008EF83B /* Web3RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3RequestType.swift; sourceTree = "<group>"; };
-		55F1052220054ECF008EF83B /* Web3Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Swift.swift; sourceTree = "<group>"; };
+		55F1058320055F3F008EF83B /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		55F1058420055F3F008EF83B /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		55F1058520055F3F008EF83B /* BigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		55F1058620055F3F008EF83B /* CastError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastError.swift; sourceTree = "<group>"; };
+		55F1058720055F3F008EF83B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		55F1058820055F3F008EF83B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		55F1058920055F3F008EF83B /* EtherKeystore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherKeystore.swift; sourceTree = "<group>"; };
+		55F1058A20055F3F008EF83B /* EtherServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherServiceRequest.swift; sourceTree = "<group>"; };
+		55F1058B20055F3F008EF83B /* ImportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportType.swift; sourceTree = "<group>"; };
+		55F1058C20055F3F008EF83B /* Keystore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keystore.swift; sourceTree = "<group>"; };
+		55F1058D20055F3F008EF83B /* KeyStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStoreError.swift; sourceTree = "<group>"; };
+		55F1058E20055F3F008EF83B /* RPCServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCServer.swift; sourceTree = "<group>"; };
+		55F1058F20055F3F008EF83B /* SendRawTransactionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendRawTransactionRequest.swift; sourceTree = "<group>"; };
+		55F1059020055F3F008EF83B /* SignTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignTransaction.swift; sourceTree = "<group>"; };
+		55F1059120055F3F008EF83B /* TransactionSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionSpeed.swift; sourceTree = "<group>"; };
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		628C0F762000F39E0001E7AA /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		628C0F762000F39E0001E7AA /* BalanceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
 		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A466F1FD8280000F70DC6 /* YourCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46721FD8280000F70DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,39 +108,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55F1050420054ECF008EF83B /* Network */ = {
+		55F1058220055F3F008EF83B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				55F1050520054ECF008EF83B /* Account.swift */,
-				55F1050620054ECF008EF83B /* Address.swift */,
-				55F1050720054ECF008EF83B /* Balance.swift */,
-				55F1050820054ECF008EF83B /* BalanceCoordinator.swift */,
-				55F1050920054ECF008EF83B /* BalancePrototcol.swift */,
-				55F1050A20054ECF008EF83B /* BalanceRequest.swift */,
-				55F1050B20054ECF008EF83B /* BigInt.swift */,
-				55F1050C20054ECF008EF83B /* BlockNumberRequest.swift */,
-				55F1050D20054ECF008EF83B /* CastError.swift */,
-				55F1050E20054ECF008EF83B /* ChainState.swift */,
-				55F1050F20054ECF008EF83B /* CoinMarketService.swift */,
-				55F1051020054ECF008EF83B /* CoinTicker.swift */,
-				55F1051120054ECF008EF83B /* CoinTickerID.swift */,
-				55F1051220054ECF008EF83B /* Config.swift */,
-				55F1051320054ECF008EF83B /* CurrencyRate.swift */,
-				55F1051420054ECF008EF83B /* EthereumConverter.swift */,
-				55F1051520054ECF008EF83B /* EthereumUnit.swift */,
-				55F1051620054ECF008EF83B /* EtherKeystore.swift */,
-				55F1051720054ECF008EF83B /* EtherServiceRequest.swift */,
-				55F1051820054ECF008EF83B /* ExchangeRateCoordinator.swift */,
-				55F1051920054ECF008EF83B /* Keystore.swift */,
-				55F1051A20054ECF008EF83B /* KeyStoreError.swift */,
-				55F1051B20054ECF008EF83B /* SendRawTransactionRequest.swift */,
-				55F1051C20054ECF008EF83B /* SignTransaction.swift */,
-				55F1051D20054ECF008EF83B /* TransactionConfiguration.swift */,
-				55F1051E20054ECF008EF83B /* TransactionSpeed.swift */,
-				55F1051F20054ECF008EF83B /* WalletSession.swift */,
-				55F1052020054ECF008EF83B /* Web3Request.swift */,
-				55F1052120054ECF008EF83B /* Web3RequestType.swift */,
-				55F1052220054ECF008EF83B /* Web3Swift.swift */,
+				55F1058320055F3F008EF83B /* Account.swift */,
+				55F1058420055F3F008EF83B /* Address.swift */,
+				55F1058520055F3F008EF83B /* BigInt.swift */,
+				55F1058620055F3F008EF83B /* CastError.swift */,
+				55F1058720055F3F008EF83B /* Config.swift */,
+				55F1058820055F3F008EF83B /* Data.swift */,
+				55F1058920055F3F008EF83B /* EtherKeystore.swift */,
+				55F1058A20055F3F008EF83B /* EtherServiceRequest.swift */,
+				55F1058B20055F3F008EF83B /* ImportType.swift */,
+				55F1058C20055F3F008EF83B /* Keystore.swift */,
+				55F1058D20055F3F008EF83B /* KeyStoreError.swift */,
+				55F1058E20055F3F008EF83B /* RPCServer.swift */,
+				55F1058F20055F3F008EF83B /* SendRawTransactionRequest.swift */,
+				55F1059020055F3F008EF83B /* SignTransaction.swift */,
+				55F1059120055F3F008EF83B /* TransactionSpeed.swift */,
 			);
 			name = Network;
 			path = ../../Network;
@@ -214,7 +169,7 @@
 		A80A46711FD8280000F70DC6 /* YourCoin */ = {
 			isa = PBXGroup;
 			children = (
-				55F1050420054ECF008EF83B /* Network */,
+				55F1058220055F3F008EF83B /* Network */,
 				A82BAE7A1FF6783000616D29 /* Main.storyboard */,
 				A825D07C1FEC32280086A10D /* Wallet */,
 				A8571F911FD9B075003430F3 /* StartApp */,
@@ -252,7 +207,7 @@
 		A82BAE7E1FF6832000616D29 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
-				628C0F762000F39E0001E7AA /* Balance.swift */,
+				628C0F762000F39E0001E7AA /* BalanceUIView.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -531,50 +486,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F1052620054ECF008EF83B /* BalanceCoordinator.swift in Sources */,
+				55F1059A20055F3F008EF83B /* ImportType.swift in Sources */,
 				A84030221FE6FD3300FFD282 /* LoginViewController.swift in Sources */,
-				55F1052820054ECF008EF83B /* BalanceRequest.swift in Sources */,
-				55F1053D20054ECF008EF83B /* WalletSession.swift in Sources */,
-				55F1053820054ECF008EF83B /* KeyStoreError.swift in Sources */,
-				628C0F772000F39E0001E7AA /* Balance.swift in Sources */,
-				55F1053120054ECF008EF83B /* CurrencyRate.swift in Sources */,
+				55F1059520055F3F008EF83B /* CastError.swift in Sources */,
+				628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
 				A840301F1FE6FC2E00FFD282 /* StartUIProtocols.swift in Sources */,
-				55F1052920054ECF008EF83B /* BigInt.swift in Sources */,
-				55F1052520054ECF008EF83B /* Balance.swift in Sources */,
-				55F1052A20054ECF008EF83B /* BlockNumberRequest.swift in Sources */,
 				A82FC63E1FF11D1900499645 /* StartCustomElements.swift in Sources */,
-				55F1052320054ECF008EF83B /* Account.swift in Sources */,
-				55F1053320054ECF008EF83B /* EthereumUnit.swift in Sources */,
+				55F1059220055F3F008EF83B /* Account.swift in Sources */,
+				55F1059920055F3F008EF83B /* EtherServiceRequest.swift in Sources */,
+				55F1059720055F3F008EF83B /* Data.swift in Sources */,
+				55F1059820055F3F008EF83B /* EtherKeystore.swift in Sources */,
 				A825D0771FEC1F6F0086A10D /* PresetntView.swift in Sources */,
-				55F1052D20054ECF008EF83B /* CoinMarketService.swift in Sources */,
-				55F1053720054ECF008EF83B /* Keystore.swift in Sources */,
-				55F1052F20054ECF008EF83B /* CoinTickerID.swift in Sources */,
+				55F1059C20055F3F008EF83B /* KeyStoreError.swift in Sources */,
+				55F1059E20055F3F008EF83B /* SendRawTransactionRequest.swift in Sources */,
+				55F1059B20055F3F008EF83B /* Keystore.swift in Sources */,
+				55F1059F20055F3F008EF83B /* SignTransaction.swift in Sources */,
+				55F1059D20055F3F008EF83B /* RPCServer.swift in Sources */,
 				A825D0791FEC2F0A0086A10D /* CreateAccountViewController.swift in Sources */,
-				55F1053C20054ECF008EF83B /* TransactionSpeed.swift in Sources */,
-				55F1053A20054ECF008EF83B /* SignTransaction.swift in Sources */,
+				55F1059420055F3F008EF83B /* BigInt.swift in Sources */,
 				A825D07F1FEC32A50086A10D /* WalletViewController.swift in Sources */,
 				A82BAE7D1FF67AB200616D29 /* ExchangeRatesViewController.swift in Sources */,
-				55F1053420054ECF008EF83B /* EtherKeystore.swift in Sources */,
-				55F1053B20054ECF008EF83B /* TransactionConfiguration.swift in Sources */,
-				55F1052B20054ECF008EF83B /* CastError.swift in Sources */,
-				55F1053920054ECF008EF83B /* SendRawTransactionRequest.swift in Sources */,
-				55F1053F20054ECF008EF83B /* Web3RequestType.swift in Sources */,
-				55F1052C20054ECF008EF83B /* ChainState.swift in Sources */,
 				A89CFEAE1FF5599C00C9F2BC /* BalanceUIViewController.swift in Sources */,
+				55F105A020055F3F008EF83B /* TransactionSpeed.swift in Sources */,
 				A82FC6451FF1224E00499645 /* WalletUIProtocols.swift in Sources */,
-				55F1052420054ECF008EF83B /* Address.swift in Sources */,
-				55F1053020054ECF008EF83B /* Config.swift in Sources */,
-				55F1053620054ECF008EF83B /* ExchangeRateCoordinator.swift in Sources */,
+				55F1059320055F3F008EF83B /* Address.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
 				A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */,
-				55F1052E20054ECF008EF83B /* CoinTicker.swift in Sources */,
-				55F1053E20054ECF008EF83B /* Web3Request.swift in Sources */,
-				55F1053220054ECF008EF83B /* EthereumConverter.swift in Sources */,
-				55F1052720054ECF008EF83B /* BalancePrototcol.swift in Sources */,
-				55F1054020054ECF008EF83B /* Web3Swift.swift in Sources */,
+				55F1059620055F3F008EF83B /* Config.swift in Sources */,
 				A82FC6421FF1211600499645 /* WalletCustomElements.swift in Sources */,
-				55F1053520054ECF008EF83B /* EtherServiceRequest.swift in Sources */,
 				A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
