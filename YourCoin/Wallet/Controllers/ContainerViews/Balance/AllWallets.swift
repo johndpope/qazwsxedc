@@ -15,7 +15,13 @@ class AllWallets: UIView, ViewFragmet {
     let walletCards = UIView()
     var cardobj:WalletCardObject? = nil
     
+    let alertController = UIAlertController(title: "Simple", message: "Copy to buffer: "+UIPasteboard.general.string! , preferredStyle: UIAlertControllerStyle.alert)
+    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.destructive) { (result : UIAlertAction) -> Void in
+        print("OK")
+    }
+    
     func SetupViews() {
+        alertController.addAction(okAction)
         
         cardobj = walletCards.SetWalletCards(wallet: "0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", currency: 1488.13, typeCoin: "ETH")
         walletCards.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector (HowKeyAll (_:))))
@@ -34,6 +40,7 @@ class AllWallets: UIView, ViewFragmet {
     
     @objc func HowKeyAll(_ sender: UIButton){ 
         UIPasteboard.general.string = cardobj?.walletPublicKey
+        generalBalanceUIView.present(alertController, animated: true, completion: nil)
         print(cardobj?.walletPublicKey)
     }
 
@@ -50,6 +57,7 @@ class AllWallets: UIView, ViewFragmet {
         
         
     }
+    
 }
 
 

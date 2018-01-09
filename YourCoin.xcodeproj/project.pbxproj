@@ -12,10 +12,10 @@
 		625B0677200111F4000145A9 /* ViewFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B0676200111F4000145A9 /* ViewFragment.swift */; };
 		625B067920011595000145A9 /* ChartUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067820011595000145A9 /* ChartUIView.swift */; };
 		625B067B20011948000145A9 /* AllWallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067A20011948000145A9 /* AllWallets.swift */; };
+		6269E2C4200566D20093ED97 /* BaseBackround.png in Resources */ = {isa = PBXBuildFile; fileRef = 6269E2C3200566D20093ED97 /* BaseBackround.png */; };
 		628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* BalanceUIView.swift */; };
 		62CE74FE2005160D00079B7D /* WalletCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE74FD2005160D00079B7D /* WalletCardUIView.swift */; };
 		62CE7500200533B100079B7D /* BaseBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CE74FF200533B100079B7D /* BaseBackground.png */; };
-		62CE75062005372F00079B7D /* BaseBackround.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CE75052005372F00079B7D /* BaseBackround.png */; };
 		62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE750A20055B9200079B7D /* WalletCardObject.swift */; };
 		62E98F0A20036A5D00E60A35 /* ProgressClock.png in Resources */ = {isa = PBXBuildFile; fileRef = 62E98F0920036A5D00E60A35 /* ProgressClock.png */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
@@ -47,10 +47,10 @@
 		625B0676200111F4000145A9 /* ViewFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFragment.swift; sourceTree = "<group>"; };
 		625B067820011595000145A9 /* ChartUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUIView.swift; sourceTree = "<group>"; };
 		625B067A20011948000145A9 /* AllWallets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWallets.swift; sourceTree = "<group>"; };
+		6269E2C3200566D20093ED97 /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BaseBackround.png; path = ../../../../../Downloads/BaseBackround.png; sourceTree = "<group>"; };
 		628C0F762000F39E0001E7AA /* BalanceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
 		62CE74FD2005160D00079B7D /* WalletCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardUIView.swift; sourceTree = "<group>"; };
 		62CE74FF200533B100079B7D /* BaseBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BaseBackground.png; path = ../../../../../../Downloads/BaseBackground.png; sourceTree = "<group>"; };
-		62CE75052005372F00079B7D /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BaseBackround.png; path = ../../../../../Downloads/BaseBackround.png; sourceTree = "<group>"; };
 		62CE750A20055B9200079B7D /* WalletCardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardObject.swift; sourceTree = "<group>"; };
 		62E98F0920036A5D00E60A35 /* ProgressClock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ProgressClock.png; path = "../../../../../../Downloads/Untitled-2/ProgressClock.png"; sourceTree = "<group>"; };
 		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +97,7 @@
 		62CE7502200533E600079B7D /* Resurse */ = {
 			isa = PBXGroup;
 			children = (
-				62CE75052005372F00079B7D /* BaseBackround.png */,
+				6269E2C3200566D20093ED97 /* BaseBackround.png */,
 			);
 			path = Resurse;
 			sourceTree = "<group>";
@@ -354,6 +354,7 @@
 				A80A46801FD8280000F70DC6 /* LaunchScreen.storyboard in Resources */,
 				A890E3F21FEAECC60005C74F /* Rectangle.png in Resources */,
 				62E98F0A20036A5D00E60A35 /* ProgressClock.png in Resources */,
+				6269E2C4200566D20093ED97 /* BaseBackround.png in Resources */,
 				A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */,
 				A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */,
 				A8EB0DBE1FEAC432006FEB83 /* Logo.png in Resources */,
@@ -362,7 +363,6 @@
 				A89CFEA71FF54FFE00C9F2BC /* CyanRectangle.png in Resources */,
 				62CE7500200533B100079B7D /* BaseBackground.png in Resources */,
 				A89CFEA31FF504E300C9F2BC /* SettingsIcon.png in Resources */,
-				62CE75062005372F00079B7D /* BaseBackround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

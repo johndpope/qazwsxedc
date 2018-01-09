@@ -24,6 +24,7 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor  = UIColor(patternImage: UIImage(named:"BaseBackround.png")!)
         SetupViews()
         SetLayutConstrain()
     }
