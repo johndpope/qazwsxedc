@@ -24,3 +24,7 @@ protocol CoinLabelWallet {
     func SetBaseCustomLabelWallet()
     func SetInfoCustomLabelWallet(text:String, size:GLfloat, color:UIColor)
 }
+
+protocol CoinUIView {
+    func SetWalletCards(wallet:String, currency:GLfloat, typeCoin:String)
+}
