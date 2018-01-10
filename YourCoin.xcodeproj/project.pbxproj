@@ -153,8 +153,7 @@
 				55F1059020055F3F008EF83B /* SignTransaction.swift */,
 				55F1059120055F3F008EF83B /* TransactionSpeed.swift */,
 			);
-			name = Network;
-			path = ../../Network;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		738D7AD546768CBE06174356 /* Frameworks */ = {
