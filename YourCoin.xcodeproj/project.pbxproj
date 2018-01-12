@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D8C445093E16FE6E525D014 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		5523B296200564A600B6C2A8 /* GasData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5523B295200564A600B6C2A8 /* GasData.swift */; };
+		55317EF2200943A2003AF685 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55317EF1200943A2003AF685 /* TransactionService.swift */; };
 		55D72FA12005948600DE26C2 /* apiBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D72FA02005948600DE26C2 /* apiBase.swift */; };
 		55F1059220055F3F008EF83B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058320055F3F008EF83B /* Account.swift */; };
 		55F1059320055F3F008EF83B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1058420055F3F008EF83B /* Address.swift */; };
@@ -55,6 +56,7 @@
 		5523B2922005647500B6C2A8 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		5523B2932005647500B6C2A8 /* EthereumDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumDataService.swift; sourceTree = "<group>"; };
 		5523B295200564A600B6C2A8 /* GasData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasData.swift; sourceTree = "<group>"; };
+		55317EF1200943A2003AF685 /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
 		55D72FA02005948600DE26C2 /* apiBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiBase.swift; sourceTree = "<group>"; };
 		55F1058320055F3F008EF83B /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		55F1058420055F3F008EF83B /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				5523B2922005647500B6C2A8 /* AccountService.swift */,
 				5523B2932005647500B6C2A8 /* EthereumDataService.swift */,
 				55D72FA02005948600DE26C2 /* apiBase.swift */,
+				55317EF1200943A2003AF685 /* TransactionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
 				A840301F1FE6FC2E00FFD282 /* StartUIProtocols.swift in Sources */,
+				55317EF2200943A2003AF685 /* TransactionService.swift in Sources */,
 				A82FC63E1FF11D1900499645 /* StartCustomElements.swift in Sources */,
 				55F1059220055F3F008EF83B /* Account.swift in Sources */,
 				55F1059920055F3F008EF83B /* EtherServiceRequest.swift in Sources */,
