@@ -14,6 +14,7 @@ protocol CoinButtonWallet{
     func SetInvisibleCustomButtonWallet()
     func SetSwitchCustomButtonWallet()  
     func SetSettingsCustomButtonWallet()
+    func SetCustomBackButton()
 }
 
 protocol CoinTextFieldWallet {

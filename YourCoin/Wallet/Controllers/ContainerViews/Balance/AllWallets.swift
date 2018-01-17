@@ -14,18 +14,16 @@ class AllWallets: UIView, ViewFragmet {
     let confirmButton = UIButton()
     let walletCards = UIView()
     var cardobj:WalletCardObject? = nil
-    
-    let alertController = UIAlertController(title: "Simple", message: "Copy to buffer: "+UIPasteboard.general.string! , preferredStyle: UIAlertControllerStyle.alert)
-    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.destructive) { (result : UIAlertAction) -> Void in
-        print("OK")
-    }
+    let smallHistoryView = UIView()
     
     func SetupViews() {
-        alertController.addAction(okAction)
-        
         cardobj = walletCards.SetWalletCards(wallet: "0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", currency: 1488.13, typeCoin: "ETH")
         walletCards.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector (HowKeyAll (_:))))
         self.addSubview(walletCards)
+        
+        smallHistoryView.translatesAutoresizingMaskIntoConstraints = false
+        smallHistoryView.backgroundColor = UIColor.brown
+        self.addSubview(smallHistoryView)
         
         confirmButton.SetBaseCustomButtonStart()
         confirmButton.setTitle("ACCEPT PAY", for: UIControlState.normal )
@@ -38,9 +36,7 @@ class AllWallets: UIView, ViewFragmet {
         print("->confirmButton")
     }
     
-    @objc func HowKeyAll(_ sender: UIButton){ 
-        UIPasteboard.general.string = cardobj?.walletPublicKey
-        generalBalanceUIView.present(alertController, animated: true, completion: nil)
+    @objc func HowKeyAll(_ sender: UIButton){
         print(cardobj?.walletPublicKey)
     }
 
@@ -50,12 +46,15 @@ class AllWallets: UIView, ViewFragmet {
         confirmButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         confirmButton.widthAnchor.constraint(equalToConstant: 300).isActive = true
         
+        smallHistoryView.widthAnchor.constraint(equalToConstant: 330).isActive = true
+        smallHistoryView.heightAnchor.constraint(equalToConstant: 180).isActive = true
+        smallHistoryView.bottomAnchor.constraint(equalTo: confirmButton.topAnchor, constant: -46).isActive = true
+        smallHistoryView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        
         walletCards.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         walletCards.topAnchor.constraint(equalTo: self.topAnchor, constant: 116).isActive = true
         walletCards.widthAnchor.constraint(equalToConstant: 330).isActive = true
         walletCards.heightAnchor.constraint(equalToConstant: 136).isActive = true
-        
-        
     }
     
 }

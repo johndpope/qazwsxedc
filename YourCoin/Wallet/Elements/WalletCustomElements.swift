@@ -43,6 +43,17 @@ extension UIButton : CoinButtonWallet{
         self.setImage(UIImage(named:"SettingsIcon.png"), for: .normal)
         self.translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    func SetCustomBackButton(){
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = .clear
+        self.setImage(UIImage(named:"Back.png"), for: .normal)
+        self.setTitle("Back", for: .normal)
+        self.imageEdgeInsets = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 0)
+        self.imageRect(forContentRect: CGRect(x: 13, y: 21, width: 1, height: 1))
+        self.titleEdgeInsets = UIEdgeInsets(top: 6,left: 11,bottom: 6,right: 14)
+        self.setTitleColor(UIColor.white, for: .normal)
+    }
 }
 
 extension UILabel : CoinLabelWallet {

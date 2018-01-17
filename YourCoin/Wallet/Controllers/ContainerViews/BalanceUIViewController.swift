@@ -11,7 +11,7 @@ import UIKit
 class BalanceUIViewController:  UIViewController {
     
    // var balanceUIView = BalanceUIView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
       // SetUIView(viewFragmet: balanceUIView)

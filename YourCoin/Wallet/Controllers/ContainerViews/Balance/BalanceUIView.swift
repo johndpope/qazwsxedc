@@ -87,10 +87,12 @@ class BalanceUIView: UIView, ViewFragmet {
     
     @objc func AcceptPayAction(_ sender: UIButton) {
         print("->Accept Pay")
+        let some = AcceptUIView()
+        generalBalanceUIView.SetUIView(viewFragmet: some)
     }
-        let some = AllWallets()
     @objc func GoToListWallets(_ sender:UITapGestureRecognizer){
         print("->GoToListWallets")
+         let some = AllWallets()
          generalBalanceUIView.SetUIView(viewFragmet: some)
     }
     

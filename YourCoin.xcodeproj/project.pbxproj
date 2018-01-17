@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		3D8C445093E16FE6E525D014 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
+		62202461200F924F00382DA2 /* Back1.png in Resources */ = {isa = PBXBuildFile; fileRef = 62202460200F924F00382DA2 /* Back1.png */; };
+		62202463200F92C200382DA2 /* Back3.png in Resources */ = {isa = PBXBuildFile; fileRef = 62202462200F92C200382DA2 /* Back3.png */; };
+		62202466200F930400382DA2 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 62202465200F930400382DA2 /* Back.png */; };
 		625B0677200111F4000145A9 /* ViewFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B0676200111F4000145A9 /* ViewFragment.swift */; };
 		625B067920011595000145A9 /* ChartUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067820011595000145A9 /* ChartUIView.swift */; };
 		625B067B20011948000145A9 /* AllWallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067A20011948000145A9 /* AllWallets.swift */; };
-		6269E2C4200566D20093ED97 /* BaseBackround.png in Resources */ = {isa = PBXBuildFile; fileRef = 6269E2C3200566D20093ED97 /* BaseBackround.png */; };
 		628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* BalanceUIView.swift */; };
+		62A60389200CF38F00EA919C /* BaseBackround.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A60388200CF38E00EA919C /* BaseBackround.png */; };
 		62CE74FE2005160D00079B7D /* WalletCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE74FD2005160D00079B7D /* WalletCardUIView.swift */; };
-		62CE7500200533B100079B7D /* BaseBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CE74FF200533B100079B7D /* BaseBackground.png */; };
 		62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE750A20055B9200079B7D /* WalletCardObject.swift */; };
-		62E98F0A20036A5D00E60A35 /* ProgressClock.png in Resources */ = {isa = PBXBuildFile; fileRef = 62E98F0920036A5D00E60A35 /* ProgressClock.png */; };
+		62D9238E200E576F00FD0E1A /* AcceptUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D9238D200E576F00FD0E1A /* AcceptUIView.swift */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
 		A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46741FD8280000F70DC6 /* ViewController.swift */; };
 		A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */; };
@@ -44,15 +46,19 @@
 
 /* Begin PBXFileReference section */
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		62202460200F924F00382DA2 /* Back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Back1.png; path = "../../../../../../Downloads/Additional  11/Back1.png"; sourceTree = "<group>"; };
+		62202462200F92C200382DA2 /* Back3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Back3.png; path = "../../../../../../Downloads/Additional  12/Back3.png"; sourceTree = "<group>"; };
+		62202464200F92C800382DA2 /* Back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back2.png; sourceTree = "<group>"; };
+		62202465200F930400382DA2 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Back.png; path = "../../../../../../Downloads/Additional  14/Back.png"; sourceTree = "<group>"; };
 		625B0676200111F4000145A9 /* ViewFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFragment.swift; sourceTree = "<group>"; };
 		625B067820011595000145A9 /* ChartUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUIView.swift; sourceTree = "<group>"; };
 		625B067A20011948000145A9 /* AllWallets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWallets.swift; sourceTree = "<group>"; };
-		6269E2C3200566D20093ED97 /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BaseBackround.png; path = ../../../../../Downloads/BaseBackround.png; sourceTree = "<group>"; };
 		628C0F762000F39E0001E7AA /* BalanceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
+		62A60388200CF38E00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BaseBackround.png; path = ../../../../.Trash/BaseBackround.png; sourceTree = "<group>"; };
+		62A6038B200CF39A00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaseBackround.png; sourceTree = "<group>"; };
 		62CE74FD2005160D00079B7D /* WalletCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardUIView.swift; sourceTree = "<group>"; };
-		62CE74FF200533B100079B7D /* BaseBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BaseBackground.png; path = ../../../../../../Downloads/BaseBackground.png; sourceTree = "<group>"; };
 		62CE750A20055B9200079B7D /* WalletCardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardObject.swift; sourceTree = "<group>"; };
-		62E98F0920036A5D00E60A35 /* ProgressClock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ProgressClock.png; path = "../../../../../../Downloads/Untitled-2/ProgressClock.png"; sourceTree = "<group>"; };
+		62D9238D200E576F00FD0E1A /* AcceptUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptUIView.swift; sourceTree = "<group>"; };
 		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A466F1FD8280000F70DC6 /* YourCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A46721FD8280000F70DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,10 +100,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		62CE7502200533E600079B7D /* Resurse */ = {
+		62A6038A200CF39400EA919C /* Resurse */ = {
 			isa = PBXGroup;
 			children = (
-				6269E2C3200566D20093ED97 /* BaseBackround.png */,
+				62A6038B200CF39A00EA919C /* BaseBackround.png */,
 			);
 			path = Resurse;
 			sourceTree = "<group>";
@@ -148,12 +154,13 @@
 		A80A46711FD8280000F70DC6 /* YourCoin */ = {
 			isa = PBXGroup;
 			children = (
-				62CE7502200533E600079B7D /* Resurse */,
+				62A6038A200CF39400EA919C /* Resurse */,
 				A82BAE7A1FF6783000616D29 /* Main.storyboard */,
+				62A60388200CF38E00EA919C /* BaseBackround.png */,
 				A825D07C1FEC32280086A10D /* Wallet */,
 				A8571F911FD9B075003430F3 /* StartApp */,
-				A80A46721FD8280000F70DC6 /* AppDelegate.swift */,
 				A80A467C1FD8280000F70DC6 /* Assets.xcassets */,
+				A80A46721FD8280000F70DC6 /* AppDelegate.swift */,
 				A80A467E1FD8280000F70DC6 /* LaunchScreen.storyboard */,
 				A80A46811FD8280000F70DC6 /* Info.plist */,
 				A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */,
@@ -189,6 +196,7 @@
 			children = (
 				628C0F762000F39E0001E7AA /* BalanceUIView.swift */,
 				625B067A20011948000145A9 /* AllWallets.swift */,
+				62D9238D200E576F00FD0E1A /* AcceptUIView.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 		A82FC63F1FF120F100499645 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				62202462200F92C200382DA2 /* Back3.png */,
 				A82FC6411FF1211600499645 /* WalletCustomElements.swift */,
 				62CE74FD2005160D00079B7D /* WalletCardUIView.swift */,
 			);
@@ -221,8 +230,9 @@
 		A82FC6401FF1210000499645 /* Resurse */ = {
 			isa = PBXGroup;
 			children = (
-				62CE74FF200533B100079B7D /* BaseBackground.png */,
-				62E98F0920036A5D00E60A35 /* ProgressClock.png */,
+				62202465200F930400382DA2 /* Back.png */,
+				62202460200F924F00382DA2 /* Back1.png */,
+				62202464200F92C800382DA2 /* Back2.png */,
 				A89CFEA61FF54FFE00C9F2BC /* CyanRectangle.png */,
 				A89CFEA41FF506B700C9F2BC /* DefaultRectangle.png */,
 				A89CFEA21FF504E300C9F2BC /* SettingsIcon.png */,
@@ -351,17 +361,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62202466200F930400382DA2 /* Back.png in Resources */,
+				62202463200F92C200382DA2 /* Back3.png in Resources */,
 				A80A46801FD8280000F70DC6 /* LaunchScreen.storyboard in Resources */,
+				62A60389200CF38F00EA919C /* BaseBackround.png in Resources */,
 				A890E3F21FEAECC60005C74F /* Rectangle.png in Resources */,
-				62E98F0A20036A5D00E60A35 /* ProgressClock.png in Resources */,
-				6269E2C4200566D20093ED97 /* BaseBackround.png in Resources */,
 				A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */,
 				A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */,
 				A8EB0DBE1FEAC432006FEB83 /* Logo.png in Resources */,
 				A89CFEA51FF506B700C9F2BC /* DefaultRectangle.png in Resources */,
 				6203CD372000F8E100768BB3 /* Podfile in Resources */,
 				A89CFEA71FF54FFE00C9F2BC /* CyanRectangle.png in Resources */,
-				62CE7500200533B100079B7D /* BaseBackground.png in Resources */,
+				62202461200F924F00382DA2 /* Back1.png in Resources */,
 				A89CFEA31FF504E300C9F2BC /* SettingsIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +450,7 @@
 				A825D0791FEC2F0A0086A10D /* CreateAccountViewController.swift in Sources */,
 				A825D07F1FEC32A50086A10D /* WalletViewController.swift in Sources */,
 				A82BAE7D1FF67AB200616D29 /* ExchangeRatesViewController.swift in Sources */,
+				62D9238E200E576F00FD0E1A /* AcceptUIView.swift in Sources */,
 				A89CFEAE1FF5599C00C9F2BC /* BalanceUIViewController.swift in Sources */,
 				A82FC6451FF1224E00499645 /* WalletUIProtocols.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
