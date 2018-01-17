@@ -44,8 +44,12 @@ class AccountService {
     func GetBallance() {
         
     }
-    
-    
+    static func SignUp (login: String, password: String) {
+        
+    }
+    func SignIn () {
+        
+    }
    
     
     

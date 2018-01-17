@@ -18,6 +18,8 @@ enum Router:URLRequestConvertible {
     case getTokens(address:String)
     case getEthereumCurrency()
     case getBitcoinCurrency()
+    case signUp(parameters: Parameters)
+    case signIn(parameters: Parameters)
     
     static let baseURL = "http://194.71.227.15/api/v4.0/"
     
@@ -39,6 +41,10 @@ enum Router:URLRequestConvertible {
             return .get
         case .getBitcoinCurrency:
             return .get
+        case .signUp:
+            return .post
+        case .signIn:
+            return .post
         default:
             break
         }
@@ -62,6 +68,10 @@ enum Router:URLRequestConvertible {
             return "/api/v1.0/stat/ETH-USD"
         case .getBitcoinCurrency:
             return "/api/v1.0/stat/BTC-USD"
+        case .signIn:
+            return ""
+        case .signUp:
+            return ""
         default:
             break
         }
@@ -89,6 +99,10 @@ enum Router:URLRequestConvertible {
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
         case .getBitcoinCurrency():
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
+        case .signIn(let parameters):
+            urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+        case .signUp(let parameters):
+            urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
         default:
             break
         }
