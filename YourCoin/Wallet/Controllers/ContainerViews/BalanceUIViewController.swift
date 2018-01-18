@@ -21,6 +21,13 @@ class BalanceUIViewController:  UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func PayNowAction(_ sender: Any) {
+        print("->Pay Now")
+    }
+    
+    @IBAction func AcceptNowAction(_ sender: CustomUIButton) {
+        print("->Accept Now")
+    }
     public func SetUIView(viewFragmet:UIView)
     {
         if self.view.subviews.count != 0 {
