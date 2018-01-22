@@ -15,7 +15,17 @@ class BalanceViewController: UIViewController {
 
     }
 
+    @IBAction func PayNowAction(_ sender: Any) {
+        print("->Pay Now")
 
+    }
+    
+    @IBAction func AcceptNowAction(_ sender: CustomUIButton) {
+        print("->Accept Now")
+
+    }
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
