@@ -17,7 +17,6 @@
 		628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* BalanceUIView.swift */; };
 		62A137FE20112A4100B3281B /* AcceptPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FD20112A4100B3281B /* AcceptPayViewController.swift */; };
 		62A1380020112F2900B3281B /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FF20112F2900B3281B /* PayNowViewController.swift */; };
-		62A60389200CF38F00EA919C /* BaseBackround.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A60388200CF38E00EA919C /* BaseBackround.png */; };
 		62CE74FE2005160D00079B7D /* WalletCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE74FD2005160D00079B7D /* WalletCardUIView.swift */; };
 		62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE750A20055B9200079B7D /* WalletCardObject.swift */; };
 		62D9238E200E576F00FD0E1A /* AcceptUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D9238D200E576F00FD0E1A /* AcceptUIView.swift */; };
@@ -60,7 +59,6 @@
 		628C0F762000F39E0001E7AA /* BalanceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
 		62A137FD20112A4100B3281B /* AcceptPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptPayViewController.swift; sourceTree = "<group>"; };
 		62A137FF20112F2900B3281B /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
-		62A60388200CF38E00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BaseBackround.png; path = ../../../../.Trash/BaseBackround.png; sourceTree = "<group>"; };
 		62A6038B200CF39A00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaseBackround.png; sourceTree = "<group>"; };
 		62CE74FD2005160D00079B7D /* WalletCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardUIView.swift; sourceTree = "<group>"; };
 		62CE750A20055B9200079B7D /* WalletCardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardObject.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 		62A6038A200CF39400EA919C /* Resurse */ = {
 			isa = PBXGroup;
 			children = (
-				62A6038B200CF39A00EA919C /* BaseBackround.png */,
 			);
 			path = Resurse;
 			sourceTree = "<group>";
@@ -222,7 +219,7 @@
 				62202467200F976800382DA2 /* UI */,
 				62A6038A200CF39400EA919C /* Resurse */,
 				A82BAE7A1FF6783000616D29 /* Main.storyboard */,
-				62A60388200CF38E00EA919C /* BaseBackround.png */,
+				62A6038B200CF39A00EA919C /* BaseBackround.png */,
 				A825D07C1FEC32280086A10D /* Wallet */,
 				A8571F911FD9B075003430F3 /* StartApp */,
 				A80A467C1FD8280000F70DC6 /* Assets.xcassets */,
@@ -425,7 +422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80A46801FD8280000F70DC6 /* LaunchScreen.storyboard in Resources */,
-				62A60389200CF38F00EA919C /* BaseBackround.png in Resources */,
 				A890E3F21FEAECC60005C74F /* Rectangle.png in Resources */,
 				A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */,
 				A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */,
@@ -655,7 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B897C86793645DFB1AF42156 /* Pods-YourCoin.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				INFOPLIST_FILE = YourCoin/Info.plist;
@@ -671,7 +667,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C816055B54D11345200417DC /* Pods-YourCoin.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				INFOPLIST_FILE = YourCoin/Info.plist;
