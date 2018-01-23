@@ -15,13 +15,14 @@
 		625B067920011595000145A9 /* ChartUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067820011595000145A9 /* ChartUIView.swift */; };
 		625B067B20011948000145A9 /* AllWallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B067A20011948000145A9 /* AllWallets.swift */; };
 		628C0F772000F39E0001E7AA /* BalanceUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C0F762000F39E0001E7AA /* BalanceUIView.swift */; };
+		628C823420166BF400D4277A /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C823320166BF400D4277A /* CardCollectionViewCell.swift */; };
 		62A137FE20112A4100B3281B /* AcceptPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FD20112A4100B3281B /* AcceptPayViewController.swift */; };
 		62A1380020112F2900B3281B /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FF20112F2900B3281B /* PayNowViewController.swift */; };
+		62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA4D2017BF7400A74278 /* CreateViewController.swift */; };
 		62CE74FE2005160D00079B7D /* WalletCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE74FD2005160D00079B7D /* WalletCardUIView.swift */; };
 		62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE750A20055B9200079B7D /* WalletCardObject.swift */; };
 		62D9238E200E576F00FD0E1A /* AcceptUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D9238D200E576F00FD0E1A /* AcceptUIView.swift */; };
 		62DBAF13201022F400136351 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBAF12201022F400136351 /* BalanceViewController.swift */; };
-		62F841E02015FB290061EB0C /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841DF2015FB280061EB0C /* CardsCollectionViewController.swift */; };
 		62F841E22015FF8F0061EB0C /* SmallHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */; };
 		62F841E52015FFDB0061EB0C /* AllCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
@@ -57,14 +58,15 @@
 		625B067820011595000145A9 /* ChartUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUIView.swift; sourceTree = "<group>"; };
 		625B067A20011948000145A9 /* AllWallets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWallets.swift; sourceTree = "<group>"; };
 		628C0F762000F39E0001E7AA /* BalanceUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUIView.swift; sourceTree = "<group>"; };
+		628C823320166BF400D4277A /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		62A137FD20112A4100B3281B /* AcceptPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptPayViewController.swift; sourceTree = "<group>"; };
 		62A137FF20112F2900B3281B /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
 		62A6038B200CF39A00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaseBackround.png; sourceTree = "<group>"; };
+		62B9CA4D2017BF7400A74278 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		62CE74FD2005160D00079B7D /* WalletCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardUIView.swift; sourceTree = "<group>"; };
 		62CE750A20055B9200079B7D /* WalletCardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardObject.swift; sourceTree = "<group>"; };
 		62D9238D200E576F00FD0E1A /* AcceptUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptUIView.swift; sourceTree = "<group>"; };
 		62DBAF12201022F400136351 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
-		62F841DF2015FB280061EB0C /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewController.swift; sourceTree = "<group>"; };
 		62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallHistoryTableViewController.swift; sourceTree = "<group>"; };
 		62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsViewController.swift; sourceTree = "<group>"; };
 		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 				62DBAF11201022E100136351 /* Exchange Rates */,
 				62DBAF10201022DA00136351 /* Balance */,
 				62202469200F979200382DA2 /* MainViewController.swift */,
+				62B9CA4D2017BF7400A74278 /* CreateViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,8 +175,8 @@
 		62F841E32015FF940061EB0C /* AllCards */ = {
 			isa = PBXGroup;
 			children = (
-				62F841DF2015FB280061EB0C /* CardsCollectionViewController.swift */,
 				62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */,
+				628C823320166BF400D4277A /* CardCollectionViewCell.swift */,
 			);
 			path = AllCards;
 			sourceTree = "<group>";
@@ -511,10 +514,10 @@
 				A825D0791FEC2F0A0086A10D /* CreateAccountViewController.swift in Sources */,
 				A825D07F1FEC32A50086A10D /* WalletViewController.swift in Sources */,
 				A82BAE7D1FF67AB200616D29 /* ExchangeRatesViewController.swift in Sources */,
-				62F841E02015FB290061EB0C /* CardsCollectionViewController.swift in Sources */,
 				62D9238E200E576F00FD0E1A /* AcceptUIView.swift in Sources */,
 				A89CFEAE1FF5599C00C9F2BC /* BalanceUIViewController.swift in Sources */,
 				A82FC6451FF1224E00499645 /* WalletUIProtocols.swift in Sources */,
+				62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
 				625B067920011595000145A9 /* ChartUIView.swift in Sources */,
 				A80A46751FD8280000F70DC6 /* ViewController.swift in Sources */,
@@ -522,6 +525,7 @@
 				A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */,
 				62A137FE20112A4100B3281B /* AcceptPayViewController.swift in Sources */,
 				62F841E52015FFDB0061EB0C /* AllCardsViewController.swift in Sources */,
+				628C823420166BF400D4277A /* CardCollectionViewCell.swift in Sources */,
 				62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
