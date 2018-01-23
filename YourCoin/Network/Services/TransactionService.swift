@@ -10,6 +10,7 @@ import Foundation
 
 
 class TransactionService {
+    public let keystore: EtherKeystore = EtherKeystore()
     
     // TODO: Get current user account
     

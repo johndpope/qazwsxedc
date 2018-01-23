@@ -7,27 +7,44 @@
 //
 
 import Foundation
+import UIKit
+import Geth
+import BigInt
+import Foundation
+import Geth
+import APIKit
+import JSONRPCKit
+import Result
+import Foundation
+import Geth
+import KeychainSwift
+import CryptoSwift
+import Alamofire
 
 
 class AccountService {
-    
-    public let keystore: EtherKeystore = EtherKeystore()
-    static func CreateWallet()  {
+    let keystore: EtherKeystore = EtherKeystore()
+
+//    let keystore: EtherKeystore = EtherKeystore()
+     func CreateWallet() {
+        var account: Account
         let password = UUID().uuidString
         keystore.createAccount(with: password) { result in
             switch result {
             case .success(let account):
                 print("\(account.address)")
+                
             case .failure(let error):
                 print(error)
             }
+            
         }
     }
-    static func GetCurrentAccount() -> Account {
-        return keystore.current
+     func GetCurrentAccount() -> Account? {
+        return EtherKeystore.current
     }
-    static func hasAccounts() -> Bool {
-        return keystore.hasAccounts
+     func hasAccounts() -> Account {
+        return keystore.recentlyUsedAccount!
     }
     func ImportWallet() {
         
