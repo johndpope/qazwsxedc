@@ -24,6 +24,8 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        some.SetCardsView(CardInfo: WalletCardObject(Wallet:"0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", Balance:13, PriceToUSD:29, TypeCoin:"ETH"))
+        
         self.dataSource = self
         self.delegate = self
         configurePageControl()

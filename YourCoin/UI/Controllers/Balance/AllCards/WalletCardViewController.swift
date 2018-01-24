@@ -17,15 +17,13 @@ class WalletCardViewController: UIViewController {
     var typeCoinCurrencyUILabel = UILabel()
     var typeCoinUILabel = UILabel()
     
-    var walletCardObject:WalletCardObject? = nil
+    var walletCardObject:WalletCardObject? = WalletCardObject(Wallet:"-----", Balance:0, PriceToUSD:0, TypeCoin:"--")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0.02, green: 0.16, blue: 0.21, alpha: 1)
         self.view.layer.cornerRadius = 10
         self.view.layer.borderWidth = 0;
-        
-        walletCardObject = WalletCardObject(Wallet:"-----", Balance:13, PriceToUSD:29, TypeCoin:"ETH")
         
         infowallelUILabel = SetLabelInfo(text:"WALLET:")
         self.view.addSubview(infowallelUILabel)
@@ -50,7 +48,7 @@ class WalletCardViewController: UIViewController {
         wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 27).isActive = true
         wallelUILabel.widthAnchor.constraint(equalToConstant: 209).isActive = true
         
-        vauleCurrencyUILabel = SetLabelValue(text:String(describing: walletCardObject?.balance))
+        vauleCurrencyUILabel = SetLabelValue(text:String(describing: (walletCardObject?.balance)!))
         self.view.addSubview(vauleCurrencyUILabel)
         vauleCurrencyUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 122).isActive = true
         vauleCurrencyUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 58).isActive = true
@@ -72,6 +70,10 @@ class WalletCardViewController: UIViewController {
         typeCoinUILabel.leftAnchor.constraint(equalTo: wallelUILabel.rightAnchor, constant: 10).isActive = true
         typeCoinUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 89).isActive = true
 
+    }
+    
+    public func SetCardsView(CardInfo:WalletCardObject){
+         self.walletCardObject = CardInfo//WalletCardObject(Wallet:"-----", Balance:13, PriceToUSD:29, TypeCoin:"ETH")
     }
 
     override func didReceiveMemoryWarning() {
