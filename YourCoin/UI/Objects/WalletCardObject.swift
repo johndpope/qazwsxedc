@@ -9,13 +9,17 @@
 import Foundation
 
 class WalletCardObject  {
-    init(Wallet:String, Balance:Float, BalanceToUSD:Float)
+    init(Wallet:String, Balance:Float, PriceToUSD:Float, TypeCoin:String)
     {
         walletPublicKey = Wallet
         balance = Balance
-        balanceToUSD = BalanceToUSD
+        priceToUSD = PriceToUSD
+        typeCoin = TypeCoin
     }
     public var walletPublicKey:String
     public var balance:Float
-    public var balanceToUSD:Float
+    public var priceToUSD:Float
+    public var typeCoin:String
 }
+
+

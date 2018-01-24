@@ -385,7 +385,7 @@
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-ce-9Jw">
                                 <rect key="frame" x="22" y="114" width="330" height="175"/>
-                                <color key="backgroundColor" name="BaseColorOne"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="Sea-mD-MSD"/>
                                     <constraint firstAttribute="height" constant="155" id="glr-zq-ZUx"/>
@@ -560,10 +560,10 @@
             </objects>
             <point key="canvasLocation" x="-764" y="156"/>
         </scene>
-        <!--Page View Controller-->
+        <!--WalletUI Page View Controller-->
         <scene sceneID="QYS-sg-hqy">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="ogh-eh-gqs" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ogh-eh-gqs" customClass="WalletUIPageViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrs-O4-zrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1576" y="-679"/>
