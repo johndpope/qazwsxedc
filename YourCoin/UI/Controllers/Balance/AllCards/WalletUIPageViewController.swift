@@ -13,6 +13,7 @@ import UIKit
 class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     var pageControl = UIPageControl()
+    //temp
     var some = WalletCardViewController()
     var some2 = WalletCardViewController()
     
@@ -24,6 +25,7 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //temp
         some.SetCardsView(CardInfo: WalletCardObject(Wallet:"0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", Balance:13, PriceToUSD:29, TypeCoin:"ETH"))
         
         self.dataSource = self
@@ -36,7 +38,6 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
                                completion: nil)
         }
         
-        
     }
     
     func configurePageControl() {
@@ -48,6 +49,15 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
         self.pageControl.currentPageIndicatorTintColor = UIColor.black
         self.view.addSubview(pageControl)
     }
+    
+ //   override func viewWillAppear(_ animated: Bool) {
+   //       AllCardsViewController.walletCards = self
+  //  }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let tabl = segue.description as? SmallHistoryTableViewController
+//        tabl?.historyArray =  ["Гена", "Чебурашка", "Апельсины", "Фиксики", "Роботы", "Машинки", "Маша", "И Медведь", "Матроскин", "Шарик", "Печкин", "Доктор Хаус"]
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,6 +72,8 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
+        AllCardsViewController.TempCount = self.pageControl.currentPage
+        SmallHistoryTableViewController.RefreshData(key: String(self.pageControl.currentPage))
     }
     
     // MARK: Data source functions.
