@@ -10,9 +10,17 @@ import UIKit
 
 class SmallHistoryTableViewController: UITableViewController {
 
+    var historyArray = [String]()
+    
+    static func RefreshData(key:String){
+        print(key)
+        //historyArray = [] //по ключу мы выргружаем данные вот сюда
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //historyArray = ["Гена", "Чебурашка", "Апельсины", "Фиксики", "Роботы", "Машинки", "Маша", "И Медведь", "Матроскин", "Шарик", "Печкин", "Доктор Хаус"]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +37,23 @@ class SmallHistoryTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return historyArray.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = historyArray[indexPath.row]
+        cell.backgroundColor = UIColor.clear
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

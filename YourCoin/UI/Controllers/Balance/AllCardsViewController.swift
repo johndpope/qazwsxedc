@@ -9,10 +9,16 @@
 import UIKit
 
 class AllCardsViewController: UIViewController {
-
+    
+   // static var walletCards:WalletUIPageViewController?
+    static var TempCount:Int?
+    static func RefreshData(some:String){
+        print(some)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+     //   self.view.backgroundColor = .red
         // Do any additional setup after loading the view.
     }
 
@@ -21,11 +27,10 @@ class AllCardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var i:Int = 1;
-    @IBAction func ыы(_ sender: Any) {
-        i+=1
-        print("Swiper", String(i))
-    }
+       override func viewWillAppear(_ animated: Bool) {
+      //  NotificationCenter.default.addObserver(self, selector: #selector(dd), name: NSNotification.Name("dd"), object: nil)
+        print(AllCardsViewController.TempCount)
+      }
     
     /*
     // MARK: - Navigation

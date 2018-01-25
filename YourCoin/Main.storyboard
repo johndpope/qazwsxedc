@@ -383,12 +383,12 @@
                                     <segue destination="CLT-Sp-gdf" kind="embed" id="5Ix-Hn-KeL"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-ce-9Jw">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-ce-9Jw">
                                 <rect key="frame" x="22" y="114" width="330" height="175"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="Sea-mD-MSD"/>
-                                    <constraint firstAttribute="height" constant="155" id="glr-zq-ZUx"/>
+                                    <constraint firstAttribute="height" constant="175" id="glr-zq-ZUx"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="ogh-eh-gqs" kind="embed" id="u7j-Vn-kBa"/>
@@ -405,17 +405,9 @@
                             <constraint firstItem="ekZ-fl-79D" firstAttribute="centerX" secondItem="0PI-tx-gWU" secondAttribute="centerX" id="onb-Iz-P6E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TQZ-xo-TWy"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="aRm-FO-obg" appends="YES" id="bm8-3b-Sh7"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB8-Kq-5Fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="right" id="aRm-FO-obg">
-                    <connections>
-                        <action selector="ыы:" destination="XU3-Ak-azI" id="cw4-fM-ka3"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="-548.27586206896558"/>
         </scene>
@@ -563,7 +555,7 @@
         <!--WalletUI Page View Controller-->
         <scene sceneID="QYS-sg-hqy">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ogh-eh-gqs" customClass="WalletUIPageViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="10" navigationOrientation="horizontal" spineLocation="none" id="ogh-eh-gqs" customClass="WalletUIPageViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrs-O4-zrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1576" y="-679"/>
@@ -577,7 +569,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DEb-5U-Hvc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="DEb-5U-Hvc">
                                 <rect key="frame" x="0.0" y="28" width="330" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DEb-5U-Hvc" id="hVe-ca-zh0">
@@ -609,15 +601,6 @@
         </namedColor>
         <namedColor name="BaseColorOne">
             <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="BaseColorOne">
-            <color red="0.43137254899999999" green="0.91764705879999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="BaseColorOne">
-            <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="CircleColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CircleColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
