@@ -29,6 +29,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		558E88F5201B0CF30027F71D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		558E88F6201B0CF30027F71D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		558E88F7201B0CF30027F71D /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		558E88F8201B0CF30027F71D /* CastError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastError.swift; sourceTree = "<group>"; };
+		558E88F9201B0CF30027F71D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		558E88FA201B0CF30027F71D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		558E88FB201B0CF30027F71D /* EtherKeystore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherKeystore.swift; sourceTree = "<group>"; };
+		558E88FC201B0CF30027F71D /* EtherServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherServiceRequest.swift; sourceTree = "<group>"; };
+		558E88FD201B0CF30027F71D /* ImportType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportType.swift; sourceTree = "<group>"; };
+		558E88FE201B0CF30027F71D /* Keystore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keystore.swift; sourceTree = "<group>"; };
+		558E88FF201B0CF30027F71D /* KeyStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStoreError.swift; sourceTree = "<group>"; };
+		558E8901201B0CF30027F71D /* GasData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasData.swift; sourceTree = "<group>"; };
+		558E8902201B0CF30027F71D /* RPCServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCServer.swift; sourceTree = "<group>"; };
+		558E8903201B0CF30027F71D /* SendRawTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRawTransactionRequest.swift; sourceTree = "<group>"; };
+		558E8905201B0CF30027F71D /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		558E8906201B0CF30027F71D /* apiBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiBase.swift; sourceTree = "<group>"; };
+		558E8907201B0CF30027F71D /* EthereumDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumDataService.swift; sourceTree = "<group>"; };
+		558E8908201B0CF30027F71D /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		558E8909201B0CF30027F71D /* SignTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTransaction.swift; sourceTree = "<group>"; };
+		558E890A201B0CF30027F71D /* TransactionSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSpeed.swift; sourceTree = "<group>"; };
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		62202469200F979200382DA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6220246F200F9F3700382DA2 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
@@ -67,6 +87,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		558E88F4201B0CF30027F71D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				558E88F5201B0CF30027F71D /* Account.swift */,
+				558E88F6201B0CF30027F71D /* Address.swift */,
+				558E88F7201B0CF30027F71D /* BigInt.swift */,
+				558E88F8201B0CF30027F71D /* CastError.swift */,
+				558E88F9201B0CF30027F71D /* Config.swift */,
+				558E88FA201B0CF30027F71D /* Data.swift */,
+				558E88FB201B0CF30027F71D /* EtherKeystore.swift */,
+				558E88FC201B0CF30027F71D /* EtherServiceRequest.swift */,
+				558E88FD201B0CF30027F71D /* ImportType.swift */,
+				558E88FE201B0CF30027F71D /* Keystore.swift */,
+				558E88FF201B0CF30027F71D /* KeyStoreError.swift */,
+				558E8900201B0CF30027F71D /* Models */,
+				558E8902201B0CF30027F71D /* RPCServer.swift */,
+				558E8903201B0CF30027F71D /* SendRawTransactionRequest.swift */,
+				558E8904201B0CF30027F71D /* Services */,
+				558E8909201B0CF30027F71D /* SignTransaction.swift */,
+				558E890A201B0CF30027F71D /* TransactionSpeed.swift */,
+			);
+			name = Network;
+			path = YourCoin/Network;
+			sourceTree = "<group>";
+		};
+		558E8900201B0CF30027F71D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				558E8901201B0CF30027F71D /* GasData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		558E8904201B0CF30027F71D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				558E8905201B0CF30027F71D /* AccountService.swift */,
+				558E8906201B0CF30027F71D /* apiBase.swift */,
+				558E8907201B0CF30027F71D /* EthereumDataService.swift */,
+				558E8908201B0CF30027F71D /* TransactionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		62202467200F976800382DA2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,13 +158,6 @@
 				6220246F200F9F3700382DA2 /* CustomUIButton.swift */,
 			);
 			path = CustomElements;
-			sourceTree = "<group>";
-		};
-		62A6038A200CF39400EA919C /* Resurse */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resurse;
 			sourceTree = "<group>";
 		};
 		62CE750920055B7200079B7D /* Objects */ = {
@@ -160,6 +217,7 @@
 		A80A46661FD8280000F70DC6 = {
 			isa = PBXGroup;
 			children = (
+				558E88F4201B0CF30027F71D /* Network */,
 				A80A46711FD8280000F70DC6 /* YourCoin */,
 				A80A46701FD8280000F70DC6 /* Products */,
 				A631B7EE43095BAAD4280C01 /* Pods */,
@@ -179,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				62202467200F976800382DA2 /* UI */,
-				62A6038A200CF39400EA919C /* Resurse */,
 				A82BAE7A1FF6783000616D29 /* Main.storyboard */,
 				62A6038B200CF39A00EA919C /* BaseBackround.png */,
 				A80A467C1FD8280000F70DC6 /* Assets.xcassets */,
@@ -290,11 +347,59 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YourCoin/Pods-YourCoin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/1PasswordExtension/OnePasswordExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
+				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONRPCKit/JSONRPCKit.framework",
+				"${BUILT_PRODUCTS_DIR}/JavaScriptKit/JavaScriptKit.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReaderViewController/QRCodeReaderViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SSKeychain/SSKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SeedStackViewController/StackViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/StatefulViewController/StatefulViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/VENTouchLock/VENTouchLock.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnePasswordExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BonMot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONRPCKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JavaScriptKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReaderViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StackViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatefulViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VENTouchLock.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,10 +572,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 527XT9Q8DK;
+				DEVELOPMENT_TEAM = BG42VZY2JD;
 				INFOPLIST_FILE = YourCoin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Bubble-team.YourCoin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YourCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,10 +588,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 527XT9Q8DK;
+				DEVELOPMENT_TEAM = BG42VZY2JD;
 				INFOPLIST_FILE = YourCoin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Bubble-team.YourCoin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YourCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
