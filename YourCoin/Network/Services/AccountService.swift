@@ -26,12 +26,13 @@ class AccountService {
     let keystore: EtherKeystore = EtherKeystore()
 
 //    let keystore: EtherKeystore = EtherKeystore()
-     func CreateWallet() {
-        var account: Account
+     func CreateWallet() -> Account! {
+        var _account: Account!
         let password = UUID().uuidString
         keystore.createAccount(with: password) { result in
             switch result {
             case .success(let account):
+                _account! = account
                 print("\(account.address)")
                 
             case .failure(let error):
@@ -39,6 +40,7 @@ class AccountService {
             }
             
         }
+        return _account!
     }
      func GetCurrentAccount() -> Account? {
         return EtherKeystore.current

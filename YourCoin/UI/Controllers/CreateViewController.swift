@@ -16,8 +16,13 @@ class CreateViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func CreateWalletAction(_ sender: Any) {
+        let _accountService: AccountService = AccountService()
+        DispatchQueue.main.async {
+           var account =  _accountService.CreateWallet()
+        }
         //create wallet
         self.performSegue(withIdentifier: "GoToMain", sender: self)
+        
     }
     
     override func didReceiveMemoryWarning() {
