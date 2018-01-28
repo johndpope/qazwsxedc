@@ -13,7 +13,7 @@ target 'YourCoin' do
   	pod 'Eureka', '~> 4.0.1'
   	pod 'MBProgressHUD'
   	pod 'StatefulViewController'
-  	pod 'QRCodeReaderViewController', :git=>'https://github.com/yannickl/	QRCodeReaderViewController.git', :branch=>'master'
+  	pod 'QRCodeReaderViewController', :git=>'https://github.com/yannickl/QRCodeReaderViewController.git', :branch=>'master'
   	pod 'KeychainSwift'
   	pod 'SwiftLint'
   	pod 'SeedStackViewController'
