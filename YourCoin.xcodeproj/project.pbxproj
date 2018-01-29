@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C296869C049739D7BC4941 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		5513E0FB201BBB0900BDE0E5 /* Geth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5513DD6C201BBAE100BDE0E5 /* Geth.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		558E890C201BB8160027F71D /* Pods_YourCoin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		559B743C201BC4F500DDEBD4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88F5201B0CF30027F71D /* Account.swift */; };
@@ -168,13 +169,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 5096D679C9275EEDF5256437687BD951;
 			remoteInfo = "Pods-YourCoin";
-		};
-		5513DC39201BBAD700BDE0E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5513D914201BBAD700BDE0E5 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6FDEE389F0D4B9F06B66C768B166E467;
-			remoteInfo = PureLayout;
 		};
 		5513DC3B201BBAD700BDE0E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -364,13 +358,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 5096D679C9275EEDF5256437687BD951;
 			remoteInfo = "Pods-YourCoin";
-		};
-		5513E0E5201BBAE200BDE0E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5513DDC0201BBAE100BDE0E5 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6FDEE389F0D4B9F06B66C768B166E467;
-			remoteInfo = PureLayout;
 		};
 		5513E0E7201BBAE200BDE0E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2450,6 +2437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5513E0FB201BBB0900BDE0E5 /* Geth.framework in Frameworks */,
+				04C296869C049739D7BC4941 /* Pods_YourCoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3267,7 +3255,6 @@
 				5513DC34201BBAD700BDE0E5 /* MBProgressHUD.framework */,
 				5513DC36201BBAD700BDE0E5 /* Moya.framework */,
 				5513DC38201BBAD700BDE0E5 /* Pods_YourCoin.framework */,
-				5513DC3A201BBAD700BDE0E5 /* PureLayout.framework */,
 				5513DC3C201BBAD700BDE0E5 /* QRCodeReaderViewController.framework */,
 				5513DC3E201BBAD700BDE0E5 /* Rswift.framework */,
 				5513DC40201BBAD700BDE0E5 /* Realm.framework */,
@@ -5396,7 +5383,6 @@
 				5513E0E0201BBAE200BDE0E5 /* MBProgressHUD.framework */,
 				5513E0E2201BBAE200BDE0E5 /* Moya.framework */,
 				5513E0E4201BBAE200BDE0E5 /* Pods_YourCoin.framework */,
-				5513E0E6201BBAE200BDE0E5 /* PureLayout.framework */,
 				5513E0E8201BBAE200BDE0E5 /* QRCodeReaderViewController.framework */,
 				5513E0EA201BBAE200BDE0E5 /* Rswift.framework */,
 				5513E0EC201BBAE200BDE0E5 /* Realm.framework */,
@@ -7088,13 +7074,6 @@
 			remoteRef = 5513DC37201BBAD700BDE0E5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5513DC3A201BBAD700BDE0E5 /* PureLayout.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PureLayout.framework;
-			remoteRef = 5513DC39201BBAD700BDE0E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		5513DC3C201BBAD700BDE0E5 /* QRCodeReaderViewController.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -7284,13 +7263,6 @@
 			remoteRef = 5513E0E3201BBAE200BDE0E5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5513E0E6201BBAE200BDE0E5 /* PureLayout.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PureLayout.framework;
-			remoteRef = 5513E0E5201BBAE200BDE0E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		5513E0E8201BBAE200BDE0E5 /* QRCodeReaderViewController.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -7417,7 +7389,6 @@
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReaderViewController/QRCodeReaderViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -7445,7 +7416,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReaderViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -7667,7 +7637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BG42VZY2JD;
+				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Geth/Frameworks",
@@ -7692,7 +7662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BG42VZY2JD;
+				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Geth/Frameworks",
