@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04C296869C049739D7BC4941 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		5513E0FB201BBB0900BDE0E5 /* Geth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5513DD6C201BBAE100BDE0E5 /* Geth.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		5572CBDC20224955001EACA1 /* TransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572CBDB20224955001EACA1 /* TransactionStatus.swift */; };
 		558E890C201BB8160027F71D /* Pods_YourCoin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		559B743C201BC4F500DDEBD4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88F5201B0CF30027F71D /* Account.swift */; };
 		559B743D201BC4F500DDEBD4 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88F6201B0CF30027F71D /* Address.swift */; };
@@ -2385,6 +2386,7 @@
 		5513E0A4201BBAE200BDE0E5 /* VENTouchLockPasscodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENTouchLockPasscodeView.h; sourceTree = "<group>"; };
 		5513E0A5201BBAE200BDE0E5 /* VENTouchLockPasscodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENTouchLockPasscodeView.m; sourceTree = "<group>"; };
 		5513E0A6201BBAE200BDE0E5 /* VENTouchLockPasscodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VENTouchLockPasscodeView.xib; sourceTree = "<group>"; };
+		5572CBDB20224955001EACA1 /* TransactionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatus.swift; sourceTree = "<group>"; };
 		558E88F5201B0CF30027F71D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		558E88F6201B0CF30027F71D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		558E88F7201B0CF30027F71D /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
@@ -6747,6 +6749,7 @@
 			isa = PBXGroup;
 			children = (
 				558E8901201B0CF30027F71D /* GasData.swift */,
+				5572CBDB20224955001EACA1 /* TransactionStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -7470,6 +7473,7 @@
 				559B7440201BC4F500DDEBD4 /* Config.swift in Sources */,
 				559B7441201BC4F500DDEBD4 /* Data.swift in Sources */,
 				559B7442201BC4F500DDEBD4 /* EtherKeystore.swift in Sources */,
+				5572CBDC20224955001EACA1 /* TransactionStatus.swift in Sources */,
 				559B7443201BC4F500DDEBD4 /* EtherServiceRequest.swift in Sources */,
 				559B7444201BC4F500DDEBD4 /* ImportType.swift in Sources */,
 				559B7445201BC4F500DDEBD4 /* Keystore.swift in Sources */,

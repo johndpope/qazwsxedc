@@ -28,8 +28,22 @@ public class EthereumDataService {
 //
 //        
 //    }
-// 
-    static func GetGasInfo() {
+//
+    func GetTransactionStatus (hash:String) {
+        Alamofire.request(Router.getTransactionByHash(hash: hash)).responseJSON {
+            (response) in if let jsonDictionary = response.value as? [String: Any] {
+                for index in jsonDictionary {
+                    switch  index.key {
+                        
+                        default:
+                        break
+                    }
+                }
+            }
+            
+        }
+    }
+    func GetGasInfo() {
         Alamofire.request(Router.getGasInfo()).responseJSON { (response) in
             if let jsonDictionary = response.result.value as? [String: Any] {
                 for index in jsonDictionary {
@@ -47,7 +61,7 @@ public class EthereumDataService {
             }
         }
     }
-    static func GetEthereumCurrency() {
+    func GetEthereumCurrency() {
         Alamofire.request(Router.getEthereumCurrency()).responseJSON { (response) in
             if let jsonDictionary = response.result.value as? [String: Any] {
                 for index in jsonDictionary {

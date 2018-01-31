@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Alamofire
 
 class TransactionService {
     public let keystore: EtherKeystore = EtherKeystore()
@@ -36,5 +36,22 @@ class TransactionService {
 //        }
 //
 //    }
+    
+    
+    // TODO: Using library ObjectMapper get data from API automaticaly, then use that method for other services
+    func GetTransactionStatus (hash:String) {
+        Alamofire.request(Router.getTransactionByHash(hash: hash)).responseJSON {
+            (response) in if let jsonDictionary = response.value as? [String: Any] {
+                for index in jsonDictionary {
+                    switch  index.key {
+                        
+                    default:
+                        break
+                    }
+                }
+            }
+            
+        }
+    }
 }
 
