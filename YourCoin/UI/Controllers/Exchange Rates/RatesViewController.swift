@@ -16,7 +16,6 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
     
     var numberOfItems = 30
     lazy var plotOneData: [Double] = self.generateRandomData(self.numberOfItems, max: 100, shouldIncludeOutliers: true)
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +24,19 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
         setupGraph(graphView: charthView)
         charthView.shouldAdaptRange = true
         charthView.backgroundFillColor = UIColor(red: 0.02, green: 0.16, blue: 0.21, alpha: 1)
+        charthView.topMargin = 32
+        charthView.bottomMargin = 30
+        charthView.leftmostPointPadding = 20
+        charthView.rightmostPointPadding = 20
+        charthView.shouldRangeAlwaysStartAtZero = true
+        self.didMove(toParentViewController: self)
     }
-
+    
+    @IBAction func ReloadChartAction(_ sender: Any) {
+        charthView.reload()
+        print("->Reload chart")
+    }
+    
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
             return plotOneData[pointIndex]
     }
@@ -51,12 +61,12 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
         chartLine.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
         
         let referenceLines = ReferenceLines()
+        referenceLines.includeMinMax = true
         referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
         referenceLines.referenceLineColor = UIColor.black.withAlphaComponent(0.5)
         referenceLines.referenceLineLabelColor = UIColor.black.withAlphaComponent(0.5)
-
         referenceLines.dataPointLabelColor = UIColor.black.withAlphaComponent(0.5)
-
+        
         graphView.addReferenceLines(referenceLines: referenceLines)
         graphView.addPlot(plot: chartLine)
     }
@@ -87,3 +97,4 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
     }
     
 }
+

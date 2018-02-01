@@ -508,9 +508,26 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-Gp-v3Z" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
                                 <rect key="frame" x="20" y="188" width="334" height="431"/>
                                 <color key="backgroundColor" name="CardColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="431" id="4sr-tS-ZiS"/>
                                     <constraint firstAttribute="width" constant="334" id="kH5-Ha-kVK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0if-tk-bDl" appends="YES" id="BZe-0X-meh"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-aA-kv8" customClass="CustomUIView" customModule="YourCoin" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="120" width="334" height="48"/>
+                                <color key="backgroundColor" name="CardColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="334" id="muY-7N-DZp"/>
+                                    <constraint firstAttribute="height" constant="48" id="yGt-Lc-4DT"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -521,7 +538,9 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="Sdf-oS-4FP" firstAttribute="bottom" secondItem="4fc-Gp-v3Z" secondAttribute="bottom" constant="48" id="TS2-8s-LtU"/>
-                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="centerX" secondItem="q0S-sa-Kky" secondAttribute="centerX" id="nEi-He-Av0"/>
+                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="top" secondItem="RaJ-aA-kv8" secondAttribute="bottom" constant="20" id="Yov-mv-7Pm"/>
+                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="centerX" secondItem="RaJ-aA-kv8" secondAttribute="centerX" id="uos-Ke-Yxt"/>
+                            <constraint firstItem="RaJ-aA-kv8" firstAttribute="centerX" secondItem="q0S-sa-Kky" secondAttribute="centerX" id="zNw-aJ-RV6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sdf-oS-4FP"/>
                     </view>
@@ -536,6 +555,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5c4-3c-4Rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="0if-tk-bDl">
+                    <connections>
+                        <action selector="ReloadChartAction:" destination="73c-wC-nQX" id="AXm-q9-oNR"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="84" y="155"/>
         </scene>
