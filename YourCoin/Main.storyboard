@@ -532,7 +532,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="graphView" destination="4fc-Gp-v3Z" id="jyY-zO-Mrv"/>
+                        <outlet property="charthView" destination="4fc-Gp-v3Z" id="jyY-zO-Mrv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5c4-3c-4Rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
