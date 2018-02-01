@@ -23,6 +23,8 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
         
         charthView.dataSource = self
         setupGraph(graphView: charthView)
+        charthView.shouldAdaptRange = true
+        charthView.backgroundFillColor = UIColor(red: 0.02, green: 0.16, blue: 0.21, alpha: 1)
     }
 
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
@@ -39,21 +41,16 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
 
     func setupGraph(graphView: ScrollableGraphView) {
         
-        // Setup the first line plot.
         let chartLine = LinePlot(identifier: "one")
-        
         chartLine.lineWidth = 3
         chartLine.lineColor = UIColor(red: 0.03, green: 0.88, blue: 0.57, alpha: 1)
         chartLine.lineStyle = ScrollableGraphViewLineStyle.smooth
-        
         chartLine.shouldFill = false
         chartLine.fillType = ScrollableGraphViewFillType.solid
         chartLine.fillColor = UIColor(red: 0.03, green: 0.88, blue: 0.57, alpha: 1)
-        
         chartLine.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
         
         let referenceLines = ReferenceLines()
-
         referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
         referenceLines.referenceLineColor = UIColor.black.withAlphaComponent(0.5)
         referenceLines.referenceLineLabelColor = UIColor.black.withAlphaComponent(0.5)
