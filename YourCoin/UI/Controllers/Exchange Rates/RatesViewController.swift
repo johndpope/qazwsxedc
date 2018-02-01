@@ -13,6 +13,8 @@ import ScrollableGraphView
 class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
 
     @IBOutlet var charthView: ScrollableGraphView!
+    @IBOutlet weak var LeftViewButton: UIButton!
+    @IBOutlet weak var RightViewButton: UIButton!
     
     var numberOfItems = 30
     lazy var plotOneData: [Double] = self.generateRandomData(self.numberOfItems, max: 100, shouldIncludeOutliers: true)
@@ -76,7 +78,9 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
         return true
     }
     
-    
+    @IBAction func ButtonViewAction(_ sender: UIButton) {
+        print("-> Click button restorationIdentifier: " + sender.restorationIdentifier!)
+    }
     
     
     

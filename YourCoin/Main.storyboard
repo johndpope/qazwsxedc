@@ -506,7 +506,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-Gp-v3Z" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
-                                <rect key="frame" x="20" y="188" width="334" height="431"/>
+                                <rect key="frame" x="21" y="188" width="334" height="431"/>
                                 <color key="backgroundColor" name="CardColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -523,10 +523,53 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-aA-kv8" customClass="CustomUIView" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="20.5" y="120" width="334" height="48"/>
+                                <rect key="frame" x="21" y="120" width="334" height="48"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="mj8-ol-ss1">
+                                        <rect key="frame" x="167" y="9" width="1" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="Uxd-B9-xa4"/>
+                                            <constraint firstAttribute="height" constant="30" id="W3Q-0a-6mB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="LeftButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scY-X5-gat">
+                                        <rect key="frame" x="14" y="2" width="150" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="KN0-DL-sbJ"/>
+                                            <constraint firstAttribute="width" constant="150" id="d7F-gt-1rn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="ETH">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ButtonViewAction:" destination="73c-wC-nQX" eventType="touchUpInside" id="AVG-YV-Oj7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="RigthButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHf-aG-wig">
+                                        <rect key="frame" x="171" y="1.5" width="150" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="5TN-Ur-UR9"/>
+                                            <constraint firstAttribute="height" constant="45" id="bhN-Oz-seD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="USD">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ButtonViewAction:" destination="73c-wC-nQX" eventType="touchUpInside" id="goq-Ie-oTt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" name="CardColor"/>
                                 <constraints>
+                                    <constraint firstItem="iHf-aG-wig" firstAttribute="centerY" secondItem="RaJ-aA-kv8" secondAttribute="centerY" id="6I4-ri-IS2"/>
+                                    <constraint firstItem="scY-X5-gat" firstAttribute="centerY" secondItem="RaJ-aA-kv8" secondAttribute="centerY" id="GqT-u3-wwO"/>
+                                    <constraint firstItem="mj8-ol-ss1" firstAttribute="centerY" secondItem="RaJ-aA-kv8" secondAttribute="centerY" id="HHh-SM-Fa4"/>
+                                    <constraint firstItem="mj8-ol-ss1" firstAttribute="centerX" secondItem="RaJ-aA-kv8" secondAttribute="centerX" id="Oe7-BU-hzp"/>
+                                    <constraint firstItem="mj8-ol-ss1" firstAttribute="leading" secondItem="scY-X5-gat" secondAttribute="trailing" constant="3" id="lTO-YT-9Mx"/>
                                     <constraint firstAttribute="width" constant="334" id="muY-7N-DZp"/>
+                                    <constraint firstItem="iHf-aG-wig" firstAttribute="leading" secondItem="mj8-ol-ss1" secondAttribute="trailing" constant="3" id="sss-7d-sAb"/>
                                     <constraint firstAttribute="height" constant="48" id="yGt-Lc-4DT"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -551,6 +594,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="LeftViewButton" destination="scY-X5-gat" id="Dvv-MI-WhF"/>
+                        <outlet property="RightViewButton" destination="iHf-aG-wig" id="mEo-Ig-RPq"/>
                         <outlet property="charthView" destination="4fc-Gp-v3Z" id="jyY-zO-Mrv"/>
                     </connections>
                 </viewController>
@@ -653,10 +698,8 @@
         <image name="DefaultRectangle" width="1" height="1"/>
         <image name="ExampleQR" width="160" height="160"/>
         <image name="MainBackground" width="187" height="333"/>
+        <image name="Rectangle" width="1" height="32"/>
         <image name="SettingsIcon.png" width="96" height="96"/>
-        <namedColor name="BaseColorOne">
-            <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="BaseColorOne">
             <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
