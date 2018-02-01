@@ -239,7 +239,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-16-rLx">
                                 <rect key="frame" x="106.5" y="286" width="162" height="13"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="dIs-La-OoU">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HistoryImage" translatesAutoresizingMaskIntoConstraints="NO" id="dIs-La-OoU">
                                         <rect key="frame" x="0.0" y="0.0" width="13" height="13"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="13" id="2A7-Ki-HLD"/>
@@ -697,6 +697,7 @@
         <image name="Clock" width="13" height="13"/>
         <image name="DefaultRectangle" width="1" height="1"/>
         <image name="ExampleQR" width="160" height="160"/>
+        <image name="HistoryImage" width="5" height="5"/>
         <image name="MainBackground" width="187" height="333"/>
         <image name="Rectangle" width="1" height="32"/>
         <image name="SettingsIcon.png" width="96" height="96"/>
