@@ -33,6 +33,7 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
     }
     
     @IBAction func ReloadChartAction(_ sender: Any) {
+        plotOneData = self.generateRandomData(self.numberOfItems, max: 100, shouldIncludeOutliers: true)
         charthView.reload()
         print("->Reload chart")
     }
