@@ -56,6 +56,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="NxD-wy-G6C"/>
@@ -494,13 +497,32 @@
             </objects>
             <point key="canvasLocation" x="906" y="-1945"/>
         </scene>
-        <!--View Controller-->
+        <!--Rates View Controller-->
         <scene sceneID="963-Yj-2G0">
             <objects>
-                <viewController id="73c-wC-nQX" sceneMemberID="viewController">
+                <viewController id="73c-wC-nQX" customClass="RatesViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q0S-sa-Kky">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-Gp-v3Z" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
+                                <rect key="frame" x="20" y="188" width="334" height="431"/>
+                                <color key="backgroundColor" name="CardColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="431" id="4sr-tS-ZiS"/>
+                                    <constraint firstAttribute="width" constant="334" id="kH5-Ha-kVK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Sdf-oS-4FP" firstAttribute="bottom" secondItem="4fc-Gp-v3Z" secondAttribute="bottom" constant="48" id="TS2-8s-LtU"/>
+                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="centerX" secondItem="q0S-sa-Kky" secondAttribute="centerX" id="nEi-He-Av0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Sdf-oS-4FP"/>
                     </view>
                     <navigationItem key="navigationItem" id="ad4-yO-Gsh">
@@ -509,10 +531,13 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="graphView" destination="4fc-Gp-v3Z" id="jyY-zO-Mrv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5c4-3c-4Rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="156"/>
+            <point key="canvasLocation" x="84" y="155"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lSw-sj-0Se">
@@ -597,10 +622,10 @@
         <image name="MainBackground" width="187" height="333"/>
         <image name="SettingsIcon.png" width="96" height="96"/>
         <namedColor name="BaseColorOne">
-            <color red="0.43137254899999999" green="0.91764705879999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="BaseColorOne">
             <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="CardColor">
+            <color red="0.019999999552965164" green="0.15999999642372131" blue="0.20999999344348907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CircleColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
