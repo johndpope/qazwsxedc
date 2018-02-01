@@ -15,6 +15,11 @@ class CreateViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBAction func CreateWalletAction(_ sender: Any) {
         //create wallet
         self.performSegue(withIdentifier: "GoToMain", sender: self)

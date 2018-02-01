@@ -14,6 +14,7 @@
 		6215FE722021F8E40037B2C4 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6215FE712021F8E40037B2C4 /* RatesViewController.swift */; };
 		6220246A200F979200382DA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62202469200F979200382DA2 /* MainViewController.swift */; };
 		62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220246F200F9F3700382DA2 /* CustomUIButton.swift */; };
+		622ECB4520230C3C0081B75F /* Load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 622ECB4420230C3C0081B75F /* Load.gif */; };
 		62A137FE20112A4100B3281B /* AcceptPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FD20112A4100B3281B /* AcceptPayViewController.swift */; };
 		62A1380020112F2900B3281B /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FF20112F2900B3281B /* PayNowViewController.swift */; };
 		62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA4D2017BF7400A74278 /* CreateViewController.swift */; };
@@ -39,6 +40,7 @@
 		6215FE712021F8E40037B2C4 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		62202469200F979200382DA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6220246F200F9F3700382DA2 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		622ECB4420230C3C0081B75F /* Load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Load.gif; path = ../../../../../Desktop/Load.gif; sourceTree = "<group>"; };
 		62A137FD20112A4100B3281B /* AcceptPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptPayViewController.swift; sourceTree = "<group>"; };
 		62A137FF20112F2900B3281B /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
 		62A6038B200CF39A00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaseBackround.png; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		62A6038A200CF39400EA919C /* Resurse */ = {
 			isa = PBXGroup;
 			children = (
+				622ECB4420230C3C0081B75F /* Load.gif */,
 			);
 			path = Resurse;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				A80A46801FD8280000F70DC6 /* LaunchScreen.storyboard in Resources */,
 				A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */,
 				A82BAE7B1FF6783000616D29 /* Main.storyboard in Resources */,
+				622ECB4520230C3C0081B75F /* Load.gif in Resources */,
 				6203CD372000F8E100768BB3 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
