@@ -18,6 +18,7 @@ enum Router:URLRequestConvertible {
     case getTokens(address:String)
     case getTransactionByHash(hash:String)
     case getEthereumCurrency()
+    case getEthereumCurrency30days()
     case getBitcoinCurrency()
     case signUp(parameters: Parameters)
     case signIn(parameters: Parameters)
@@ -39,6 +40,8 @@ enum Router:URLRequestConvertible {
         case .getTokens:
             return .get
         case .getEthereumCurrency:
+            return .get
+        case .getEthereumCurrency30days:
             return .get
         case .getBitcoinCurrency:
             return .get
@@ -71,6 +74,8 @@ enum Router:URLRequestConvertible {
             return "/api/v1.0/stat/ETH-USD"
         case .getBitcoinCurrency:
             return "/api/v1.0/stat/BTC-USD"
+        case .getEthereumCurrency30days():
+            return "c02/:pair/:market"
         case .getTransactionByHash(let hash):
             return "/ETH/getTransactionByHash/\(hash)"
         case .signIn:
@@ -101,6 +106,8 @@ enum Router:URLRequestConvertible {
         case .getTokens(_):
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
         case .getEthereumCurrency():
+            urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
+        case .getEthereumCurrency30days():
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
         case .getBitcoinCurrency():
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
