@@ -4,3 +4,11 @@
 //
 
 import Foundation
+
+/*
+class EthereumCurrency {
+    static var time: Int!
+    static var price: Double!
+    static var
+}
+ */

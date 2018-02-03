@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04C296869C049739D7BC4941 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		5513E0FB201BBB0900BDE0E5 /* Geth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5513DD6C201BBAE100BDE0E5 /* Geth.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		55388C0F202488B0007515E1 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55388C0E202488B0007515E1 /* Currency.swift */; };
 		5572CBDC20224955001EACA1 /* TransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572CBDB20224955001EACA1 /* TransactionStatus.swift */; };
 		558E890C201BB8160027F71D /* Pods_YourCoin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		559B743C201BC4F500DDEBD4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88F5201B0CF30027F71D /* Account.swift */; };
@@ -2387,6 +2388,7 @@
 		5513E0A4201BBAE200BDE0E5 /* VENTouchLockPasscodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENTouchLockPasscodeView.h; sourceTree = "<group>"; };
 		5513E0A5201BBAE200BDE0E5 /* VENTouchLockPasscodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENTouchLockPasscodeView.m; sourceTree = "<group>"; };
 		5513E0A6201BBAE200BDE0E5 /* VENTouchLockPasscodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VENTouchLockPasscodeView.xib; sourceTree = "<group>"; };
+		55388C0E202488B0007515E1 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		5572CBDB20224955001EACA1 /* TransactionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatus.swift; sourceTree = "<group>"; };
 		558E88F5201B0CF30027F71D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		558E88F6201B0CF30027F71D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -6753,6 +6755,7 @@
 				558E8901201B0CF30027F71D /* GasData.swift */,
 				5572CBDB20224955001EACA1 /* TransactionStatus.swift */,
 				60C6E1B4CD07EAE2096DFB9E /* EthereumCurrency.swift */,
+				55388C0E202488B0007515E1 /* Currency.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -7482,6 +7485,7 @@
 				559B7445201BC4F500DDEBD4 /* Keystore.swift in Sources */,
 				559B7446201BC4F500DDEBD4 /* KeyStoreError.swift in Sources */,
 				62B9CA52201878B400A74278 /* WalletCardViewController.swift in Sources */,
+				55388C0F202488B0007515E1 /* Currency.swift in Sources */,
 				62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */,
 				62A1380020112F2900B3281B /* PayNowViewController.swift in Sources */,
 				6220246A200F979200382DA2 /* MainViewController.swift in Sources */,

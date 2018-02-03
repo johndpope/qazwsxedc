@@ -61,8 +61,8 @@ public class EthereumDataService {
             }
         }
     }
-    func GetEthereumCurrency() {
-        Alamofire.request(Router.getEthereumCurrency()).responseJSON { (response) in
+    func GetCryptoCurrency(value: Currency) {
+        Alamofire.request(Router.getCryptoCurrency(left_value: value.rawValue)).responseJSON { (response) in
             if let jsonDictionary = response.result.value as? [String: Any] {
                 for index in jsonDictionary {
                     let value = index.key

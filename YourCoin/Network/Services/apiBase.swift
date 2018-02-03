@@ -17,9 +17,8 @@ enum Router:URLRequestConvertible {
     case listOfTransaction(address: String)
     case getTokens(address:String)
     case getTransactionByHash(hash:String)
-    case getEthereumCurrency()
     case getEthereumCurrency30days()
-    case getBitcoinCurrency()
+    case getCryptoCurrency(left_value: String)
     case signUp(parameters: Parameters)
     case signIn(parameters: Parameters)
     
@@ -39,11 +38,9 @@ enum Router:URLRequestConvertible {
             return .get
         case .getTokens:
             return .get
-        case .getEthereumCurrency:
-            return .get
         case .getEthereumCurrency30days:
             return .get
-        case .getBitcoinCurrency:
+        case .getCryptoCurrency:
             return .get
         case .signUp:
             return .post
@@ -70,11 +67,9 @@ enum Router:URLRequestConvertible {
             return "/ETH/getTransactionsList/\(address)"
         case .getTokens(let address):
             return "/ETH/getTokenBalance/\(address)"
-        case .getEthereumCurrency:
-            return "/api/v1.0/stat/ETH-USD"
-        case .getBitcoinCurrency:
-            return "/api/v1.0/stat/BTC-USD"
-        case .getEthereumCurrency30days():
+        case .getCryptoCurrency(let left_value):
+            return "/api/v1.0/stat/\(left_value)-USD"
+        case .getEthereumCurrency30days:
             return "c02/:pair/:market"
         case .getTransactionByHash(let hash):
             return "/ETH/getTransactionByHash/\(hash)"
@@ -105,11 +100,7 @@ enum Router:URLRequestConvertible {
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
         case .getTokens(_):
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
-        case .getEthereumCurrency():
-            urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
-        case .getEthereumCurrency30days():
-            urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
-        case .getBitcoinCurrency():
+        case .getCryptoCurrency(_):
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
         case .getTransactionByHash(_):
             urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
