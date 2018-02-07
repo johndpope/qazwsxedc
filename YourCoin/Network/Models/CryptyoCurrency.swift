@@ -5,10 +5,10 @@
 
 import Foundation
 
-/*
-class EthereumCurrency {
+
+class CryptoCurrency {
     static var time: Int!
     static var price: Double!
-    static var
+
 }
- */
+

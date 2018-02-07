@@ -24,8 +24,6 @@ import Alamofire
 
 class AccountService {
     let keystore: EtherKeystore = EtherKeystore()
-
-//    let keystore: EtherKeystore = EtherKeystore()
      func CreateWallet() -> Account? {
         var _account: Account!
         let password = UUID().uuidString

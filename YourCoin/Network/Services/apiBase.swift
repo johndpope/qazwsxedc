@@ -17,7 +17,6 @@ enum Router:URLRequestConvertible {
     case listOfTransaction(address: String)
     case getTokens(address:String)
     case getTransactionByHash(hash:String)
-    case getEthereumCurrency30days()
     case getCryptoCurrency(left_value: String)
     case signUp(parameters: Parameters)
     case signIn(parameters: Parameters)
@@ -37,8 +36,6 @@ enum Router:URLRequestConvertible {
         case .listOfTransaction:
             return .get
         case .getTokens:
-            return .get
-        case .getEthereumCurrency30days:
             return .get
         case .getCryptoCurrency:
             return .get
@@ -69,8 +66,6 @@ enum Router:URLRequestConvertible {
             return "/ETH/getTokenBalance/\(address)"
         case .getCryptoCurrency(let left_value):
             return "/api/v1.0/stat/\(left_value)-USD"
-        case .getEthereumCurrency30days:
-            return "c02/:pair/:market"
         case .getTransactionByHash(let hash):
             return "/ETH/getTransactionByHash/\(hash)"
         case .signIn:

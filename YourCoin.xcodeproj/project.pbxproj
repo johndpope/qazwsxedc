@@ -32,7 +32,7 @@
 		559B7485201BC70800DDEBD4 /* SendRawTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E8903201B0CF30027F71D /* SendRawTransactionRequest.swift */; };
 		559B7486201BC70800DDEBD4 /* SignTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E8909201B0CF30027F71D /* SignTransaction.swift */; };
 		559B7487201BC70800DDEBD4 /* TransactionSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E890A201B0CF30027F71D /* TransactionSpeed.swift */; };
-		60C6E979185DEB29834D4F2E /* EthereumCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C6E1B4CD07EAE2096DFB9E /* EthereumCurrency.swift */; };
+		60C6E979185DEB29834D4F2E /* CryptyoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C6E1B4CD07EAE2096DFB9E /* CryptyoCurrency.swift */; };
 		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
 		6220246A200F979200382DA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62202469200F979200382DA2 /* MainViewController.swift */; };
 		62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220246F200F9F3700382DA2 /* CustomUIButton.swift */; };
@@ -2410,7 +2410,7 @@
 		558E8908201B0CF30027F71D /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
 		558E8909201B0CF30027F71D /* SignTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTransaction.swift; sourceTree = "<group>"; };
 		558E890A201B0CF30027F71D /* TransactionSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSpeed.swift; sourceTree = "<group>"; };
-		60C6E1B4CD07EAE2096DFB9E /* EthereumCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumCurrency.swift; sourceTree = "<group>"; };
+		60C6E1B4CD07EAE2096DFB9E /* CryptyoCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptyoCurrency.swift; sourceTree = "<group>"; };
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		62202469200F979200382DA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6220246F200F9F3700382DA2 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
@@ -6754,7 +6754,7 @@
 			children = (
 				558E8901201B0CF30027F71D /* GasData.swift */,
 				5572CBDB20224955001EACA1 /* TransactionStatus.swift */,
-				60C6E1B4CD07EAE2096DFB9E /* EthereumCurrency.swift */,
+				60C6E1B4CD07EAE2096DFB9E /* CryptyoCurrency.swift */,
 				55388C0E202488B0007515E1 /* Currency.swift */,
 			);
 			path = Models;
@@ -7387,6 +7387,7 @@
 				"${BUILT_PRODUCTS_DIR}/1PasswordExtension/OnePasswordExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
 				"${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
@@ -7398,6 +7399,7 @@
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReaderViewController/QRCodeReaderViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -7414,6 +7416,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnePasswordExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BonMot.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
@@ -7425,6 +7428,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReaderViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -7499,7 +7503,7 @@
 				62A137FE20112A4100B3281B /* AcceptPayViewController.swift in Sources */,
 				62F841E52015FFDB0061EB0C /* AllCardsViewController.swift in Sources */,
 				62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */,
-				60C6E979185DEB29834D4F2E /* EthereumCurrency.swift in Sources */,
+				60C6E979185DEB29834D4F2E /* CryptyoCurrency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
