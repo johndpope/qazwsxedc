@@ -4,11 +4,19 @@
 //
 
 import Foundation
+import ObjectMapper
 
-
-class CryptoCurrency {
-    static var time: Int!
-    static var price: Double!
+class CryptoCurrency: Mappable {
+    var time: Int?
+    var price: Double?
+    var hour: Array<CryptoCurrency> = []
+    required init(map: Map) {
+        
+    }
+    func mapping(map: Map) {
+        time <- map["time"]
+        price <- map["price"]
+        hour <- map["hour"]
+        }
 
 }
-

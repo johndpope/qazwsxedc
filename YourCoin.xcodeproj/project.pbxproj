@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04C296869C049739D7BC4941 /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		5513E0FB201BBB0900BDE0E5 /* Geth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5513DD6C201BBAE100BDE0E5 /* Geth.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		551A3838202B7C95007AC619 /* TransactionCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551A3837202B7C95007AC619 /* TransactionCount.swift */; };
 		55388C0F202488B0007515E1 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55388C0E202488B0007515E1 /* Currency.swift */; };
 		5572CBDC20224955001EACA1 /* TransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5572CBDB20224955001EACA1 /* TransactionStatus.swift */; };
 		558E890C201BB8160027F71D /* Pods_YourCoin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -431,6 +432,34 @@
 			proxyType = 2;
 			remoteGlobalIDString = 52ED76E9588128D51470446F57265610;
 			remoteInfo = VENTouchLock;
+		};
+		551A3856202B7C96007AC619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513DDC0201BBAE100BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B062AAF9037862B68618C1B613DF991A;
+			remoteInfo = AlamofireObjectMapper;
+		};
+		551A3858202B7C96007AC619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513DDC0201BBAE100BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B36CB5AA02C7259E8E3B6203C133B95E;
+			remoteInfo = ObjectMapper;
+		};
+		551A3877202B7C96007AC619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513D914201BBAD700BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B062AAF9037862B68618C1B613DF991A;
+			remoteInfo = AlamofireObjectMapper;
+		};
+		551A3879202B7C96007AC619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513D914201BBAD700BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B36CB5AA02C7259E8E3B6203C133B95E;
+			remoteInfo = ObjectMapper;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2388,6 +2417,7 @@
 		5513E0A4201BBAE200BDE0E5 /* VENTouchLockPasscodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENTouchLockPasscodeView.h; sourceTree = "<group>"; };
 		5513E0A5201BBAE200BDE0E5 /* VENTouchLockPasscodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENTouchLockPasscodeView.m; sourceTree = "<group>"; };
 		5513E0A6201BBAE200BDE0E5 /* VENTouchLockPasscodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VENTouchLockPasscodeView.xib; sourceTree = "<group>"; };
+		551A3837202B7C95007AC619 /* TransactionCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCount.swift; sourceTree = "<group>"; };
 		55388C0E202488B0007515E1 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		5572CBDB20224955001EACA1 /* TransactionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatus.swift; sourceTree = "<group>"; };
 		558E88F5201B0CF30027F71D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -3247,6 +3277,7 @@
 				5513DC18201BBAD700BDE0E5 /* OnePasswordExtension.framework */,
 				5513DC1A201BBAD700BDE0E5 /* OnePasswordExtensionResources.bundle */,
 				5513DC1C201BBAD700BDE0E5 /* Alamofire.framework */,
+				551A3878202B7C96007AC619 /* AlamofireObjectMapper.framework */,
 				5513DC1E201BBAD700BDE0E5 /* APIKit.framework */,
 				5513DC20201BBAD700BDE0E5 /* BigInt.framework */,
 				5513DC22201BBAD700BDE0E5 /* BonMot.framework */,
@@ -3260,6 +3291,7 @@
 				5513DC32201BBAD700BDE0E5 /* KeychainSwift.framework */,
 				5513DC34201BBAD700BDE0E5 /* MBProgressHUD.framework */,
 				5513DC36201BBAD700BDE0E5 /* Moya.framework */,
+				551A387A202B7C96007AC619 /* ObjectMapper.framework */,
 				5513DC38201BBAD700BDE0E5 /* Pods_YourCoin.framework */,
 				5513DC3C201BBAD700BDE0E5 /* QRCodeReaderViewController.framework */,
 				5513DC3E201BBAD700BDE0E5 /* Rswift.framework */,
@@ -5375,6 +5407,7 @@
 				5513E0C4201BBAE200BDE0E5 /* OnePasswordExtension.framework */,
 				5513E0C6201BBAE200BDE0E5 /* OnePasswordExtensionResources.bundle */,
 				5513E0C8201BBAE200BDE0E5 /* Alamofire.framework */,
+				551A3857202B7C96007AC619 /* AlamofireObjectMapper.framework */,
 				5513E0CA201BBAE200BDE0E5 /* APIKit.framework */,
 				5513E0CC201BBAE200BDE0E5 /* BigInt.framework */,
 				5513E0CE201BBAE200BDE0E5 /* BonMot.framework */,
@@ -5388,6 +5421,7 @@
 				5513E0DE201BBAE200BDE0E5 /* KeychainSwift.framework */,
 				5513E0E0201BBAE200BDE0E5 /* MBProgressHUD.framework */,
 				5513E0E2201BBAE200BDE0E5 /* Moya.framework */,
+				551A3859202B7C96007AC619 /* ObjectMapper.framework */,
 				5513E0E4201BBAE200BDE0E5 /* Pods_YourCoin.framework */,
 				5513E0E8201BBAE200BDE0E5 /* QRCodeReaderViewController.framework */,
 				5513E0EA201BBAE200BDE0E5 /* Rswift.framework */,
@@ -6756,6 +6790,7 @@
 				5572CBDB20224955001EACA1 /* TransactionStatus.swift */,
 				60C6E1B4CD07EAE2096DFB9E /* CryptyoCurrency.swift */,
 				55388C0E202488B0007515E1 /* Currency.swift */,
+				551A3837202B7C95007AC619 /* TransactionCount.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -7342,6 +7377,34 @@
 			remoteRef = 5513E0F9201BBAE200BDE0E5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		551A3857202B7C96007AC619 /* AlamofireObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireObjectMapper.framework;
+			remoteRef = 551A3856202B7C96007AC619 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551A3859202B7C96007AC619 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 551A3858202B7C96007AC619 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551A3878202B7C96007AC619 /* AlamofireObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireObjectMapper.framework;
+			remoteRef = 551A3877202B7C96007AC619 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551A387A202B7C96007AC619 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 551A3879202B7C96007AC619 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -7479,6 +7542,7 @@
 				559B743C201BC4F500DDEBD4 /* Account.swift in Sources */,
 				559B743D201BC4F500DDEBD4 /* Address.swift in Sources */,
 				559B743E201BC4F500DDEBD4 /* BigInt.swift in Sources */,
+				551A3838202B7C95007AC619 /* TransactionCount.swift in Sources */,
 				559B743F201BC4F500DDEBD4 /* CastError.swift in Sources */,
 				559B7440201BC4F500DDEBD4 /* Config.swift in Sources */,
 				559B7441201BC4F500DDEBD4 /* Data.swift in Sources */,

@@ -10,9 +10,9 @@ import Foundation
 import Alamofire
 
 enum Router:URLRequestConvertible {
-    case getGasInfo()
+    case getGasInfo() // r
     case getWalletBalance(address: String)
-    case getTransactionsCount(address: String)
+    case getTransactionsCount(address: String) // r
     case signTransaction(hex: String)
     case listOfTransaction(address: String)
     case getTokens(address:String)

@@ -14,7 +14,6 @@ class GasData: Mappable {
     var gasLimitHex: String?
     var gasPrice: String?
     var gasPriceHex: String?
-    //var transactionCount: Int?
     required init?(map: Map) {
         
         
