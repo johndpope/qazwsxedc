@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'YourCoin' do
 	pod 'AlamofireObjectMapper', '~> 5.0'
+	pod 'ObjectMapper', '~> 3.1'
 	pod 'BigInt', '~> 3.0'
   	pod 'R.swift'
   	pod 'JSONRPCKit', :git=> 'https://github.com/bricklife/JSONRPCKit.git'

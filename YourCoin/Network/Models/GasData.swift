@@ -7,11 +7,26 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class gasData {
-    static var gasLimit: Int?
-    static var gasLimitHex: String?
-    static var gasPrice: String?
-    static var gasPriceHex: String?
-    static var transactionCount: Int?
+class gasData: Mappable {
+    var gasLimit: Int?
+    var gasLimitHex: String?
+    var gasPrice: String?
+    var gasPriceHex: String?
+    //var transactionCount: Int?
+    required init?(map: Map) {
+        
+        
+    }
+    func mapping(map: Map) {
+        gasLimit <- map["gasLimit"]
+        gasLimitHex <- map["gasLimitHex"]
+        gasPrice <- map["gasPrice"]
+        gasPriceHex <- map["gasPriceHex"]
+        
+    }
+    
+    
+    
 }
