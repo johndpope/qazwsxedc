@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireObjectMapper
 
 public class EthereumDataService {
     
@@ -43,23 +44,19 @@ public class EthereumDataService {
             
         }
     }
-    func GetGasInfo() {
-        Alamofire.request(Router.getGasInfo()).responseJSON { (response) in
-            if let jsonDictionary = response.result.value as? [String: Any] {
-                for index in jsonDictionary {
-                    let value = index.key
-                    switch value {
-                        
-                    case "gasLimitHex": gasData.gasLimitHex = index.value as? String
-                    case "gasPrice": gasData.gasPrice = index.value as? String
-                    case "gasPriceHex": gasData.gasPriceHex = index.value as? String
-                    case "gasLimit": gasData.gasLimit = index.value as? Int
-                    default: break
-                    }
-                    
-                }
+    func GetGasInfo(completionHandler: @escaping (GasData) -> ()){
+        Alamofire.request(Router.getGasInfo()).responseObject{(response: DataResponse<GasData>)
+            in switch response.result {
+            case .success:
+                let gasData = response.result.value
+                completionHandler(gasData!)
+            default:
+                break;
+                
             }
-        }
+            //let gasData = response.result.value
+            //print(gasData?.gasLimit)        }
+    }
     }
     func GetCryptoCurrency(value: Currency) {
         Alamofire.request(Router.getCryptoCurrency(left_value: value.rawValue)).responseJSON { (response) in
@@ -71,8 +68,6 @@ public class EthereumDataService {
             }
         }
     }
-    static func GetBitcoinCurrency () {
-        
-    }
+
     
 }

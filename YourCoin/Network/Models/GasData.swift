@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class gasData: Mappable {
+class GasData: Mappable {
     var gasLimit: Int?
     var gasLimitHex: String?
     var gasPrice: String?
