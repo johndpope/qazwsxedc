@@ -11,9 +11,9 @@ import Alamofire
 
 enum Router:URLRequestConvertible {
     case getGasInfo() // r
-    case getWalletBalance(address: String)
+    case getWalletBalance(address: String) // r
     case getTransactionsCount(address: String) // r
-    case signTransaction(hex: String)
+    case signTransaction(hex: String) 
     case listOfTransaction(address: String)
     case getTokens(address:String)
     case getTransactionByHash(hash:String)

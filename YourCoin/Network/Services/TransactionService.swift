@@ -7,14 +7,16 @@
 //
 
 import Foundation
+import BigInt
 import Alamofire
+import AlamofireObjectMapper
 
 class TransactionService {
     public let keystore: EtherKeystore = EtherKeystore()
     
     // TODO: Get current user account
     
-//    func SignTransaction (amount: Int64, to: Address) {
+//    func SignTransaction (amount: Int64, to: String) {
 //        let signTransaction = SignTransaction(
 //            amount: GethNewBigInt(Int64(0.5)),
 //            account: from!,
@@ -38,19 +40,20 @@ class TransactionService {
 //    }
     
     
-    // TODO: Using library ObjectMapper get data from API automaticaly, then use that method for other services
-    func GetTransactionStatus (hash:String) {
-        Alamofire.request(Router.getTransactionByHash(hash: hash)).responseJSON {
-            (response) in if let jsonDictionary = response.value as? [String: Any] {
-                for index in jsonDictionary {
-                    switch  index.key {
-                        
-                    default:
-                        break
-                    }
-                }
+    
+    func GetTransactionStatus (hash:String, completionHandler: @escaping (TransactionStatus?, Error?) -> ()) {
+        Alamofire.request(Router.getTransactionByHash(hash: hash)).responseObject {(response: DataResponse<TransactionStatus>)
+            in switch response.result {
+            case .success:
+                let status = response.result.value
+                completionHandler(status, nil)
+                break
+                
+            case .failure(let error):
+                print(error)
+                completionHandler(nil, error)
+                break
             }
-            
         }
     }
 }

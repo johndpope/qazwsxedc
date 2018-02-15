@@ -7,27 +7,43 @@
 //
 
 import Foundation
+import ObjectMapper
 
-
-class TransactionStatus {
+class TransactionStatus: Mappable {
     
-    var blockHash: Any!
-    var blockNumber: Any {
-        get {
-            if blockNumber == nil {return "Pending"}
-            return "Ready"
-        }
+    var blockHash: Any?
+    var blockNumber: Any?
+    var from: String?
+    var gas: Any?
+    var gasPrice: Any?
+    var hash: Any?
+    var input: String?
+    var nonce: Any?
+    var to: String?
+    var transactionIndex: Any?
+    var value: Any?
+    var v:String?
+    var r:String?
+    var s:String?
+    
+    required init?(map: Map) {
+        
     }
-    var from: Any!
-    var gas: Any!
-    var gasPrice: Any!
-    var hash: Any!
-    var input: Any!
-    var nonce: Any!
-    var to: Any!
-    var transactionIndex: Any!
-    var value: Any!
-    var v:Any!
-    var r:Any!
-    var s:Any!
+    func mapping(map: Map) {
+        blockHash <- map["blockHash"]
+        blockNumber <- map["blockNumber"]
+        from <- map["from"]
+        gas <- map["from"]
+        gasPrice <- map["gasPrice"]
+        hash <- map["hash"]
+        input <- map["hash"]
+        nonce <- map["nonce"]
+        to <- map["to"]
+        transactionIndex <- map["transactionIndex"]
+        value <- map["value"]
+        v <- map["v"]
+        r <- map["r"]
+        s <- map["s"]
+        
+    }
 }

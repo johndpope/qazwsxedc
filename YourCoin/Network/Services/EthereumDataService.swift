@@ -20,6 +20,7 @@ public class EthereumDataService {
                 completionHandler(transactionCount, nil)
                 break
             case .failure(let error):
+                print(error)
                 completionHandler(nil, error)
                 break
             default:
@@ -31,21 +32,7 @@ public class EthereumDataService {
         
     }
     }
-    func GetTransactionStatus (hash:String) {
-        Alamofire.request(Router.getTransactionByHash(hash: hash)).responseJSON {
-            (response) in if let jsonDictionary = response.value as? [String: Any] {
-                for index in jsonDictionary {
-                    switch  index.key {
-                        
-                        default:
-                        break
-                    }
-                }
-            }
-            
-        }
-    }
-    func GetGasInfo(completionHandler: @escaping (GasData?, Error?) -> ()){
+     func GetGasInfo(completionHandler: @escaping (GasData?, Error?) -> ()){
         Alamofire.request(Router.getGasInfo()).responseObject{(response: DataResponse<GasData>)
             in switch response.result {
             case .success:
@@ -53,6 +40,7 @@ public class EthereumDataService {
                 completionHandler(gasData, nil)
                 break
             case .failure(let error):
+                print(error)
                 completionHandler(nil, error)
                 break
             default:
@@ -61,19 +49,39 @@ public class EthereumDataService {
             }
     }
     }
-    func GetCryptoCurrency(value: Currency) {
-        Alamofire.request(Router.getCryptoCurrency(left_value: value.rawValue)).responseArray { (response: DataResponse<[CryptoCurrency]>)
-            in let cryptoCurrency = response.result.value
-            if let cryptoCurrency =  cryptoCurrency {
-                for item in cryptoCurrency {
-                    print(item.hour)
-                }
-            }
-            
-            
-           
+    // TODO: Improve realization
+//    func GetCryptoCurrency(value: String) {
+//            Alamofire.request(Router.getCryptoCurrency(left_value: value))
+//                .responseArray {(response: DataResponse<[CryptoCurrency]>)
+//                    in switch response.result {
+//                    case .success:
+//                        let currency = response.result.value
+//                        print(currency)
+//                        break
+//                    case .failure(let error):
+//                        print(error)
+//                        break
+//                    default:
+//                        break
+//                    }
+//                }
+//        }
+    func GetBallance(address: String, completionHandler: @escaping (Balance?, Error?) -> ()) {
+        Alamofire.request(Router.getWalletBalance(address: address)).responseObject {(response: DataResponse<Balance>)
+            in switch response.result {
+            case .success:
+                let balance = response.result.value
+                completionHandler(balance, nil)
+                break
+            case .failure(let error):
+                print(error)
+                completionHandler(nil, error)
+                break
+            default:
+                break
             }
         }
+    }
     
 }
 

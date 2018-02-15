@@ -16,12 +16,17 @@ class CreateViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func CreateWalletAction(_ sender: Any) {
-        let _accountService: AccountService = AccountService()
+        let _etherService: EthereumDataService = EthereumDataService()
         DispatchQueue.main.async {
-           var account =  _accountService.CreateWallet()
+            _etherService.GetCryptoCurrency(value: Currency.ETH.rawValue)
+
         }
-        //create wallet
-        self.performSegue(withIdentifier: "GoToMain", sender: self)
+//        let _accountService: AccountService = AccountService()
+//        DispatchQueue.main.async {
+//           var account =  _accountService.CreateWallet()
+//        }
+//        //create wallet
+//        self.performSegue(withIdentifier: "GoToMain", sender: self)
         
     }
     
