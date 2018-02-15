@@ -7,37 +7,57 @@
 //
 
 import Foundation
-import BigInt
 import Alamofire
+import BigInt
+import Geth
 import AlamofireObjectMapper
+import UIKit
+import APIKit
+import JSONRPCKit
+import Result
+import Foundation
+import Geth
+import KeychainSwift
+import CryptoSwift
+import Alamofire
 
 class TransactionService {
     public let keystore: EtherKeystore = EtherKeystore()
     
     // TODO: Get current user account
     
-//    func SignTransaction (amount: Int64, to: String) {
-//        let signTransaction = SignTransaction(
-//            amount: GethNewBigInt(Int64(0.5)),
-//            account: from!,
-//            address: to!,
-//            nonce: gasData.transactionCount!,
-//            speed: .custom(gasPrice: BigInt(gasData.gasPrice!)!, gasLimit: BigInt(gasData.gasLimit!)),
-//            data: Data(),
-//            chainID: GethNewBigInt(Int64(3)))
-//
-//        let signedTransaction = keystore.signTransaction(signTransaction)
-//        switch signedTransaction {
-//        case .success(let data):
-//            let sendData = data.hexEncoded
-//            Alamofire.request(Router.signTransaction(hex: sendData)).responseJSON(completionHandler: { (response) in
-//                print(response)
-//            })
-//        case .failure(let error):
-//            print(error)
-//        }
-//
-//    }
+    func SigningTransaction (amount: GethBigInt, account: Account, address: Address, nonce: TransactionCount, speed: GasData, data: Data, chainId:Int64,  completionHandler: @escaping (SignedTransaction?, Error?) -> ()) {
+        let signTransaction = SignTransaction(
+            amount: amount,
+            account: account,
+            address: address,
+            nonce: Int(nonce.transactionCount!)!,
+            speed: .custom(gasPrice: BigInt(Int(speed.gasPrice!)!), gasLimit: BigInt(speed.gasLimit!)),
+            data: Data(),
+            chainID: GethNewBigInt(Int64(3)))
+        
+
+        let signedTransaction = keystore.signTransaction(signTransaction)
+        switch signedTransaction {
+        case .success(let data):
+            let sendData = data.hexEncoded
+            Alamofire.request(Router.signTransaction(hex: sendData)).responseObject {(response: DataResponse<SignedTransaction>)
+                in switch response.result {
+                case .success:
+                    let hash = response.result.value
+                    completionHandler(hash, nil)
+                    break;
+                case .failure(let error):
+                    print(error)
+                    break
+                }
+                
+            }
+        case .failure(let error):
+            print(error)
+        }
+
+    }
     
     
     
@@ -56,5 +76,7 @@ class TransactionService {
             }
         }
     }
+    
+    
 }
 

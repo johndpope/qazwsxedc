@@ -18,7 +18,7 @@ class CreateViewController: UIViewController {
     @IBAction func CreateWalletAction(_ sender: Any) {
         let _etherService: EthereumDataService = EthereumDataService()
         DispatchQueue.main.async {
-            _etherService.GetCryptoCurrency(value: Currency.ETH.rawValue)
+            //_etherService.GetCryptoCurrency(value: Currency.ETH.rawValue)
 
         }
 //        let _accountService: AccountService = AccountService()
