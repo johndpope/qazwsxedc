@@ -43,8 +43,10 @@ class EtherKeystore: Keystore {
         }
     }
     
-    static var current: Account? {
-        return EtherKeystore().recentlyUsedAccount
+     var current: Account? {
+        
+        //return recentlyUsedAccount
+        return self.gethAccounts.map {Account(address: Address(address: $0.getAddress().getHex()))}[1]
     }
     var accounts: [Account] {
         return self.gethAccounts.map { Account(address: Address(address: $0.getAddress().getHex())) }

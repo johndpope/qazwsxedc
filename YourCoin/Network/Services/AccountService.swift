@@ -24,27 +24,30 @@ import Alamofire
 
 class AccountService {
     let keystore: EtherKeystore = EtherKeystore()
-     func CreateWallet() -> Account? {
-        var _account: Account!
+    func CreateWallet(completionHandler: @escaping (Account?, Error?) -> ()) {
         let password = UUID().uuidString
         keystore.createAccount(with: password) { result in
             switch result {
             case .success(let account):
-                _account = account
+                completionHandler(account, nil)
                 print("\(account.address)")
                 
             case .failure(let error):
+                completionHandler(nil, error)
                 print(error)
             }
             
         }
-        return _account
     }
-     func GetCurrentAccount() -> Account? {
-        return EtherKeystore.current
+     func GetCurrentAccount(completionHandler: @escaping (Account?, Error?) -> ()){
+        completionHandler(keystore.current, nil)
     }
-     func hasAccounts() -> Account {
-        return keystore.recentlyUsedAccount!
+    func GetAccounts(completionHandler: @escaping ([Account]?, Error?) -> ()) {
+        completionHandler(keystore.accounts, nil)
+    }
+     func hasAccounts(completionHandler: @escaping (Account?, Error?) -> ()) {
+        completionHandler(keystore.recentlyUsedAccount, nil)
+        //return
     }
     func ImportWallet() {
         

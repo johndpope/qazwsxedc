@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func SwichButton(_ sender: UIButton) {
-        print("->Click Swich Buttons" , sender.titleLabel?.text )
+        print("->Click Swich Buttons" ,sender.titleLabel?.text)
         
         if(sender.titleLabel?.text == "Balance") {
             BalanceView.isHidden = false

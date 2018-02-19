@@ -9,26 +9,60 @@
 import UIKit
 
 class CreateViewController: UIViewController {
-
+    let accountService: AccountService = AccountService()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func CreateWalletAction(_ sender: Any) {
-        let _etherService: EthereumDataService = EthereumDataService()
-        DispatchQueue.main.async {
-            //_etherService.GetCryptoCurrency(value: Currency.ETH.rawValue)
-
-        }
-//        let _accountService: AccountService = AccountService()
-//        DispatchQueue.main.async {
-//           var account =  _accountService.CreateWallet()
-//        }
-//        //create wallet
-//        self.performSegue(withIdentifier: "GoToMain", sender: self)
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        accountService.GetAccounts(){
+            response, error in
+            
+            if response!.count > 0 {
+                self.performSegue(withIdentifier: "GoToMain", sender: self)
+            }
+            else {
+            }
+            // Do any additional setup after loading the view.
+        }
+    }
+    @IBAction func getWallet(_ sender: Any) {
+        self.accountService.GetCurrentAccount{
+            response, error in
+            if let account = response {
+                print(account.address)
+            }
+            else {
+                print(error)
+            }
+        }
+//        self.accountService.GetAccounts() {
+//            response, error in
+//            print("Your wallets:")
+//            for item in response!
+//            {
+//                print(item.address.address)
+//
+//            }
+//        }
+    
+    }
+    @IBAction func CreateWalletAction(_ sender: Any) {
+        //let _etherService: EthereumDataService = EthereumDataService()
+        //let accountService: AccountService = AccountService()
+        
+     
+            self.accountService.CreateWallet() {
+                response, error in print(response?.address)
+            }
+            
+        
+       
+    }
+
+        
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

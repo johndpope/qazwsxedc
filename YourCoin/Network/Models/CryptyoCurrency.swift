@@ -9,14 +9,14 @@ import ObjectMapper
 class CryptoCurrency: Mappable {
     var time: UInt32?
     var price: Double?
-    //var hour: [Hours]?
+    var hour: [Hours]?
     required init?(map: Map) {
         
     }
     func mapping(map: Map) {
         time <- map["time"]
         price <- map["price"]
-        //hour <- map["hour"]
+        hour <- map["hour"]
         }
 
 }
