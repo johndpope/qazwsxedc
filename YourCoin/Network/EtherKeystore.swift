@@ -44,9 +44,7 @@ class EtherKeystore: Keystore {
     }
     
      var current: Account? {
-        
-        //return recentlyUsedAccount
-        return self.gethAccounts.map {Account(address: Address(address: $0.getAddress().getHex()))}[1]
+        return self.gethAccounts.map {Account(address: Address(address: $0.getAddress().getHex()))}.last
     }
     var accounts: [Account] {
         return self.gethAccounts.map { Account(address: Address(address: $0.getAddress().getHex())) }
@@ -64,6 +62,26 @@ class EtherKeystore: Keystore {
         }
         
         return finalAccounts
+    }
+    func export(account: Account, password: String, newPassword: String) -> Result<String, KeyStoreError> {
+        let result = exportData(account: account, password: password, newPassword: newPassword)
+        switch result {
+        case .success(let data):
+            let string = String(data: data, encoding: .utf8) ?? ""
+            return .success(string)
+        case .failure(let error):
+            return .failure(error)
+        }
+    }
+    
+    func exportData(account: Account, password: String, newPassword: String) -> Result<Data, KeyStoreError> {
+        let gethAccount = getGethAccount(for: account.address)
+        do {
+            let data = try gethKeyStorage.exportKey(gethAccount, passphrase: password, newPassphrase: newPassword)
+            return (.success(data))
+        } catch {
+            return (.failure(.failedToDecryptKey))
+        }
     }
     func createAccount(with password: String, completion: @escaping (Result<Account, KeyStoreError>) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async {
