@@ -547,7 +547,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="RigthButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHf-aG-wig">
-                                        <rect key="frame" x="171" y="1.5" width="150" height="45"/>
+                                        <rect key="frame" x="171" y="2" width="150" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="5TN-Ur-UR9"/>
                                             <constraint firstAttribute="height" constant="45" id="bhN-Oz-seD"/>

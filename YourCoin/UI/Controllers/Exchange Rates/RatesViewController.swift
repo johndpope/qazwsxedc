@@ -16,8 +16,10 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
     @IBOutlet weak var LeftViewButton: UIButton!
     @IBOutlet weak var RightViewButton: UIButton!
     
+    let blurView = CustomUIView()
     var numberOfItems = 30
     lazy var plotOneData: [Double] = self.generateRandomData(self.numberOfItems, max: 100, shouldIncludeOutliers: true)
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,8 +82,28 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
     
     @IBAction func ButtonViewAction(_ sender: UIButton) {
         print("-> Click button restorationIdentifier: " + sender.restorationIdentifier!)
+        CreateBlurView()
+        let blurEffect = UIBlurEffect(style: .light)
+        let effectView = UIVisualEffectView(effect: blurEffect)
+        blurView.addSubview(effectView)
+        effectView.alpha = 0
+        
+        UIView.animate(withDuration: 0.8) {
+            effectView.alpha = 1.0
+        }
     }
     
+     func CreateBlurView(){
+        blurView.cornerRadius = 10
+        blurView.backgroundColor = UIColor.blue
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(blurView)
+        blurView.widthAnchor.constraint(equalToConstant: 334).isActive = true
+        blurView.heightAnchor.constraint(equalToConstant: 431).isActive = true
+        blurView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+        blurView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -48).isActive = true
+        print("------>Set Custom")
+    }
     
     
     //temp
