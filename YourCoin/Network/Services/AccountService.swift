@@ -39,7 +39,7 @@ class AccountService {
             
         }
     }
-     func GetCurrentAccount(completionHandler: @escaping (Account?, Error?) -> ()){
+    func GetCurrentAccount(completionHandler: @escaping (Account?, Error?) -> ()){
         completionHandler(keystore.current, nil)
     }
     func GetAccounts(completionHandler: @escaping ([Account]?, Error?) -> ()) {
@@ -53,7 +53,20 @@ class AccountService {
         
     }
     
-    func ExportWallet() {
+    func ExportWallet(account:Account?, password: String, newPassword: String) -> String {
+       let result = keystore.export(account: account!, password: password, newPassword: password)
+        
+        switch result {
+        case .success(let value):
+            print(value)
+            return value
+        default:
+            break
+        }
+            
+        
+            return "nil"
+            
         
     }
     

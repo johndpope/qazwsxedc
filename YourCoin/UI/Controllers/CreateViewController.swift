@@ -10,58 +10,50 @@ import UIKit
 
 class CreateViewController: UIViewController {
     let accountService: AccountService = AccountService()
+    let accountStorage = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.getCachedAccount()
         
     }
-    override func viewWillAppear(_ animated: Bool) {
-        accountService.GetAccounts(){
-            response, error in
-            
-            if response!.count > 0 {
-                self.performSegue(withIdentifier: "GoToMain", sender: self)
-            }
-            else {
-            }
-            // Do any additional setup after loading the view.
-        }
+    func getCachedAccount (){
+//       let lastAccoount = 1
+//       accountStorage.set(lastAccoount, forKey:"current_account")
+         print(accountStorage.value(forKey: "current_account"))
+        
     }
     @IBAction func getWallet(_ sender: Any) {
         self.accountService.GetCurrentAccount{
             response, error in
             if let account = response {
                 print(account.address)
+                
+                
             }
             else {
                 print(error)
             }
         }
-//        self.accountService.GetAccounts() {
-//            response, error in
-//            print("Your wallets:")
-//            for item in response!
-//            {
-//                print(item.address.address)
-//
-//            }
-//        }
-    
     }
     @IBAction func CreateWalletAction(_ sender: Any) {
-        //let _etherService: EthereumDataService = EthereumDataService()
-        //let accountService: AccountService = AccountService()
-        
-     
-            self.accountService.CreateWallet() {
-                response, error in print(response?.address)
-            }
-            
-        
-       
+        self.accountService.CreateWallet() {
+            response, error in print(response?.address)
+        }
     }
 
-        
+    @IBAction func exportWallet(_ sender: Any) {
+        self.accountService.GetCurrentAccount{
+            response, error in
+            if let account = response {
+                self.accountService.ExportWallet(account: account, password: "123456", newPassword: "123456")
+            }
+            else {
+                print(error)
+            }
+        }
+    }
+    
     
     
     override func didReceiveMemoryWarning() {
