@@ -652,20 +652,10 @@
                     <view key="view" contentMode="scaleToFill" id="UUo-HY-gxo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="EFN-UR-JU9">
-                                <rect key="frame" x="177" y="323" width="20" height="20"/>
-                            </activityIndicatorView>
-                        </subviews>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="EFN-UR-JU9" firstAttribute="centerY" secondItem="UUo-HY-gxo" secondAttribute="centerY" id="uLN-F5-INB"/>
-                            <constraint firstItem="EFN-UR-JU9" firstAttribute="centerX" secondItem="UUo-HY-gxo" secondAttribute="centerX" id="udw-fC-Dh1"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3mK-xg-DSY"/>
                     </view>
                     <connections>
-                        <outlet property="startupLoading" destination="EFN-UR-JU9" id="AUV-F9-qJK"/>
                         <segue destination="bcI-NS-Ewe" kind="show" identifier="startup_create" id="faW-L2-N0Z"/>
                         <segue destination="Jx4-tp-KTc" kind="show" identifier="startup_main" id="ff8-oC-kie"/>
                     </connections>
@@ -684,12 +674,6 @@
         <image name="SettingsIcon.png" width="96" height="96"/>
         <namedColor name="BaseColorOne">
             <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="BaseColorOne">
-            <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="CircleColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CircleColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

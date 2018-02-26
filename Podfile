@@ -19,6 +19,7 @@ target 'YourCoin' do
   	pod 'SwiftLint'
   	pod 'SeedStackViewController'
   	pod 'RealmSwift'
+	pod 'JTMaterialSpinner', '~> 2.0'
   	pod 'BonMot', '~> 5.0'
   	pod 'VENTouchLock'
   	pod '1PasswordExtension'

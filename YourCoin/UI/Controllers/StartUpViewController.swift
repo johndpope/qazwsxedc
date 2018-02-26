@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JTMaterialSpinner
 
 class StartUpViewController: UIViewController {
     let accountService: AccountService = AccountService()
@@ -14,25 +15,37 @@ class StartUpViewController: UIViewController {
 
     @IBOutlet weak var startupLoading: UIActivityIndicatorView!
     
+    var spinnerView = JTMaterialSpinner()
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        showIndicator(isLoading: true)
+        self.view.addSubview(spinnerView)
+        spinnerView.circleLayer.lineWidth = 2.0
+//        spinnerView.circleLayer.strokeColor = UIColor(named:"BaseColorOne")?.cgColor
+        spinnerView.circleLayer.strokeColor = UIColor.red.cgColor
+        spinnerView.animationDuration = 2.5
+        
         accountService.GetAccounts() {
             response, error in
             if let wallets = response?.count {
+                //self.startupLoading.startAnimating()
+                self.spinnerView.beginRefreshing()
                 if wallets > 0 {
-                    DispatchQueue.main.async {
-                        self.showIndicator(isLoading: false)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(5000)) {
                         self.performSegue(withIdentifier: "startup_main", sender: self)
+                        //self.startupLoading.stopAnimating()
+                        self.spinnerView.endRefreshing()
                         
                     }
                     
                 }
                 else {
-                    DispatchQueue.main.async {
-                        self.showIndicator(isLoading: false)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(5000)){
                         self.performSegue(withIdentifier: "startup_create", sender: self)
+                        //self.startupLoading.stopAnimating()
+                        self.spinnerView.endRefreshing()
                     }
                     
                 }
@@ -47,18 +60,6 @@ class StartUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func showIndicator(isLoading: Bool) {
-        if isLoading {
-            startupLoading.center = self.view.center
-            startupLoading.hidesWhenStopped = true
-            startupLoading.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-            view.addSubview(startupLoading)
-        }
-        else {
-            startupLoading.stopAnimating()
-            
-        }
-    }
 
     /*
     // MARK: - Navigation
