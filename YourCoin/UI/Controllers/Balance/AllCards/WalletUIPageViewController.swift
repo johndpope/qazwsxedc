@@ -30,6 +30,7 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
             response, error in
             if let wallets = response{
                 for index in wallets {
+                    // TODO: Create model such as "Model" and set model via constructor !!!!
                     let wallet = WalletCardViewController()
                     wallet.account = index
                     self.userWallets.append(wallet)
