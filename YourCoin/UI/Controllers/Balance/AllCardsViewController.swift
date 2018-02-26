@@ -11,9 +11,9 @@ import UIKit
 class AllCardsViewController: UIViewController {
     
    // static var walletCards:WalletUIPageViewController?
-    static var TempCount:Int?
+    static var TempCount:Int!
     static func RefreshData(some:String){
-        print(some)
+        print("Chosen wallet \(some)")
     }
     
     override func viewDidLoad() {

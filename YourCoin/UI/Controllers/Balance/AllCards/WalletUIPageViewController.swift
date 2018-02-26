@@ -11,19 +11,35 @@ import UIKit
 
 
 class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-    
+    let accountService: AccountService = AccountService()
     var pageControl = UIPageControl()
     //temp
     var some = WalletCardViewController()
     var some2 = WalletCardViewController()
+    var userWallets: Array<WalletCardViewController> = Array()
     
     
     lazy var orderedViewControllers: [UIViewController] = {
-        return [some, some2]//add view
+        return userWallets//add view
         }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        accountService.GetAccounts() {
+            response, error in
+            if let wallets = response{
+                for index in wallets {
+                    let wallet = WalletCardViewController()
+                    wallet.account = index
+                    self.userWallets.append(wallet)
+                }
+                print("Count \(self.userWallets.count)")
+            }
+        }
+
+        
+
         
         //temp
         some.SetCardsView(CardInfo: WalletCardObject(Wallet:"0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", Balance:13, PriceToUSD:29, TypeCoin:"ETH"))
@@ -73,6 +89,7 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
         AllCardsViewController.TempCount = self.pageControl.currentPage
+        AllCardsViewController.RefreshData(some: String(self.pageControl.currentPage))
         SmallHistoryTableViewController.RefreshData(key: String(self.pageControl.currentPage))
     }
     

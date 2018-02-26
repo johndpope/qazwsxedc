@@ -9,11 +9,12 @@
 import UIKit
 
 class SmallHistoryTableViewController: UITableViewController {
+    let accountStorage = UserDefaults.standard
 
     var historyArray = [String]()
     
     static func RefreshData(key:String){
-        print(key)
+        //print("Chosen wallet \(key)")
         //historyArray = [] //по ключу мы выргружаем данные вот сюда
     }
     

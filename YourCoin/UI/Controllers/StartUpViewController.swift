@@ -21,30 +21,29 @@ class StartUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: Refactor thit spinner's initialization
         self.view.addSubview(spinnerView)
+        spinnerView.frame = CGRect(x: (375.0 - 50.0) / 2.0, y: 300, width: 50, height: 50)
         spinnerView.circleLayer.lineWidth = 2.0
-//        spinnerView.circleLayer.strokeColor = UIColor(named:"BaseColorOne")?.cgColor
-        spinnerView.circleLayer.strokeColor = UIColor.red.cgColor
+        spinnerView.circleLayer.strokeColor = UIColor(named:"BaseColorOne")?.cgColor
         spinnerView.animationDuration = 2.5
         
         accountService.GetAccounts() {
             response, error in
             if let wallets = response?.count {
-                //self.startupLoading.startAnimating()
-                self.spinnerView.beginRefreshing()
                 if wallets > 0 {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(5000)) {
+                    self.spinnerView.beginRefreshing()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
                         self.performSegue(withIdentifier: "startup_main", sender: self)
-                        //self.startupLoading.stopAnimating()
                         self.spinnerView.endRefreshing()
                         
                     }
                     
                 }
                 else {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(5000)){
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)){
                         self.performSegue(withIdentifier: "startup_create", sender: self)
-                        //self.startupLoading.stopAnimating()
                         self.spinnerView.endRefreshing()
                     }
                     

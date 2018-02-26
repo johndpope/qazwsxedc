@@ -18,7 +18,7 @@ class WalletCardViewController: UIViewController {
     var typeCoinUILabel = UILabel()
     
     var walletCardObject:WalletCardObject? = WalletCardObject(Wallet:"-----", Balance:0, PriceToUSD:0, TypeCoin:"--")
-    
+    var account: Account!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0.02, green: 0.16, blue: 0.21, alpha: 1)
@@ -42,7 +42,7 @@ class WalletCardViewController: UIViewController {
         
         //////
         
-        wallelUILabel = SetLabelValue(text: (walletCardObject?.walletPublicKey)!)
+        wallelUILabel = SetLabelValue(text: (account.address.address))
         self.view.addSubview(wallelUILabel)
         wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 99).isActive = true
         wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 27).isActive = true
