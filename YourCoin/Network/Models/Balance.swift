@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 class Balance: Mappable {
-    var balance: Double?
+    var balance: String?
     
     required init?(map: Map) {
         

@@ -17,7 +17,7 @@ class WalletCardViewController: UIViewController {
     var typeCoinCurrencyUILabel = UILabel()
     var typeCoinUILabel = UILabel()
     
-    var walletCardObject:WalletCardObject? = WalletCardObject(Wallet:"-----", Balance:0, PriceToUSD:0, TypeCoin:"--")
+    var walletCardObject:WalletCardObject? = WalletCardObject(Wallet:"-----", Balance:"1", TypeCoin:"ETH")
     var account: Account!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,7 @@ class WalletCardViewController: UIViewController {
         
         //////
         
-        wallelUILabel = SetLabelValue(text: (account.address.address))
+        wallelUILabel = SetLabelValue(text:String(describing: (walletCardObject?.walletPublicKey)!))
         self.view.addSubview(wallelUILabel)
         wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 99).isActive = true
         wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 27).isActive = true
@@ -53,10 +53,10 @@ class WalletCardViewController: UIViewController {
         vauleCurrencyUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 122).isActive = true
         vauleCurrencyUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 58).isActive = true
         
-        wallelUILabel = SetLabelValue(text:String((walletCardObject?.balance)!*(walletCardObject?.priceToUSD)!))
-        self.view.addSubview(wallelUILabel)
-        wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 84).isActive = true
-        wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 89).isActive = true
+        //wallelUILabel = SetLabelValue(text:String((walletCardObject?.balance)!*(walletCardObject?.priceToUSD)!))
+        //self.view.addSubview(wallelUILabel)
+        //wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 84).isActive = true
+        //wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 89).isActive = true
         
         //////
         
