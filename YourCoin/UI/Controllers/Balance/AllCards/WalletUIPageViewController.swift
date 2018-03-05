@@ -34,17 +34,21 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
                     // TODO: Create model such as "Model" and set model via constructor !!!!
                     let wallet = WalletCardViewController()
                     let account = account.address.address
-                    wallet.walletCardObject?.walletPublicKey = account
+                    //wallet.walletCardObject = WalletCardObject()
+                    wallet.walletCardObject.walletPublicKey = account
                     DispatchQueue.main.async {
                         self.ethereumDataService.GetBallance(address: account) {
                             response, error in
                             let balance = response?.balance
-                            
-                            wallet.walletCardObject?.balance = "500"
-                            wallet.walletCardObject?.typeCoin = "ETH"
+                            print(balance!)
+                            wallet.walletCardObject.balance = balance!
+                            wallet.walletCardObject.typeCoin = "ETH"
+                                self.userWallets.append(wallet)
                         }
+                        
                     }
-                    self.userWallets.append(wallet)
+                   
+                    //
                 }
                 print("Count \(self.userWallets.count)")
             }
@@ -54,7 +58,7 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
 
         
         //temp
-        some.SetCardsView(CardInfo: WalletCardObject(Wallet:"0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", Balance:"13", TypeCoin:"ETH"))
+       // some.SetCardsView(CardInfo: WalletCardObject(Wallet:"0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", Balance:"13", TypeCoin:"ETH"))
         
         self.dataSource = self
         self.delegate = self

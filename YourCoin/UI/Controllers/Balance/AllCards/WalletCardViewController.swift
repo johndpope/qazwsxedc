@@ -17,7 +17,7 @@ class WalletCardViewController: UIViewController {
     var typeCoinCurrencyUILabel = UILabel()
     var typeCoinUILabel = UILabel()
     
-    var walletCardObject:WalletCardObject? = WalletCardObject(Wallet:"-----", Balance:"1", TypeCoin:"ETH")
+    var walletCardObject:WalletCardObject! = WalletCardObject()
     var account: Account!
     override func viewDidLoad() {
         super.viewDidLoad()

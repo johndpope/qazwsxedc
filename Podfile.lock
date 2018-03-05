@@ -39,6 +39,9 @@ PODS:
   - RealmSwift (3.0.2):
     - Realm (= 3.0.2)
   - Result (3.2.4)
+  - RxCocoa (4.1.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.1)
   - SeedStackViewController (0.4.0)
   - SipHash (1.2.0)
   - SSKeychain (1.4.1)
@@ -68,6 +71,8 @@ DEPENDENCIES:
   - QRCodeReaderViewController (from `https://github.com/yannickl/QRCodeReaderViewController.git`, branch `master`)
   - R.swift
   - RealmSwift
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SeedStackViewController
   - StatefulViewController
   - SwiftLint
@@ -120,6 +125,8 @@ SPEC CHECKSUMS:
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
   SeedStackViewController: 45e88ca1493a610e74d661d3feced7098f72dbd3
   SipHash: c6e9e43e9c531b5bc6602545130c26194a6d31ce
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
@@ -127,6 +134,6 @@ SPEC CHECKSUMS:
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
   VENTouchLock: 20d378b9c6173e2c054448aeb3fb2f40822a9f3f
 
-PODFILE CHECKSUM: ff320e21ca6f0c16b2c2839b75776bc9544b4ee9
+PODFILE CHECKSUM: a556b842d5052605a8ebfd1792a35faab805946e
 
 COCOAPODS: 1.3.1

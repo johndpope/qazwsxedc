@@ -67,20 +67,23 @@ public class EthereumDataService {
 //                }
 //        }
     func GetBallance(address: String, completionHandler: @escaping (Balance?, Error?) -> ()) {
-        Alamofire.request(Router.getWalletBalance(address: address)).responseObject {(response: DataResponse<Balance>)
-            in switch response.result {
-            case .success:
-                let balance = response.result.value
-                completionHandler(balance, nil)
-                break
-            case .failure(let error):
-                print(error)
-                completionHandler(nil, error)
-                break
-            default:
-                break
+        DispatchQueue.main.async {
+            Alamofire.request(Router.getWalletBalance(address: address)).responseObject {(response: DataResponse<Balance>)
+                in switch response.result {
+                case .success:
+                    let balance = response.result.value
+                    completionHandler(balance, nil)
+                    break
+                case .failure(let error):
+                    print(error)
+                    completionHandler(nil, error)
+                    break
+                default:
+                    break
+                }
             }
         }
+
     }
     
 }

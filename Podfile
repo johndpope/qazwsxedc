@@ -10,6 +10,8 @@ target 'YourCoin' do
   	pod 'JSONRPCKit', :git=> 'https://github.com/bricklife/JSONRPCKit.git'
   	pod 'APIKit'
   	pod 'Geth'
+	pod 'RxSwift',    '~> 4.0'
+    	pod 'RxCocoa',    '~> 4.0'
   	pod 'EAIntroView'
   	pod 'Eureka', '~> 4.0.1'
   	pod 'MBProgressHUD'
