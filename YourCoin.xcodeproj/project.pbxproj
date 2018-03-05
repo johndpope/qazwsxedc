@@ -22,6 +22,7 @@
 		62DBAF13201022F400136351 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBAF12201022F400136351 /* BalanceViewController.swift */; };
 		62F841E22015FF8F0061EB0C /* SmallHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */; };
 		62F841E52015FFDB0061EB0C /* AllCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */; };
+		94F0B315CCCA8B1D4929CCFF /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
 		A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A80A46791FD8280000F70DC6 /* YourCoin.xcdatamodeld */; };
 		A80A467D1FD8280000F70DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80A467C1FD8280000F70DC6 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				621324A82022BED0009CFCBB /* ScrollableGraphView.framework in Frameworks */,
+				94F0B315CCCA8B1D4929CCFF /* Pods_YourCoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +482,7 @@
 				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				INFOPLIST_FILE = YourCoin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Bubble-team.YourCoin";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bubble-team.YourCoin.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,7 +498,7 @@
 				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				INFOPLIST_FILE = YourCoin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Bubble-team.YourCoin";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bubble-team.YourCoin.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
