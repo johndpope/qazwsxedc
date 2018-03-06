@@ -89,7 +89,7 @@ class EtherKeystore: Keystore {
             numericCast(signTransaction.nonce),
             gethAddress,
             signTransaction.amount,
-            signTransaction.speed.gasLimit.gethBigInt,
+            Int64("\(signTransaction.speed.gasLimit.gethBigInt)")!, //signTransaction.speed.gasLimit.gethBigInt
             signTransaction.speed.gasPrice.gethBigInt,
             signTransaction.data
         )

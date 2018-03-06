@@ -18,7 +18,6 @@
 		559B743F201BC4F500DDEBD4 /* CastError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88F8201B0CF30027F71D /* CastError.swift */; };
 		559B7440201BC4F500DDEBD4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88F9201B0CF30027F71D /* Config.swift */; };
 		559B7441201BC4F500DDEBD4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88FA201B0CF30027F71D /* Data.swift */; };
-		559B7442201BC4F500DDEBD4 /* EtherKeystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88FB201B0CF30027F71D /* EtherKeystore.swift */; };
 		559B7443201BC4F500DDEBD4 /* EtherServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88FC201B0CF30027F71D /* EtherServiceRequest.swift */; };
 		559B7444201BC4F500DDEBD4 /* ImportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88FD201B0CF30027F71D /* ImportType.swift */; };
 		559B7445201BC4F500DDEBD4 /* Keystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88FE201B0CF30027F71D /* Keystore.swift */; };
@@ -41,6 +40,7 @@
 		62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA4D2017BF7400A74278 /* CreateViewController.swift */; };
 		62B9CA502017EABA00A74278 /* WalletUIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA4F2017EABA00A74278 /* WalletUIPageViewController.swift */; };
 		62B9CA52201878B400A74278 /* WalletCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA51201878B400A74278 /* WalletCardViewController.swift */; };
+		62CDB9FE204F280C00D4E8AA /* EtherKeystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E88FB201B0CF30027F71D /* EtherKeystore.swift */; };
 		62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE750A20055B9200079B7D /* WalletCardObject.swift */; };
 		62DBAF13201022F400136351 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBAF12201022F400136351 /* BalanceViewController.swift */; };
 		62F841E22015FF8F0061EB0C /* SmallHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */; };
@@ -431,6 +431,34 @@
 			proxyType = 2;
 			remoteGlobalIDString = 52ED76E9588128D51470446F57265610;
 			remoteInfo = VENTouchLock;
+		};
+		6265D1E9204F25580014E0AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513DDC0201BBAE100BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA127C577A863C7FE1BDB4CCDD37EA9D;
+			remoteInfo = AlamofireObjectMapper;
+		};
+		6265D1EB204F25580014E0AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513DDC0201BBAE100BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C082EB27334F14260BAF527DC063E805;
+			remoteInfo = ObjectMapper;
+		};
+		6265D20A204F25580014E0AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513D914201BBAD700BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA127C577A863C7FE1BDB4CCDD37EA9D;
+			remoteInfo = AlamofireObjectMapper;
+		};
+		6265D20C204F25580014E0AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5513D914201BBAD700BDE0E5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C082EB27334F14260BAF527DC063E805;
+			remoteInfo = ObjectMapper;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -3247,6 +3275,7 @@
 				5513DC18201BBAD700BDE0E5 /* OnePasswordExtension.framework */,
 				5513DC1A201BBAD700BDE0E5 /* OnePasswordExtensionResources.bundle */,
 				5513DC1C201BBAD700BDE0E5 /* Alamofire.framework */,
+				6265D20B204F25580014E0AD /* AlamofireObjectMapper.framework */,
 				5513DC1E201BBAD700BDE0E5 /* APIKit.framework */,
 				5513DC20201BBAD700BDE0E5 /* BigInt.framework */,
 				5513DC22201BBAD700BDE0E5 /* BonMot.framework */,
@@ -3260,6 +3289,7 @@
 				5513DC32201BBAD700BDE0E5 /* KeychainSwift.framework */,
 				5513DC34201BBAD700BDE0E5 /* MBProgressHUD.framework */,
 				5513DC36201BBAD700BDE0E5 /* Moya.framework */,
+				6265D20D204F25580014E0AD /* ObjectMapper.framework */,
 				5513DC38201BBAD700BDE0E5 /* Pods_YourCoin.framework */,
 				5513DC3C201BBAD700BDE0E5 /* QRCodeReaderViewController.framework */,
 				5513DC3E201BBAD700BDE0E5 /* Rswift.framework */,
@@ -5375,6 +5405,7 @@
 				5513E0C4201BBAE200BDE0E5 /* OnePasswordExtension.framework */,
 				5513E0C6201BBAE200BDE0E5 /* OnePasswordExtensionResources.bundle */,
 				5513E0C8201BBAE200BDE0E5 /* Alamofire.framework */,
+				6265D1EA204F25580014E0AD /* AlamofireObjectMapper.framework */,
 				5513E0CA201BBAE200BDE0E5 /* APIKit.framework */,
 				5513E0CC201BBAE200BDE0E5 /* BigInt.framework */,
 				5513E0CE201BBAE200BDE0E5 /* BonMot.framework */,
@@ -5388,6 +5419,7 @@
 				5513E0DE201BBAE200BDE0E5 /* KeychainSwift.framework */,
 				5513E0E0201BBAE200BDE0E5 /* MBProgressHUD.framework */,
 				5513E0E2201BBAE200BDE0E5 /* Moya.framework */,
+				6265D1EC204F25580014E0AD /* ObjectMapper.framework */,
 				5513E0E4201BBAE200BDE0E5 /* Pods_YourCoin.framework */,
 				5513E0E8201BBAE200BDE0E5 /* QRCodeReaderViewController.framework */,
 				5513E0EA201BBAE200BDE0E5 /* Rswift.framework */,
@@ -7342,6 +7374,34 @@
 			remoteRef = 5513E0F9201BBAE200BDE0E5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		6265D1EA204F25580014E0AD /* AlamofireObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireObjectMapper.framework;
+			remoteRef = 6265D1E9204F25580014E0AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6265D1EC204F25580014E0AD /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 6265D1EB204F25580014E0AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6265D20B204F25580014E0AD /* AlamofireObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireObjectMapper.framework;
+			remoteRef = 6265D20A204F25580014E0AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6265D20D204F25580014E0AD /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 6265D20C204F25580014E0AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -7467,6 +7527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62CDB9FE204F280C00D4E8AA /* EtherKeystore.swift in Sources */,
 				559B7484201BC70800DDEBD4 /* RPCServer.swift in Sources */,
 				559B7485201BC70800DDEBD4 /* SendRawTransactionRequest.swift in Sources */,
 				559B7486201BC70800DDEBD4 /* SignTransaction.swift in Sources */,
@@ -7482,7 +7543,6 @@
 				559B743F201BC4F500DDEBD4 /* CastError.swift in Sources */,
 				559B7440201BC4F500DDEBD4 /* Config.swift in Sources */,
 				559B7441201BC4F500DDEBD4 /* Data.swift in Sources */,
-				559B7442201BC4F500DDEBD4 /* EtherKeystore.swift in Sources */,
 				5572CBDC20224955001EACA1 /* TransactionStatus.swift in Sources */,
 				559B7443201BC4F500DDEBD4 /* EtherServiceRequest.swift in Sources */,
 				559B7444201BC4F500DDEBD4 /* ImportType.swift in Sources */,
@@ -7571,6 +7631,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -7628,6 +7689,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -7653,7 +7715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BG42VZY2JD;
+				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Geth/Frameworks",
@@ -7665,7 +7727,7 @@
 					"$(PROJECT_DIR)/Pods/Geth/Frameworks/Geth.framework/Versions/A",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YourCoin.test.mb;
+				PRODUCT_BUNDLE_IDENTIFIER = Coin.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7678,7 +7740,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BG42VZY2JD;
+				DEVELOPMENT_TEAM = 527XT9Q8DK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Geth/Frameworks",
@@ -7690,7 +7752,7 @@
 					"$(PROJECT_DIR)/Pods/Geth/Frameworks/Geth.framework/Versions/A",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YourCoin.test.mb;
+				PRODUCT_BUNDLE_IDENTIFIER = Coin.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
