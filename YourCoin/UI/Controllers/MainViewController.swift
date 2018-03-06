@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    ////// залупа конская
     @IBOutlet weak var BalanceView: UIView!
     @IBOutlet weak var ExchangeRatesView: UIView!
     @IBOutlet weak var BalanceButton: UIButton!
