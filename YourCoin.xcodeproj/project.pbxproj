@@ -35,6 +35,7 @@
 		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
 		6220246A200F979200382DA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62202469200F979200382DA2 /* MainViewController.swift */; };
 		62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220246F200F9F3700382DA2 /* CustomUIButton.swift */; };
+		622E53B12052B449008C4FF4 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E53B02052B449008C4FF4 /* HistoryTableViewController.swift */; };
 		62A137FE20112A4100B3281B /* AcceptPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FD20112A4100B3281B /* AcceptPayViewController.swift */; };
 		62A1380020112F2900B3281B /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FF20112F2900B3281B /* PayNowViewController.swift */; };
 		62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA4D2017BF7400A74278 /* CreateViewController.swift */; };
@@ -2442,6 +2443,7 @@
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		62202469200F979200382DA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6220246F200F9F3700382DA2 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		622E53B02052B449008C4FF4 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		62A137FD20112A4100B3281B /* AcceptPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptPayViewController.swift; sourceTree = "<group>"; };
 		62A137FF20112F2900B3281B /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
 		62A6038B200CF39A00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaseBackround.png; sourceTree = "<group>"; };
@@ -6816,7 +6818,6 @@
 		62202468200F977600382DA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				62DBAF11201022E100136351 /* Exchange Rates */,
 				62DBAF10201022DA00136351 /* Balance */,
 				62202469200F979200382DA2 /* MainViewController.swift */,
 				62B9CA4D2017BF7400A74278 /* CreateViewController.swift */,
@@ -6848,15 +6849,9 @@
 				62A137FD20112A4100B3281B /* AcceptPayViewController.swift */,
 				62A137FF20112F2900B3281B /* PayNowViewController.swift */,
 				62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */,
+				622E53B02052B449008C4FF4 /* HistoryTableViewController.swift */,
 			);
 			path = Balance;
-			sourceTree = "<group>";
-		};
-		62DBAF11201022E100136351 /* Exchange Rates */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Exchange Rates";
 			sourceTree = "<group>";
 		};
 		62F841E32015FF940061EB0C /* AllCards */ = {
@@ -7527,6 +7522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622E53B12052B449008C4FF4 /* HistoryTableViewController.swift in Sources */,
 				62CDB9FE204F280C00D4E8AA /* EtherKeystore.swift in Sources */,
 				559B7484201BC70800DDEBD4 /* RPCServer.swift in Sources */,
 				559B7485201BC70800DDEBD4 /* SendRawTransactionRequest.swift in Sources */,
