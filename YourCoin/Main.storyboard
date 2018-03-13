@@ -230,7 +230,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="PayNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="h1J-6x-cIp"/>
-                                    <segue destination="w7u-i6-0wH" kind="show" animates="NO" id="4Qc-FU-7QG"/>
+                                    <segue destination="w7u-i6-0wH" kind="show" animates="NO" id="rVM-9q-Uie"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-16-rLx">
@@ -591,6 +591,32 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-4D-d0U" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="307" width="300" height="50"/>
+                                <color key="backgroundColor" name="BaseColorOne"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="VH2-ek-uNV"/>
+                                    <constraint firstAttribute="height" constant="50" id="ydY-HA-dGM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" name="CircleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BaseColorOne"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="CoG-hu-AMu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -598,13 +624,21 @@
                             <constraint firstItem="8jE-ZP-MB7" firstAttribute="bottom" secondItem="eZV-aM-nlg" secondAttribute="bottom" constant="400" id="JWM-BY-MHb"/>
                             <constraint firstItem="eZV-aM-nlg" firstAttribute="centerX" secondItem="AL2-OK-0gp" secondAttribute="centerX" id="OFq-UN-3Xg"/>
                             <constraint firstItem="5IX-pZ-poI" firstAttribute="centerX" secondItem="AL2-OK-0gp" secondAttribute="centerX" id="SvI-Hp-Nte"/>
+                            <constraint firstItem="gwm-4D-d0U" firstAttribute="centerX" secondItem="AL2-OK-0gp" secondAttribute="centerX" id="m2f-BD-AcQ"/>
+                            <constraint firstItem="gwm-4D-d0U" firstAttribute="top" secondItem="eZV-aM-nlg" secondAttribute="bottom" constant="40" id="pAe-1y-S5x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8jE-ZP-MB7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EaJ-QK-H0F">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Photo" id="hOm-Sn-nsD">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="-1" maxX="0.0" maxY="-1"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Xj-Qz-A9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="-1945"/>
+            <point key="canvasLocation" x="905" y="-1952"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="963-Yj-2G0">
@@ -707,13 +741,8 @@
         <image name="DefaultRectangle" width="1" height="1"/>
         <image name="ExampleQR" width="160" height="160"/>
         <image name="MainBackground" width="187" height="333"/>
+        <image name="Photo" width="32" height="32"/>
         <image name="SettingsIcon.png" width="96" height="96"/>
-        <namedColor name="BaseColorOne">
-            <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="BaseColorOne">
-            <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="BaseColorOne">
             <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
