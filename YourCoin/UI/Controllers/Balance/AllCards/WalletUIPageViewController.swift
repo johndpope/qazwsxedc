@@ -9,7 +9,11 @@
 import UIKit
 
 
-
+struct Wallet{
+    var key: String?
+    var balance: String = "0.00"
+    var type:String =  "ETH"
+}
 class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     let accountService: AccountService = AccountService()
     let ethereumDataService: EthereumDataService = EthereumDataService()
@@ -26,22 +30,53 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        let queue = DispatchQueue.global(qos: .utility)
+        // TODO: Rename array of wallets. This name is shit
+        var wallets1: [Wallet] = []
+        queue.async {
+            AccountService.sharedInstance.GetAccounts {
+                response, error in
+                if let wallets = response {
+                    for item in wallets {
+                        var wallet: Wallet? = Wallet()
+//                        print("Wallet: \(item.address.address)")
+                        wallet?.key = item.address.address
+//                        EthereumDataService.sharedInstance.GetBallance(address: item.address.address) {
+//                            resp, err in
+//                            if let balance = resp?.balance {
+//                                wallet?.balance = balance
+//                            }
+//                        }
+                        wallets1.append(wallet!)
+                        
+                    }
+                    DispatchQueue.main.async {
+                        for item in wallets1 {
+                            let walletContr = WalletCardViewController()
+                            walletContr.walletCardObject.walletPublicKey = item.key
+                            walletContr.walletCardObject.balance = item.balance
+                            walletContr.walletCardObject.typeCoin = item.type
+                            self.userWallets.append(walletContr)
+                        }
+                       
+                        self.dataSource = self
+                        self.delegate = self
+                        self.self.configurePageControl()
+                        if let firstViewController = self.orderedViewControllers.first {
+                            self.setViewControllers([firstViewController],
+                                                    direction: .forward,
+                                                    animated: true,
+                                                    completion: nil)
+                        }
+                    }
+                }
 
-        
+        }
+       
+        }
         //temp
        // some.SetCardsView(CardInfo: WalletCardObject(Wallet:"0xB9335eC1C88AA481042537eD36ba0baA6CB49e87", Balance:"13", TypeCoin:"ETH"))
-        
-        self.dataSource = self
-        self.delegate = self
-        configurePageControl()
-        if let firstViewController = orderedViewControllers.first {
-            setViewControllers([firstViewController],
-                               direction: .forward,
-                               animated: true,
-                               completion: nil)
-        }
+
         
     }
     

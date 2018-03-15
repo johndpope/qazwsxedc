@@ -23,6 +23,8 @@ import Alamofire
 
 class TransactionService {
     public let keystore: EtherKeystore = EtherKeystore()
+    
+    
     static let sharedInstance: TransactionService = TransactionService()
     
     // TODO: Get current user account

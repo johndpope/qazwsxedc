@@ -11,7 +11,7 @@ import Alamofire
 import AlamofireObjectMapper
 
 public class EthereumDataService {
-    
+    static let sharedInstance: EthereumDataService = EthereumDataService()
     func GetNonce(address: String,completionHandler: @escaping (TransactionCount?, Error?) -> ()) {
         Alamofire.request(Router.getTransactionsCount(address:address)).responseObject { (response:DataResponse<TransactionCount>)
             in switch response.result {

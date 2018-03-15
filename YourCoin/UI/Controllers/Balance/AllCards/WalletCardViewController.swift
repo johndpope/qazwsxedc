@@ -24,7 +24,6 @@ class WalletCardViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 0.02, green: 0.16, blue: 0.21, alpha: 1)
         self.view.layer.cornerRadius = 10
         self.view.layer.borderWidth = 0;
-        
         infowallelUILabel = SetLabelInfo(text:"WALLET:")
         self.view.addSubview(infowallelUILabel)
         infowallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 22).isActive = true
@@ -53,12 +52,12 @@ class WalletCardViewController: UIViewController {
         vauleCurrencyUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 122).isActive = true
         vauleCurrencyUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 58).isActive = true
         
-        //wallelUILabel = SetLabelValue(text:String((walletCardObject?.balance)!*(walletCardObject?.priceToUSD)!))
-        //self.view.addSubview(wallelUILabel)
-        //wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 84).isActive = true
-        //wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 89).isActive = true
+//        wallelUILabel = SetLabelValue(text:String((walletCardObject?.balance)!*(walletCardObject?.priceToUSD)!))
+//        self.view.addSubview(wallelUILabel)
+//        wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 84).isActive = true
+//        wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 89).isActive = true
         
-        //////
+        ////
         
         typeCoinCurrencyUILabel = SetLabelNameValue(text:(walletCardObject?.typeCoin)!)
         self.view.addSubview(typeCoinCurrencyUILabel)
