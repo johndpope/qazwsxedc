@@ -28,8 +28,6 @@ class CreateViewController: UIViewController {
             response, error in
             if let account = response {
                 print(account.address)
-                
-                
             }
             else {
                 print(error)
@@ -50,6 +48,7 @@ class CreateViewController: UIViewController {
             }
             else {
                 print(error)
+                
             }
         }
     }

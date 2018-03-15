@@ -16,7 +16,7 @@ class StartUpViewController: UIViewController {
     @IBOutlet weak var startupLoading: UIActivityIndicatorView!
     
     var spinnerView = JTMaterialSpinner()
-
+    
     
 
     override func viewDidLoad() {
@@ -24,33 +24,35 @@ class StartUpViewController: UIViewController {
         
         // TODO: Refactor thit spinner's initialization
         self.view.addSubview(spinnerView)
-        spinnerView.frame = CGRect(x: (375.0 - 50.0) / 2.0, y: 300, width: 50, height: 50)
-        spinnerView.circleLayer.lineWidth = 2.0
-        spinnerView.circleLayer.strokeColor = UIColor(named:"BaseColorOne")?.cgColor
-        spinnerView.animationDuration = 2.5
         
-        accountService.GetAccounts() {
-            response, error in
-            if let wallets = response?.count {
-                if wallets > 0 {
-                    self.spinnerView.beginRefreshing()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
-                        self.performSegue(withIdentifier: "startup_main", sender: self)
-                        self.spinnerView.endRefreshing()
+            spinnerView.frame = CGRect(x: (375.0 - 50.0) / 2.0, y: 300, width: 50, height: 50)
+            spinnerView.circleLayer.lineWidth = 2.0
+            spinnerView.circleLayer.strokeColor = UIColor(named:"BaseColorOne")?.cgColor
+            spinnerView.animationDuration = 2.5
+            
+            self.self.accountService.GetAccounts() {
+                response, error in
+                if let wallets = response?.count {
+                    if wallets > 0 {
+                        self.spinnerView.beginRefreshing()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
+                            self.performSegue(withIdentifier: "startup_main", sender: self)
+                            self.spinnerView.endRefreshing()
+                            
+                        }
                         
                     }
-                    
-                }
-                else {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)){
-                        self.performSegue(withIdentifier: "startup_create", sender: self)
-                        self.spinnerView.endRefreshing()
+                    else {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)){
+                            self.performSegue(withIdentifier: "startup_create", sender: self)
+                            self.spinnerView.endRefreshing()
+                        }
+                        
                     }
-                    
                 }
+                
             }
-            
-        }
+        
         // Do any additional setup after loading the view.
     }
 

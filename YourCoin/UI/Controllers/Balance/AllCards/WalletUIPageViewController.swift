@@ -27,33 +27,6 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        accountService.GetAccounts() {
-            response, error in
-            if let wallets = response{
-                for account in wallets {
-                    // TODO: Create model such as "Model" and set model via constructor !!!!
-                    let wallet = WalletCardViewController()
-                    let account = account.address.address
-                    //wallet.walletCardObject = WalletCardObject()
-                    wallet.walletCardObject.walletPublicKey = account
-                    DispatchQueue.main.async {
-                        self.ethereumDataService.GetBallance(address: account) {
-                            response, error in
-                            let balance = response?.balance
-                            print(balance!)
-                            wallet.walletCardObject.balance = balance!
-                            wallet.walletCardObject.typeCoin = "ETH"
-                                self.userWallets.append(wallet)
-                        }
-                        
-                    }
-                   
-                    //
-                }
-                print("Count \(self.userWallets.count)")
-            }
-        }
-
         
 
         

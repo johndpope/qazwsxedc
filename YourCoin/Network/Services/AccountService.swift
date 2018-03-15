@@ -23,6 +23,7 @@ import Alamofire
 
 
 class AccountService {
+    static let sharedInstance: AccountService = AccountService()
     let keystore: EtherKeystore = EtherKeystore()
     func CreateWallet(completionHandler: @escaping (Account?, Error?) -> ()) {
         let password = UUID().uuidString
