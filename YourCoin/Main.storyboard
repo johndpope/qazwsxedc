@@ -258,6 +258,7 @@
                                         </state>
                                         <connections>
                                             <action selector="Some:" destination="9CL-7j-8fw" eventType="touchUpInside" id="vQW-Ht-Up1"/>
+                                            <segue destination="ZiL-nu-joY" kind="show" animates="NO" id="a7Y-V5-FM5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -414,6 +415,65 @@
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="-548.27586206896558"/>
         </scene>
+        <!--History Table View Controller-->
+        <scene sceneID="7tt-tY-0XE">
+            <objects>
+                <viewController id="ZiL-nu-joY" customClass="HistoryTableViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvw-qH-ydv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AuQ-eL-Acj">
+                                <rect key="frame" x="0.0" y="129" width="375" height="488"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="O51-1p-zut" detailTextLabel="CDX-Bw-wUt" style="IBUITableViewCellStyleValue1" id="UQT-1C-4Hy">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UQT-1C-4Hy" id="u3N-Sm-TD9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O51-1p-zut">
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CDX-Bw-wUt">
+                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZiL-nu-joY" id="MWi-jC-2Rm"/>
+                                    <outlet property="delegate" destination="ZiL-nu-joY" id="hTG-s6-EB4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AuQ-eL-Acj" firstAttribute="leading" secondItem="e9I-Yo-uOm" secondAttribute="leading" id="Bd5-Nt-6tT"/>
+                            <constraint firstItem="e9I-Yo-uOm" firstAttribute="bottom" secondItem="AuQ-eL-Acj" secondAttribute="bottom" constant="50" id="LHi-wm-MDM"/>
+                            <constraint firstItem="AuQ-eL-Acj" firstAttribute="top" secondItem="e9I-Yo-uOm" secondAttribute="top" constant="65" id="awa-5b-0Nn"/>
+                            <constraint firstItem="e9I-Yo-uOm" firstAttribute="trailing" secondItem="AuQ-eL-Acj" secondAttribute="trailing" id="d5G-XM-s0e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e9I-Yo-uOm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67x-bO-D9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-1269"/>
+        </scene>
         <!--Accept Pay View Controller-->
         <scene sceneID="YeE-Vj-ytH">
             <objects>
@@ -489,9 +549,95 @@
                     <view key="view" contentMode="scaleToFill" id="AL2-OK-0gp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-aM-nlg" customClass="CustomUITextField" customModule="YourCoin">
+                                <rect key="frame" x="38" y="217" width="300" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="IdS-pe-azw"/>
+                                    <constraint firstAttribute="height" constant="50" id="cee-W2-NB2"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BaseColorOne"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IX-pZ-poI" customClass="CustomUITextField" customModule="YourCoin">
+                                <rect key="frame" x="38" y="147" width="300" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PHC-Za-ZI8"/>
+                                    <constraint firstAttribute="width" constant="300" id="yoX-1V-OFU"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BaseColorOne"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-4D-d0U" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="307" width="300" height="50"/>
+                                <color key="backgroundColor" name="BaseColorOne"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="VH2-ek-uNV"/>
+                                    <constraint firstAttribute="height" constant="50" id="ydY-HA-dGM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" name="CircleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BaseColorOne"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="CoG-hu-AMu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eZV-aM-nlg" firstAttribute="top" secondItem="5IX-pZ-poI" secondAttribute="bottom" constant="20" id="8tP-J8-g8a"/>
+                            <constraint firstItem="8jE-ZP-MB7" firstAttribute="bottom" secondItem="eZV-aM-nlg" secondAttribute="bottom" constant="400" id="JWM-BY-MHb"/>
+                            <constraint firstItem="eZV-aM-nlg" firstAttribute="centerX" secondItem="AL2-OK-0gp" secondAttribute="centerX" id="OFq-UN-3Xg"/>
+                            <constraint firstItem="5IX-pZ-poI" firstAttribute="centerX" secondItem="AL2-OK-0gp" secondAttribute="centerX" id="SvI-Hp-Nte"/>
+                            <constraint firstItem="gwm-4D-d0U" firstAttribute="centerX" secondItem="AL2-OK-0gp" secondAttribute="centerX" id="m2f-BD-AcQ"/>
+                            <constraint firstItem="gwm-4D-d0U" firstAttribute="top" secondItem="eZV-aM-nlg" secondAttribute="bottom" constant="40" id="pAe-1y-S5x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8jE-ZP-MB7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EaJ-QK-H0F">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Photo" id="hOm-Sn-nsD">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="-1" maxX="0.0" maxY="-1"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Xj-Qz-A9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

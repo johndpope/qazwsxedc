@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    ////// залупа конская
     @IBOutlet weak var BalanceView: UIView!
     @IBOutlet weak var ExchangeRatesView: UIView!
     @IBOutlet weak var BalanceButton: UIButton!
@@ -27,8 +28,13 @@ class MainViewController: UIViewController {
         return .lightContent
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("успех")
+        self.view.endEditing(true)
+    }
+    
     @IBAction func SwichButton(_ sender: UIButton) {
-        print("->Click Swich Buttons" , sender.titleLabel?.text )
+        print("->Click Swich Buttons" , sender.titleLabel?.text ?? "error" )
         
         if(sender.titleLabel?.text == "Balance") {
             BalanceView.isHidden = false
@@ -37,6 +43,7 @@ class MainViewController: UIViewController {
             ExchangeRatesButton.setTitleColor(UIColor.white, for: .normal)
         }
         else if (sender.titleLabel?.text == "Exchange Rates"){
+            self.view.endEditing(true)
             BalanceView.isHidden = true
             ExchangeRatesView.isHidden = false
             sender.setTitleColor(UIColor.cyan, for: .normal)
