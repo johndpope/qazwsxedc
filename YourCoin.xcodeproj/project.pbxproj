@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		556126EB205C48120016575A /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556126EA205C48120016575A /* HistoryTableViewController.swift */; };
 		6203CD372000F8E100768BB3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6203CD362000F8E100768BB3 /* Podfile */; };
-		621324A52022B95B009CFCBB /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621324A42022B95B009CFCBB /* CustomUIView.swift */; };
 		621324A82022BED0009CFCBB /* ScrollableGraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621324A92022BED0009CFCBB /* ScrollableGraphView.framework */; };
 		6215FE722021F8E40037B2C4 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6215FE712021F8E40037B2C4 /* RatesViewController.swift */; };
 		6220246A200F979200382DA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62202469200F979200382DA2 /* MainViewController.swift */; };
 		62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220246F200F9F3700382DA2 /* CustomUIButton.swift */; };
+		627341EF2061012400B445E9 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627341EE2061012400B445E9 /* CustomUIView.swift */; };
+		627341F12061027900B445E9 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627341F02061027800B445E9 /* CustomUITextField.swift */; };
 		62A137FE20112A4100B3281B /* AcceptPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FD20112A4100B3281B /* AcceptPayViewController.swift */; };
 		62A1380020112F2900B3281B /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A137FF20112F2900B3281B /* PayNowViewController.swift */; };
 		62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA4D2017BF7400A74278 /* CreateViewController.swift */; };
@@ -35,11 +36,12 @@
 /* Begin PBXFileReference section */
 		556126EA205C48120016575A /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		6203CD362000F8E100768BB3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		621324A42022B95B009CFCBB /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		621324A92022BED0009CFCBB /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6215FE712021F8E40037B2C4 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		62202469200F979200382DA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6220246F200F9F3700382DA2 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		627341EE2061012400B445E9 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		627341F02061027800B445E9 /* CustomUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		62A137FD20112A4100B3281B /* AcceptPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptPayViewController.swift; sourceTree = "<group>"; };
 		62A137FF20112F2900B3281B /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
 		62A6038B200CF39A00EA919C /* BaseBackround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaseBackround.png; sourceTree = "<group>"; };
@@ -108,8 +110,9 @@
 		6220246C200F9C6F00382DA2 /* CustomElements */ = {
 			isa = PBXGroup;
 			children = (
+				627341F02061027800B445E9 /* CustomUITextField.swift */,
 				6220246F200F9F3700382DA2 /* CustomUIButton.swift */,
-				621324A42022B95B009CFCBB /* CustomUIView.swift */,
+				627341EE2061012400B445E9 /* CustomUIView.swift */,
 			);
 			path = CustomElements;
 			sourceTree = "<group>";
@@ -382,14 +385,15 @@
 			files = (
 				556126EB205C48120016575A /* HistoryTableViewController.swift in Sources */,
 				62B9CA52201878B400A74278 /* WalletCardViewController.swift in Sources */,
-				621324A52022B95B009CFCBB /* CustomUIView.swift in Sources */,
 				62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */,
 				62A1380020112F2900B3281B /* PayNowViewController.swift in Sources */,
+				627341EF2061012400B445E9 /* CustomUIView.swift in Sources */,
 				6220246A200F979200382DA2 /* MainViewController.swift in Sources */,
 				62DBAF13201022F400136351 /* BalanceViewController.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
 				62F841E22015FF8F0061EB0C /* SmallHistoryTableViewController.swift in Sources */,
 				62B9CA502017EABA00A74278 /* WalletUIPageViewController.swift in Sources */,
+				627341F12061027900B445E9 /* CustomUITextField.swift in Sources */,
 				62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
 				6215FE722021F8E40037B2C4 /* RatesViewController.swift in Sources */,

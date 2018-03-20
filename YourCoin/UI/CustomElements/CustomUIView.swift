@@ -1,8 +1,8 @@
 //
-//  CustomView.swift
+//  CustomUIView.swift
 //  YourCoin
 //
-//  Created by Some Man on 01.02.18.
+//  Created by Some Man on 20.03.18.
 //  Copyright © 2018 Bubble. All rights reserved.
 //
 
@@ -26,4 +26,3 @@ import UIKit
         get { return layer.cornerRadius  }
     }
 }
-
