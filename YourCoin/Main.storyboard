@@ -877,7 +877,67 @@
                     <view key="view" contentMode="scaleToFill" id="4Q5-go-WS0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzq-JH-I0W" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
+                                <rect key="frame" x="12.5" y="165" width="350" height="50"/>
+                                <color key="backgroundColor" name="BaseColorOne"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="RtR-xm-jzI"/>
+                                    <constraint firstAttribute="height" constant="50" id="mMf-qh-Vbw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="RECIVED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" name="CircleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BaseColorOne"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="ihw-6M-H0e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-1X-2Vj" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
+                                <rect key="frame" x="12.5" y="85" width="350" height="50"/>
+                                <color key="backgroundColor" name="BaseColorOne"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="EwN-GN-Pbk"/>
+                                    <constraint firstAttribute="height" constant="50" id="NSv-IA-zSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" name="CircleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BaseColorOne"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="7aI-Ye-Ocy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jzq-JH-I0W" firstAttribute="centerX" secondItem="4Q5-go-WS0" secondAttribute="centerX" id="4o1-G7-WI1"/>
+                            <constraint firstItem="buZ-1X-2Vj" firstAttribute="centerY" secondItem="4Q5-go-WS0" secondAttribute="centerY" constant="-40" id="Mzk-d5-Yw2"/>
+                            <constraint firstItem="jzq-JH-I0W" firstAttribute="centerY" secondItem="4Q5-go-WS0" secondAttribute="centerY" constant="40" id="dcF-df-Uva"/>
+                            <constraint firstItem="buZ-1X-2Vj" firstAttribute="centerX" secondItem="4Q5-go-WS0" secondAttribute="centerX" id="hQ7-4b-VbP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jfl-tG-BvW"/>
                     </view>
                 </viewController>
@@ -916,6 +976,12 @@
         <image name="Rectangle" width="1" height="32"/>
         <image name="SettingsIcon.png" width="96" height="96"/>
         <namedColor name="BaseColorOne">
+            <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="BaseColorOne">
+            <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="BaseColorOne">
             <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="CardColor">
@@ -923,6 +989,12 @@
         </namedColor>
         <namedColor name="ChartColor">
             <color red="0.0" green="0.87999999523162842" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="CircleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CircleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CircleColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
