@@ -10,7 +10,14 @@ import UIKit
 
 class AllCardsViewController: UIViewController {
     
-   // static var walletCards:WalletUIPageViewController?
+    @IBOutlet weak var SendRaciveUIButton: UIButton!
+    @IBOutlet weak var RateViewUIButton: UIButton!
+    @IBOutlet weak var TransactionViewUIButton: UIButton!
+    
+    @IBOutlet weak var SendReciveUIView: UIView!
+    @IBOutlet weak var RateUIView: UIView!
+    @IBOutlet weak var TransactionsUIView: UIView!
+    // static var walletCards:WalletUIPageViewController?
     static var TempCount:Int?
     
     override func viewDidLoad() {
@@ -22,9 +29,33 @@ class AllCardsViewController: UIViewController {
     }
     
        override func viewWillAppear(_ animated: Bool) {
-      //  NotificationCenter.default.addObserver(self, selector: #selector(dd), name: NSNotification.Name("dd"), object: nil)
-        print(AllCardsViewController.TempCount)
+        SendReciveUIView.isHidden = false
+        RateUIView.isHidden = true
+        TransactionsUIView.isHidden = true
+        print(AllCardsViewController.TempCount ?? "nil")
       }
+    @IBAction func ClickPageMenu(_ sender: UIButton) {
+        print("->Click Page menu:")
+        switch sender.accessibilityIdentifier {
+        case "sendrecive"?:
+            print(" -sendrecive view")
+            SendReciveUIView.isHidden = false
+            RateUIView.isHidden = true
+            TransactionsUIView.isHidden = true
+        case "rate"?:
+            print(" -rate view")
+            SendReciveUIView.isHidden = true
+            RateUIView.isHidden = false
+            TransactionsUIView.isHidden = true
+        case "transactions"?:
+            print(" -transactions view")
+            SendReciveUIView.isHidden = true
+            RateUIView.isHidden = true
+            TransactionsUIView.isHidden = false
+        default:
+            print("error")
+        }
+    }
     
     static func RefreshData(some:String){
         print(some)

@@ -352,6 +352,15 @@
                                     <segue destination="twZ-AB-7RB" kind="embed" id="2Cr-Hj-fXV"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgu-G5-93V">
+                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="KOX-M9-tzb"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="diX-5L-k3X" kind="embed" id="1qN-W7-tDa"/>
+                                </connections>
+                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikl-6f-LUO">
                                 <rect key="frame" x="0.0" y="367" width="375" height="300"/>
                                 <constraints>
@@ -359,15 +368,6 @@
                                 </constraints>
                                 <connections>
                                     <segue destination="CkO-fa-aBC" kind="embed" id="Xfn-5J-SXB"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgu-G5-93V">
-                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="KOX-M9-tzb"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="diX-5L-k3X" kind="embed" id="sae-Qq-mvr"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-ce-9Jw">
@@ -387,23 +387,35 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si3-Wz-TMv">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="sendrecive"/>
                                         <state key="normal" title="SEND/RECIVE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ClickPageMenu:" destination="XU3-Ak-azI" eventType="touchUpInside" id="o4A-Ku-tVY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bva-K4-7or">
                                         <rect key="frame" x="125.5" y="0.0" width="124" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="rate"/>
                                         <state key="normal" title="RATE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ClickPageMenu:" destination="XU3-Ak-azI" eventType="touchUpInside" id="iHW-2r-rtw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2K-cG-g3w">
                                         <rect key="frame" x="250.5" y="0.0" width="124.5" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="transactions"/>
                                         <state key="normal" title="TRANSACTIONS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ClickPageMenu:" destination="XU3-Ak-azI" eventType="touchUpInside" id="dtv-6A-uQm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -433,6 +445,14 @@
                         <viewLayoutGuide key="safeArea" id="TQZ-xo-TWy"/>
                     </view>
                     <navigationItem key="navigationItem" id="bCU-BU-nFk"/>
+                    <connections>
+                        <outlet property="RateUIView" destination="zgu-G5-93V" id="fGA-aG-SeZ"/>
+                        <outlet property="RateViewUIButton" destination="Bva-K4-7or" id="DD6-Ji-bkD"/>
+                        <outlet property="SendRaciveUIButton" destination="Si3-Wz-TMv" id="vn2-YE-UQm"/>
+                        <outlet property="SendReciveUIView" destination="RgB-8o-yVU" id="SO4-jy-Ply"/>
+                        <outlet property="TransactionViewUIButton" destination="T2K-cG-g3w" id="mc0-bY-BDJ"/>
+                        <outlet property="TransactionsUIView" destination="ikl-6f-LUO" id="gPD-H1-gfe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB8-Kq-5Fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -840,13 +860,13 @@
                     <view key="view" contentMode="scaleToFill" id="WfA-Q7-7QC">
                         <rect key="frame" x="0.0" y="0.0" width="371" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="ChartColor"/>
                         <viewLayoutGuide key="safeArea" id="QqJ-Wr-o4Q"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLg-Lc-6aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2390" y="-383"/>
+            <point key="canvasLocation" x="2422" y="-383"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0M5-Uj-Jlh">
@@ -855,13 +875,13 @@
                     <view key="view" contentMode="scaleToFill" id="jgI-Yl-Nv3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="aCi-o3-EuH"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41K-Qm-ING" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750" y="-383"/>
+            <point key="canvasLocation" x="3089" y="-383"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fGy-0j-bDM">
@@ -876,7 +896,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1o-LM-DHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3063" y="-383"/>
+            <point key="canvasLocation" x="3758" y="-383"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X01-sN-7zj">
@@ -913,6 +933,9 @@
         </namedColor>
         <namedColor name="CardColor">
             <color red="0.019999999552965164" green="0.15999999642372131" blue="0.20999999344348907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ChartColor">
+            <color red="0.0" green="0.87999999523162842" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="CircleColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
