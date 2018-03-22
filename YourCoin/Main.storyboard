@@ -105,14 +105,14 @@
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5p-Dm-YqI">
-                                <rect key="frame" x="0.0" y="-43" width="375" height="710"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="2vX-Sa-JqL" kind="embed" id="1CX-n0-mcZ"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOs-JS-WGu">
-                                <rect key="frame" x="0.0" y="-43" width="375" height="710"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="GZF-Bj-s64" kind="embed" id="Gvf-ez-4FB"/>
@@ -177,11 +177,11 @@
             <objects>
                 <viewController id="D8w-f2-3vo" customClass="BalanceViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="be2-eR-dg8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ml-0Y-THN" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="565" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="522" width="300" height="50"/>
                                 <color key="backgroundColor" name="BaseColorOne"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rha-U1-dc6"/>
@@ -208,7 +208,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-Gn-kpj" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="37" y="495" width="300" height="50"/>
+                                <rect key="frame" x="37" y="452" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="ZPW-2z-wHS"/>
                                     <constraint firstAttribute="height" constant="50" id="fXM-XX-RXy"/>
@@ -237,7 +237,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-16-rLx">
-                                <rect key="frame" x="106.5" y="329" width="162" height="13"/>
+                                <rect key="frame" x="106.5" y="286" width="162" height="13"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HistoryImage" translatesAutoresizingMaskIntoConstraints="NO" id="dIs-La-OoU">
                                         <rect key="frame" x="0.0" y="0.0" width="13" height="13"/>
@@ -263,7 +263,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="PMg-kg-6yS">
-                                <rect key="frame" x="104.5" y="293" width="166.5" height="13"/>
+                                <rect key="frame" x="104.5" y="250" width="166.5" height="13"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="5aH-07-ks5">
                                         <rect key="frame" x="0.0" y="0.0" width="13" height="13"/>
@@ -290,7 +290,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DI-xD-wnX">
-                                <rect key="frame" x="87.5" y="198" width="200.5" height="72"/>
+                                <rect key="frame" x="87.5" y="155" width="200.5" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRI-px-w1e">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="72"/>
@@ -343,11 +343,11 @@
             <objects>
                 <viewController id="XU3-Ak-azI" customClass="AllCardsViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0PI-tx-gWU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekZ-fl-79D" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="37" y="565" width="300" height="50"/>
+                                <rect key="frame" x="37" y="522" width="300" height="50"/>
                                 <color key="backgroundColor" name="BaseColorOne"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dIj-mm-Hme"/>
@@ -373,7 +373,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-8o-yVU">
-                                <rect key="frame" x="22" y="352" width="330" height="167"/>
+                                <rect key="frame" x="22" y="309" width="330" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="167" id="JW9-zN-zo3"/>
                                     <constraint firstAttribute="width" constant="330" id="SGy-DU-fQ0"/>
@@ -383,7 +383,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-ce-9Jw">
-                                <rect key="frame" x="22" y="157" width="330" height="175"/>
+                                <rect key="frame" x="22" y="114" width="330" height="175"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="Sea-mD-MSD"/>
@@ -415,11 +415,11 @@
             <objects>
                 <viewController id="ZiL-nu-joY" customClass="HistoryTableViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rvw-qH-ydv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AuQ-eL-Acj">
-                                <rect key="frame" x="0.0" y="129" width="375" height="531"/>
+                                <rect key="frame" x="0.0" y="129" width="375" height="488"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="O51-1p-zut" detailTextLabel="CDX-Bw-wUt" style="IBUITableViewCellStyleValue1" id="UQT-1C-4Hy">
@@ -474,11 +474,11 @@
             <objects>
                 <viewController id="fgj-wf-UJu" customClass="AcceptPayViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y8E-HB-AMs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbE-hl-fBl" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="38" y="565" width="300" height="50"/>
+                                <rect key="frame" x="38" y="522" width="300" height="50"/>
                                 <color key="backgroundColor" name="BaseColorOne"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ees-nm-EQH"/>
@@ -504,14 +504,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExampleQR" translatesAutoresizingMaskIntoConstraints="NO" id="QNH-q6-rhQ">
-                                <rect key="frame" x="37.5" y="205" width="300" height="300"/>
+                                <rect key="frame" x="37.5" y="162" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="9NY-Mt-qIC"/>
                                     <constraint firstAttribute="height" constant="300" id="QOT-B5-TQ5"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0xB9335eC1C88AA481042537eD36ba0baA6CB49e87" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQ2-Yl-sfJ">
-                                <rect key="frame" x="22.5" y="525" width="330" height="20"/>
+                                <rect key="frame" x="22.5" y="482" width="330" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="1LG-n1-3uk"/>
                                     <constraint firstAttribute="width" constant="330" id="LDE-Jm-Y0Q"/>
@@ -542,11 +542,11 @@
             <objects>
                 <viewController id="w7u-i6-0wH" customClass="PayNowViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AL2-OK-0gp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-aM-nlg" customClass="CustomUITextField" customModule="YourCoin">
-                                <rect key="frame" x="38" y="260" width="300" height="50"/>
+                                <rect key="frame" x="38" y="217" width="300" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="IdS-pe-azw"/>
@@ -568,7 +568,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IX-pZ-poI" customClass="CustomUITextField" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="38" y="190" width="300" height="50"/>
+                                <rect key="frame" x="38" y="147" width="300" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="PHC-Za-ZI8"/>
@@ -590,7 +590,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-4D-d0U" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="350" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="307" width="300" height="50"/>
                                 <color key="backgroundColor" name="BaseColorOne"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="VH2-ek-uNV"/>
@@ -643,11 +643,11 @@
             <objects>
                 <viewController id="73c-wC-nQX" customClass="RatesViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q0S-sa-Kky">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-Gp-v3Z" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
-                                <rect key="frame" x="21" y="231" width="334" height="431"/>
+                                <rect key="frame" x="21" y="188" width="334" height="431"/>
                                 <color key="backgroundColor" name="CardColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -664,7 +664,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-aA-kv8" customClass="CustomUIView" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="21" y="163" width="334" height="48"/>
+                                <rect key="frame" x="21" y="120" width="334" height="48"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="mj8-ol-ss1">
                                         <rect key="frame" x="167" y="9" width="1" height="30"/>
@@ -844,9 +844,6 @@
         <image name="Photo" width="32" height="32"/>
         <image name="Rectangle" width="1" height="32"/>
         <image name="SettingsIcon.png" width="96" height="96"/>
-        <namedColor name="BaseColorOne">
-            <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="BaseColorOne">
             <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
