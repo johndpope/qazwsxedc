@@ -204,7 +204,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="2cD-8A-hKh"/>
-                                    <segue destination="fgj-wf-UJu" kind="show" animates="NO" id="SPw-Rj-NIm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-Gn-kpj" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
@@ -233,7 +232,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="PayNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="h1J-6x-cIp"/>
-                                    <segue destination="w7u-i6-0wH" kind="show" animates="NO" id="4Qc-FU-7QG"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-16-rLx">
@@ -449,7 +447,7 @@
                         <outlet property="RateUIView" destination="zgu-G5-93V" id="fGA-aG-SeZ"/>
                         <outlet property="RateViewUIButton" destination="Bva-K4-7or" id="DD6-Ji-bkD"/>
                         <outlet property="SendRaciveUIButton" destination="Si3-Wz-TMv" id="vn2-YE-UQm"/>
-                        <outlet property="SendReciveUIView" destination="RgB-8o-yVU" id="SO4-jy-Ply"/>
+                        <outlet property="SendReceiveUIView" destination="RgB-8o-yVU" id="SO4-jy-Ply"/>
                         <outlet property="TransactionViewUIButton" destination="T2K-cG-g3w" id="mc0-bY-BDJ"/>
                         <outlet property="TransactionsUIView" destination="ikl-6f-LUO" id="gPD-H1-gfe"/>
                     </connections>
@@ -585,7 +583,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0v-Gy-jME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1270" y="-1356"/>
+            <point key="canvasLocation" x="4569" y="-548"/>
         </scene>
         <!--Pay Now View Controller-->
         <scene sceneID="E4S-xi-zwI">
@@ -686,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Xj-Qz-A9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1266" y="-2033"/>
+            <point key="canvasLocation" x="4574" y="-1224"/>
         </scene>
         <!--Rates View Controller-->
         <scene sceneID="963-Yj-2G0">
@@ -943,7 +941,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1o-LM-DHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3758" y="-383"/>
+            <point key="canvasLocation" x="3780" y="-385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X01-sN-7zj">

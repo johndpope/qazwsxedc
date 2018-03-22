@@ -14,7 +14,7 @@ class AllCardsViewController: UIViewController {
     @IBOutlet weak var RateViewUIButton: UIButton!
     @IBOutlet weak var TransactionViewUIButton: UIButton!
     
-    @IBOutlet weak var SendReciveUIView: UIView!
+    @IBOutlet weak var SendReceiveUIView: UIView!
     @IBOutlet weak var RateUIView: UIView!
     @IBOutlet weak var TransactionsUIView: UIView!
     // static var walletCards:WalletUIPageViewController?
@@ -29,7 +29,7 @@ class AllCardsViewController: UIViewController {
     }
     
        override func viewWillAppear(_ animated: Bool) {
-        SendReciveUIView.isHidden = false
+        SendReceiveUIView.isHidden = false
         RateUIView.isHidden = true
         TransactionsUIView.isHidden = true
         print(AllCardsViewController.TempCount ?? "nil")
@@ -39,17 +39,17 @@ class AllCardsViewController: UIViewController {
         switch sender.accessibilityIdentifier {
         case "sendrecive"?:
             print(" -sendrecive view")
-            SendReciveUIView.isHidden = false
+            SendReceiveUIView.isHidden = false
             RateUIView.isHidden = true
             TransactionsUIView.isHidden = true
         case "rate"?:
             print(" -rate view")
-            SendReciveUIView.isHidden = true
+            SendReceiveUIView.isHidden = true
             RateUIView.isHidden = false
             TransactionsUIView.isHidden = true
         case "transactions"?:
             print(" -transactions view")
-            SendReciveUIView.isHidden = true
+            SendReceiveUIView.isHidden = true
             RateUIView.isHidden = true
             TransactionsUIView.isHidden = false
         default:
