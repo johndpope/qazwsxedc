@@ -355,7 +355,7 @@
                                     <constraint firstAttribute="height" constant="300" id="KOX-M9-tzb"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="diX-5L-k3X" kind="embed" id="1qN-W7-tDa"/>
+                                    <segue destination="73c-wC-nQX" kind="embed" id="4AE-7k-5rS"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikl-6f-LUO">
@@ -364,7 +364,7 @@
                                     <constraint firstAttribute="height" constant="300" id="sMi-pt-IPH"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="CkO-fa-aBC" kind="embed" id="Xfn-5J-SXB"/>
+                                    <segue destination="CkO-fa-aBC" kind="embed" id="s4O-NS-cru"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-ce-9Jw">
@@ -522,11 +522,11 @@
             <objects>
                 <viewController id="fgj-wf-UJu" customClass="AcceptPayViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y8E-HB-AMs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbE-hl-fBl" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="38" y="522" width="300" height="50"/>
+                                <rect key="frame" x="38" y="155" width="300" height="50"/>
                                 <color key="backgroundColor" name="BaseColorOne"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ees-nm-EQH"/>
@@ -552,14 +552,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExampleQR" translatesAutoresizingMaskIntoConstraints="NO" id="QNH-q6-rhQ">
-                                <rect key="frame" x="37.5" y="162" width="300" height="300"/>
+                                <rect key="frame" x="37.5" y="-205" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="9NY-Mt-qIC"/>
                                     <constraint firstAttribute="height" constant="300" id="QOT-B5-TQ5"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0xB9335eC1C88AA481042537eD36ba0baA6CB49e87" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQ2-Yl-sfJ">
-                                <rect key="frame" x="22.5" y="482" width="330" height="20"/>
+                                <rect key="frame" x="22.5" y="115" width="330" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="1LG-n1-3uk"/>
                                     <constraint firstAttribute="width" constant="330" id="LDE-Jm-Y0Q"/>
@@ -590,11 +590,11 @@
             <objects>
                 <viewController id="w7u-i6-0wH" customClass="PayNowViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AL2-OK-0gp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-aM-nlg" customClass="CustomUITextField" customModule="YourCoin">
-                                <rect key="frame" x="38" y="217" width="300" height="50"/>
+                                <rect key="frame" x="38" y="-150" width="300" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="IdS-pe-azw"/>
@@ -616,7 +616,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IX-pZ-poI" customClass="CustomUITextField" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="38" y="147" width="300" height="50"/>
+                                <rect key="frame" x="38" y="-220" width="300" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="PHC-Za-ZI8"/>
@@ -638,7 +638,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-4D-d0U" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="307" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="-60" width="300" height="50"/>
                                 <color key="backgroundColor" name="BaseColorOne"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="VH2-ek-uNV"/>
@@ -691,17 +691,13 @@
             <objects>
                 <viewController id="73c-wC-nQX" customClass="RatesViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q0S-sa-Kky">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-Gp-v3Z" customClass="ScrollableGraphView" customModule="ScrollableGraphView">
-                                <rect key="frame" x="21" y="188" width="334" height="431"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <color key="backgroundColor" name="CardColor"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="431" id="4sr-tS-ZiS"/>
-                                    <constraint firstAttribute="width" constant="334" id="kH5-Ha-kVK"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -711,80 +707,16 @@
                                     <outletCollection property="gestureRecognizers" destination="0if-tk-bDl" appends="YES" id="BZe-0X-meh"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-aA-kv8" customClass="CustomUIView" customModule="YourCoin" customModuleProvider="target">
-                                <rect key="frame" x="21" y="120" width="334" height="48"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="mj8-ol-ss1">
-                                        <rect key="frame" x="167" y="9" width="1" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="1" id="Uxd-B9-xa4"/>
-                                            <constraint firstAttribute="height" constant="30" id="W3Q-0a-6mB"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="LeftButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scY-X5-gat">
-                                        <rect key="frame" x="14" y="2" width="150" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="KN0-DL-sbJ"/>
-                                            <constraint firstAttribute="width" constant="150" id="d7F-gt-1rn"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="ETH">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonViewAction:" destination="73c-wC-nQX" eventType="touchUpInside" id="AVG-YV-Oj7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="RigthButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHf-aG-wig">
-                                        <rect key="frame" x="171" y="2" width="150" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="5TN-Ur-UR9"/>
-                                            <constraint firstAttribute="height" constant="45" id="bhN-Oz-seD"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="USD">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonViewAction:" destination="73c-wC-nQX" eventType="touchUpInside" id="goq-Ie-oTt"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="CardColor"/>
-                                <constraints>
-                                    <constraint firstItem="iHf-aG-wig" firstAttribute="centerY" secondItem="RaJ-aA-kv8" secondAttribute="centerY" id="6I4-ri-IS2"/>
-                                    <constraint firstItem="scY-X5-gat" firstAttribute="centerY" secondItem="RaJ-aA-kv8" secondAttribute="centerY" id="GqT-u3-wwO"/>
-                                    <constraint firstItem="mj8-ol-ss1" firstAttribute="centerY" secondItem="RaJ-aA-kv8" secondAttribute="centerY" id="HHh-SM-Fa4"/>
-                                    <constraint firstItem="mj8-ol-ss1" firstAttribute="centerX" secondItem="RaJ-aA-kv8" secondAttribute="centerX" id="Oe7-BU-hzp"/>
-                                    <constraint firstItem="mj8-ol-ss1" firstAttribute="leading" secondItem="scY-X5-gat" secondAttribute="trailing" constant="3" id="lTO-YT-9Mx"/>
-                                    <constraint firstAttribute="width" constant="334" id="muY-7N-DZp"/>
-                                    <constraint firstItem="iHf-aG-wig" firstAttribute="leading" secondItem="mj8-ol-ss1" secondAttribute="trailing" constant="3" id="sss-7d-sAb"/>
-                                    <constraint firstAttribute="height" constant="48" id="yGt-Lc-4DT"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Sdf-oS-4FP" firstAttribute="bottom" secondItem="4fc-Gp-v3Z" secondAttribute="bottom" constant="48" id="TS2-8s-LtU"/>
-                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="top" secondItem="RaJ-aA-kv8" secondAttribute="bottom" constant="20" id="Yov-mv-7Pm"/>
-                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="centerX" secondItem="RaJ-aA-kv8" secondAttribute="centerX" id="uos-Ke-Yxt"/>
-                            <constraint firstItem="RaJ-aA-kv8" firstAttribute="centerX" secondItem="q0S-sa-Kky" secondAttribute="centerX" id="zNw-aJ-RV6"/>
+                            <constraint firstItem="Sdf-oS-4FP" firstAttribute="bottom" secondItem="4fc-Gp-v3Z" secondAttribute="bottom" id="04g-2R-zJO"/>
+                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="top" secondItem="Sdf-oS-4FP" secondAttribute="top" id="I5s-Z4-Os1"/>
+                            <constraint firstItem="Sdf-oS-4FP" firstAttribute="trailing" secondItem="4fc-Gp-v3Z" secondAttribute="trailing" id="QpX-wb-EIP"/>
+                            <constraint firstItem="4fc-Gp-v3Z" firstAttribute="leading" secondItem="Sdf-oS-4FP" secondAttribute="leading" id="fHE-vQ-vqH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sdf-oS-4FP"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ad4-yO-Gsh">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="SettingsIcon.png" id="VxI-qb-9sp">
-                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-10" maxY="-10"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
-                        <outlet property="LeftViewButton" destination="scY-X5-gat" id="Dvv-MI-WhF"/>
-                        <outlet property="RightViewButton" destination="iHf-aG-wig" id="mEo-Ig-RPq"/>
                         <outlet property="charthView" destination="4fc-Gp-v3Z" id="jyY-zO-Mrv"/>
                     </connections>
                 </viewController>
@@ -795,7 +727,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2046" y="68"/>
+            <point key="canvasLocation" x="3078" y="-385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lSw-sj-0Se">
@@ -837,9 +769,6 @@
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BIt-cR-NxB">
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
-                    <connections>
-                        <segue destination="73c-wC-nQX" kind="relationship" relationship="rootViewController" id="yzX-xK-Uk0"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gO-gx-Ufr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -852,21 +781,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrs-O4-zrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2389" y="-712"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="0M5-Uj-Jlh">
-            <objects>
-                <viewController id="diX-5L-k3X" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jgI-Yl-Nv3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="ChartColor"/>
-                        <viewLayoutGuide key="safeArea" id="aCi-o3-EuH"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="41K-Qm-ING" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3089" y="-383"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fGy-0j-bDM">
@@ -900,6 +814,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="ihw-6M-H0e"/>
+                                    <segue destination="fgj-wf-UJu" kind="show" animates="NO" id="B9v-2B-L47"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-1X-2Vj" customClass="CustomUIButton" customModule="YourCoin" customModuleProvider="target">
@@ -926,6 +841,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="AcceptNowAction:" destination="D8w-f2-3vo" eventType="touchUpInside" id="7aI-Ye-Ocy"/>
+                                    <segue destination="w7u-i6-0wH" kind="show" animates="NO" id="73A-a1-8nh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -954,13 +870,16 @@
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LQ7-hS-nx6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="XU3-Ak-azI" kind="relationship" relationship="rootViewController" id="hK9-L6-UbI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEH-AW-i7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-548"/>
+            <point key="canvasLocation" x="761" y="-548"/>
         </scene>
     </scenes>
     <resources>
@@ -971,28 +890,12 @@
         <image name="HistoryImage" width="5" height="5"/>
         <image name="MainBackground" width="187" height="333"/>
         <image name="Photo" width="32" height="32"/>
-        <image name="Rectangle" width="1" height="32"/>
         <image name="SettingsIcon.png" width="96" height="96"/>
         <namedColor name="BaseColorOne">
             <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="BaseColorOne">
-            <color red="0.43099999430000002" green="0.91799998279999995" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="BaseColorOne">
-            <color red="0.4309999942779541" green="0.9179999828338623" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="CardColor">
             <color red="0.019999999552965164" green="0.15999999642372131" blue="0.20999999344348907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="ChartColor">
-            <color red="0.0" green="0.87999999523162842" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="CircleColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="CircleColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CircleColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

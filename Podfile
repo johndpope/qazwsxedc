@@ -3,6 +3,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'YourCoin' do
+	pod 'ScrollableGraphView'
 	pod 'AlamofireObjectMapper', '~> 5.0'
 	pod 'BigInt', '~> 3.0'
   	pod 'R.swift'

@@ -89,6 +89,7 @@
 		62202467200F976800382DA2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				623A884A206930BE00582503 /* Animations */,
 				62CE750920055B7200079B7D /* Objects */,
 				6220246C200F9C6F00382DA2 /* CustomElements */,
 				62202468200F977600382DA2 /* Controllers */,
@@ -115,6 +116,13 @@
 				627341EE2061012400B445E9 /* CustomUIView.swift */,
 			);
 			path = CustomElements;
+			sourceTree = "<group>";
+		};
+		623A884A206930BE00582503 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		62CE750920055B7200079B7D /* Objects */ = {

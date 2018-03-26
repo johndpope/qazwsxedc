@@ -22,17 +22,22 @@ class AllCardsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SendReceiveUIView.isHidden = false
+        RateUIView.isHidden = true
+        TransactionsUIView.isHidden = true
+        print(AllCardsViewController.TempCount ?? "nil")
     }
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
        override func viewWillAppear(_ animated: Bool) {
-        SendReceiveUIView.isHidden = false
-        RateUIView.isHidden = true
-        TransactionsUIView.isHidden = true
-        print(AllCardsViewController.TempCount ?? "nil")
+        
       }
     @IBAction func ClickPageMenu(_ sender: UIButton) {
         print("->Click Page menu:")
@@ -60,9 +65,4 @@ class AllCardsViewController: UIViewController {
     static func RefreshData(some:String){
         print(some)
     }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
-    }
-
 }
