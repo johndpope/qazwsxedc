@@ -3,6 +3,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'YourCoin' do
+	pod 'Charts'
 	pod 'ScrollableGraphView'
 	pod 'AlamofireObjectMapper', '~> 5.0'
 	pod 'BigInt', '~> 3.0'
@@ -11,7 +12,6 @@ target 'YourCoin' do
   	pod 'APIKit'
   	pod 'Geth'
   	pod 'EAIntroView'
-  	pod 'Eureka', '~> 4.0.1'
   	pod 'MBProgressHUD'
   	pod 'StatefulViewController'
   	pod 'QRCodeReaderViewController', :git=>'https://github.com/yannickl/QRCodeReaderViewController.git', :branch=>'master'

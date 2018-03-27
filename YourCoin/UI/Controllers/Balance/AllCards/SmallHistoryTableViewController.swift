@@ -19,8 +19,6 @@ class SmallHistoryTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //historyArray = ["Гена", "Чебурашка", "Апельсины", "Фиксики", "Роботы", "Машинки", "Маша", "И Медведь", "Матроскин", "Шарик", "Печкин", "Доктор Хаус"]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

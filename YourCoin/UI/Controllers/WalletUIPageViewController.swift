@@ -73,7 +73,7 @@ class WalletUIPageViewController: UIPageViewController, UIPageViewControllerDele
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
         AllCardsViewController.TempCount = self.pageControl.currentPage
-        SmallHistoryTableViewController.RefreshData(key: String(self.pageControl.currentPage))
+      //  SmallHistoryTableViewController.RefreshData(key: String(self.pageControl.currentPage))
     }
     
     // MARK: Data source functions.

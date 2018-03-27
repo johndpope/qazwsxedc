@@ -22,7 +22,6 @@
 		62B9CA52201878B400A74278 /* WalletCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9CA51201878B400A74278 /* WalletCardViewController.swift */; };
 		62CE750B20055B9200079B7D /* WalletCardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE750A20055B9200079B7D /* WalletCardObject.swift */; };
 		62DBAF13201022F400136351 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DBAF12201022F400136351 /* BalanceViewController.swift */; };
-		62F841E22015FF8F0061EB0C /* SmallHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */; };
 		62F841E52015FFDB0061EB0C /* AllCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */; };
 		94F0B315CCCA8B1D4929CCFF /* Pods_YourCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */; };
 		A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A46721FD8280000F70DC6 /* AppDelegate.swift */; };
@@ -50,7 +49,6 @@
 		62B9CA51201878B400A74278 /* WalletCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardViewController.swift; sourceTree = "<group>"; };
 		62CE750A20055B9200079B7D /* WalletCardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardObject.swift; sourceTree = "<group>"; };
 		62DBAF12201022F400136351 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
-		62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallHistoryTableViewController.swift; sourceTree = "<group>"; };
 		62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsViewController.swift; sourceTree = "<group>"; };
 		7DD64D35897A8278A74E1FE7 /* Pods_YourCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80A466F1FD8280000F70DC6 /* YourCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,14 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6215FE702021F8C50037B2C4 /* Exchange Rates */ = {
-			isa = PBXGroup;
-			children = (
-				6215FE712021F8E40037B2C4 /* RatesViewController.swift */,
-			);
-			path = "Exchange Rates";
-			sourceTree = "<group>";
-		};
 		62202467200F976800382DA2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +90,14 @@
 		62202468200F977600382DA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6215FE702021F8C50037B2C4 /* Exchange Rates */,
-				62DBAF10201022DA00136351 /* Balance */,
+				556126EA205C48120016575A /* HistoryTableViewController.swift */,
+				62B9CA4F2017EABA00A74278 /* WalletUIPageViewController.swift */,
+				62B9CA51201878B400A74278 /* WalletCardViewController.swift */,
+				62DBAF12201022F400136351 /* BalanceViewController.swift */,
+				62A137FD20112A4100B3281B /* AcceptPayViewController.swift */,
+				62A137FF20112F2900B3281B /* PayNowViewController.swift */,
+				62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */,
+				6215FE712021F8E40037B2C4 /* RatesViewController.swift */,
 				62202469200F979200382DA2 /* MainViewController.swift */,
 				62B9CA4D2017BF7400A74278 /* CreateViewController.swift */,
 			);
@@ -131,29 +127,6 @@
 				62CE750A20055B9200079B7D /* WalletCardObject.swift */,
 			);
 			path = Objects;
-			sourceTree = "<group>";
-		};
-		62DBAF10201022DA00136351 /* Balance */ = {
-			isa = PBXGroup;
-			children = (
-				556126EA205C48120016575A /* HistoryTableViewController.swift */,
-				62F841E32015FF940061EB0C /* AllCards */,
-				62DBAF12201022F400136351 /* BalanceViewController.swift */,
-				62A137FD20112A4100B3281B /* AcceptPayViewController.swift */,
-				62A137FF20112F2900B3281B /* PayNowViewController.swift */,
-				62F841E42015FFDB0061EB0C /* AllCardsViewController.swift */,
-			);
-			path = Balance;
-			sourceTree = "<group>";
-		};
-		62F841E32015FF940061EB0C /* AllCards */ = {
-			isa = PBXGroup;
-			children = (
-				62F841E12015FF8F0061EB0C /* SmallHistoryTableViewController.swift */,
-				62B9CA4F2017EABA00A74278 /* WalletUIPageViewController.swift */,
-				62B9CA51201878B400A74278 /* WalletCardViewController.swift */,
-			);
-			path = AllCards;
 			sourceTree = "<group>";
 		};
 		738D7AD546768CBE06174356 /* Frameworks */ = {
@@ -312,10 +285,10 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
 				"${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
 				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
-				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONRPCKit/JSONRPCKit.framework",
 				"${BUILT_PRODUCTS_DIR}/JavaScriptKit/JavaScriptKit.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
@@ -342,10 +315,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BonMot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONRPCKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JavaScriptKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
@@ -399,7 +372,6 @@
 				6220246A200F979200382DA2 /* MainViewController.swift in Sources */,
 				62DBAF13201022F400136351 /* BalanceViewController.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
-				62F841E22015FF8F0061EB0C /* SmallHistoryTableViewController.swift in Sources */,
 				62B9CA502017EABA00A74278 /* WalletUIPageViewController.swift in Sources */,
 				627341F12061027900B445E9 /* CustomUITextField.swift in Sources */,
 				62B9CA4E2017BF7400A74278 /* CreateViewController.swift in Sources */,

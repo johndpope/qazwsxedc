@@ -20,6 +20,7 @@ class WalletCardObject  {
     public var balance:Float
     public var priceToUSD:Float
     public var typeCoin:String
+    
 }
 
 
