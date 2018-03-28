@@ -105,7 +105,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="RgB-8o-yVU" firstAttribute="centerX" secondItem="0PI-tx-gWU" secondAttribute="centerX" id="81X-gb-iJ5"/>

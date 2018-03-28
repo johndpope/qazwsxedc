@@ -23,6 +23,7 @@ class WalletCardViewController: UIViewController {
     private var typeCoinUILabel = UILabel()
     private var backIconUIImage = UIImageView()
     private var coinIconUIImage = UIImageView()
+    private var coinName = UILabel()
     
     public func SetValueCard(walletPublicKey:String, balance:String, priceToUSD:String, typeCoin:TypeCoin ) ->UIViewController
     {
@@ -63,6 +64,12 @@ class WalletCardViewController: UIViewController {
         infowallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 89).isActive = true
         
         //////
+        
+        coinName = SetCustomLabel(text: (typeCoin?.GetType().name)!, style:"Roboto-Bold")
+        self.view.addSubview(coinName)
+        coinName.leftAnchor.constraint(equalTo: self.backIconUIImage.rightAnchor, constant: 38).isActive = true
+        coinName.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 13).isActive = true
+        coinName.widthAnchor.constraint(equalToConstant: 209).isActive = true
         
         coinIconUIImage.image = typeCoin?.GetType().icon
         self.view.addSubview(coinIconUIImage)
