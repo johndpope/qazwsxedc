@@ -16,7 +16,7 @@ enum TypeCoin {
         case .eth:
             return CoinCards(name:"Ethereum", reduction:"ETH", icon: #imageLiteral(resourceName: "EthereumIcon")) // тут есть icon
         case .btc:
-            return CoinCards(name:"Bitcoin", reduction:"BTC", icon:#imageLiteral(resourceName: "EthereumIcon")) // тут есть icon
+            return CoinCards(name:"Bitcoin", reduction:"BTC", icon: #imageLiteral(resourceName: "BitcoinIcon")) // тут есть icon
         }
     }
 }
