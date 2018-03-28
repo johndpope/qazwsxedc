@@ -11,12 +11,12 @@ import UIKit
 
 enum TypeCoin {
     case eth, btc
-    func SetType()->CoinCards{
+    func GetType()->CoinCards{
         switch self {
         case .eth:
-            return CoinCards(name:"Ethereum", reduction:"ETH", icon:UIImage(named: "Clock.png")!)
+            return CoinCards(name:"Ethereum", reduction:"ETH", icon: #imageLiteral(resourceName: "EthereumIcon")) // тут есть icon
         case .btc:
-            return CoinCards(name:"Bitcoin", reduction:"BTC", icon:UIImage(named: "Clock.png")!)
+            return CoinCards(name:"Bitcoin", reduction:"BTC", icon:#imageLiteral(resourceName: "EthereumIcon")) // тут есть icon
         }
     }
 }
