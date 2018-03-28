@@ -10,14 +10,26 @@ import UIKit
 
 class WalletCardViewController: UIViewController {
 
-    var infowallelUILabel = UILabel()
-    var infocurrencyUILabel = UILabel()
-    var wallelUILabel = UILabel()
-    var vauleCurrencyUILabel = UILabel()
-    var typeCoinCurrencyUILabel = UILabel()
-    var typeCoinUILabel = UILabel()
+    private var walletPublicKey:String?
+    private var balance:String?
+    private var priceToUSD:String?
+    private var typeCoin:TypeCoin?
     
-    var walletCardObject:WalletCardObject? = WalletCardObject(Wallet:"-----", Balance:0, PriceToUSD:0, TypeCoin:"--")
+    private var infowallelUILabel = UILabel()
+    private var infocurrencyUILabel = UILabel()
+    private var wallelUILabel = UILabel()
+    private var vauleCurrencyUILabel = UILabel()
+    private var typeCoinCurrencyUILabel = UILabel()
+    private var typeCoinUILabel = UILabel()
+    
+    public func SetValueCard(walletPublicKey:String, balance:String, priceToUSD:String, typeCoin:TypeCoin ) ->UIViewController
+    {
+        self.walletPublicKey = walletPublicKey
+        self.balance = balance
+        self.priceToUSD = priceToUSD
+        self.typeCoin = typeCoin
+        return self
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,25 +54,24 @@ class WalletCardViewController: UIViewController {
         
         //////
         
-        wallelUILabel = SetCustomLabel(text: (walletCardObject?.walletPublicKey)!, style:"Roboto-Bold")
+        wallelUILabel = SetCustomLabel(text: walletPublicKey!, style:"Roboto-Bold")
         self.view.addSubview(wallelUILabel)
         wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 99).isActive = true
         wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 27).isActive = true
         wallelUILabel.widthAnchor.constraint(equalToConstant: 209).isActive = true
         
-        vauleCurrencyUILabel = SetCustomLabel(text:String(describing: (walletCardObject?.balance)!), style:"Roboto-Bold")
+        vauleCurrencyUILabel = SetCustomLabel(text:balance!, style:"Roboto-Bold")
         self.view.addSubview(vauleCurrencyUILabel)
         vauleCurrencyUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 122).isActive = true
         vauleCurrencyUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 58).isActive = true
         
-        wallelUILabel = SetCustomLabel(text:String((walletCardObject?.balance)!*(walletCardObject?.priceToUSD)!), style:"Roboto-Bold")
+        wallelUILabel = SetCustomLabel(text:priceToUSD!, style:"Roboto-Bold")
         self.view.addSubview(wallelUILabel)
         wallelUILabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 84).isActive = true
         wallelUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 89).isActive = true
         
-        //////
-        
-        typeCoinCurrencyUILabel = SetCustomLabel(text:(walletCardObject?.typeCoin)!, style:"Roboto-Black")
+        //////r
+        typeCoinCurrencyUILabel = SetCustomLabel(text:(typeCoin?.SetType().reduction)!, style:"Roboto-Black")
         self.view.addSubview(typeCoinCurrencyUILabel)
         typeCoinCurrencyUILabel.leftAnchor.constraint(equalTo: vauleCurrencyUILabel.rightAnchor, constant: 10).isActive = true
         typeCoinCurrencyUILabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 58).isActive = true
@@ -72,17 +83,10 @@ class WalletCardViewController: UIViewController {
 
     }
     
-    public func SetCardsView(CardInfo:WalletCardObject){
-         self.walletCardObject = CardInfo//WalletCardObject(Wallet:"-----", Balance:13, PriceToUSD:29, TypeCoin:"ETH")
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
     }
-
-
- 
 
     private func SetCustomLabel(text:String, style:String) -> UILabel {
         let some = UILabel()

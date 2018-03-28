@@ -7,20 +7,23 @@
 //
 
 import Foundation
+import UIKit
 
 class WalletCardObject  {
-    init(Wallet:String, Balance:Float, PriceToUSD:Float, TypeCoin:String)
-    {
+    public var walletPublicKey:String
+    public var balance:String
+    public var priceToUSD:String
+    public var typeCoin:TypeCoin
+    
+    init(Wallet:String, Balance:String, PriceToUSD:String, TypeCoin:TypeCoin){
         walletPublicKey = Wallet
         balance = Balance
         priceToUSD = PriceToUSD
         typeCoin = TypeCoin
     }
-    public var walletPublicKey:String
-    public var balance:Float
-    public var priceToUSD:Float
-    public var typeCoin:String
     
+    public func GetCardsUIView()->UIViewController{
+        return WalletCardViewController().SetValueCard(walletPublicKey: walletPublicKey , balance: balance, priceToUSD: priceToUSD, typeCoin: typeCoin)
+    }
 }
-
 
