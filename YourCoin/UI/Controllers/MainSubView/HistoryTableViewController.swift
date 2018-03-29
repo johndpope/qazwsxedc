@@ -38,7 +38,7 @@ class HistoryTableViewController: UIViewController, UITableViewDelegate, UITable
 
      func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 10
+        return temp.count
     }
 
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,17 +46,20 @@ class HistoryTableViewController: UIViewController, UITableViewDelegate, UITable
         return 1
     }
 
+    let temp = [3,4,6,-6,-3,46,-3,-5,-3,66]
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = "haile"
-        cell.detailTextLabel?.text = "1488"
+        cell.detailTextLabel?.text = String(temp[indexPath.row])
         if (cell.detailTextLabel?.text as! NSString).floatValue >= 0 {
-        cell.detailTextLabel?.textColor = UIColor.green
+            cell.detailTextLabel?.textColor = UIColor.green
+            cell.imageView?.image = #imageLiteral(resourceName: "GreenHistory")
         }
         else
         {
             cell.detailTextLabel?.textColor = UIColor.red
+            cell.imageView?.image = #imageLiteral(resourceName: "RedHistory")
         }
         return cell
     }
