@@ -12,6 +12,8 @@
 		621324A82022BED0009CFCBB /* ScrollableGraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621324A92022BED0009CFCBB /* ScrollableGraphView.framework */; };
 		6215FE722021F8E40037B2C4 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6215FE712021F8E40037B2C4 /* RatesViewController.swift */; };
 		62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220246F200F9F3700382DA2 /* CustomUIButton.swift */; };
+		6221E1F8206D45BE004D43A2 /* AllTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221E1F7206D45BE004D43A2 /* AllTransactionsViewController.swift */; };
+		6221E1FC206D4D28004D43A2 /* WalletUIPageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221E1FB206D4D28004D43A2 /* WalletUIPageProtocol.swift */; };
 		62276316206A9BCD000F6B9D /* WalletUIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62276315206A9BCC000F6B9D /* WalletUIPageViewController.swift */; };
 		62276318206AA7BF000F6B9D /* TypeCoin .swift in Sources */ = {isa = PBXBuildFile; fileRef = 62276317206AA7BF000F6B9D /* TypeCoin .swift */; };
 		623D8103206BBCCD003628A2 /* CoinCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D8102206BBCCD003628A2 /* CoinCards.swift */; };
@@ -35,6 +37,8 @@
 		621324A92022BED0009CFCBB /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6215FE712021F8E40037B2C4 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		6220246F200F9F3700382DA2 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		6221E1F7206D45BE004D43A2 /* AllTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionsViewController.swift; sourceTree = "<group>"; };
+		6221E1FB206D4D28004D43A2 /* WalletUIPageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletUIPageProtocol.swift; sourceTree = "<group>"; };
 		62276315206A9BCC000F6B9D /* WalletUIPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletUIPageViewController.swift; sourceTree = "<group>"; };
 		62276317206AA7BF000F6B9D /* TypeCoin .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TypeCoin .swift"; sourceTree = "<group>"; };
 		623D8102206BBCCD003628A2 /* CoinCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCards.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			children = (
 				556126EA205C48120016575A /* HistoryTableViewController.swift */,
 				6215FE712021F8E40037B2C4 /* RatesViewController.swift */,
+				6221E1F7206D45BE004D43A2 /* AllTransactionsViewController.swift */,
 			);
 			path = MainSubView;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		62CE750920055B7200079B7D /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				6221E1FB206D4D28004D43A2 /* WalletUIPageProtocol.swift */,
 				62CE750A20055B9200079B7D /* WalletCardObject.swift */,
 				62276317206AA7BF000F6B9D /* TypeCoin .swift */,
 				623D8102206BBCCD003628A2 /* CoinCards.swift */,
@@ -376,11 +382,13 @@
 				556126EB205C48120016575A /* HistoryTableViewController.swift in Sources */,
 				62B9CA52201878B400A74278 /* WalletCardViewController.swift in Sources */,
 				62202470200F9F3700382DA2 /* CustomUIButton.swift in Sources */,
+				6221E1FC206D4D28004D43A2 /* WalletUIPageProtocol.swift in Sources */,
 				627341EF2061012400B445E9 /* CustomUIView.swift in Sources */,
 				A80A468C1FD82B4600F70DC6 /* UIImagePreloader.swift in Sources */,
 				627341F12061027900B445E9 /* CustomUITextField.swift in Sources */,
 				A80A467B1FD8280000F70DC6 /* YourCoin.xcdatamodeld in Sources */,
 				6215FE722021F8E40037B2C4 /* RatesViewController.swift in Sources */,
+				6221E1F8206D45BE004D43A2 /* AllTransactionsViewController.swift in Sources */,
 				A80A46731FD8280000F70DC6 /* AppDelegate.swift in Sources */,
 				62276318206AA7BF000F6B9D /* TypeCoin .swift in Sources */,
 				62F841E52015FFDB0061EB0C /* AllCardsViewController.swift in Sources */,

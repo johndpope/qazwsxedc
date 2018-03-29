@@ -10,14 +10,16 @@ import UIKit
 import Foundation
 import ScrollableGraphView
 
-class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
+class RatesViewController: UIViewController, ScrollableGraphViewDataSource, WalletUIPageProtocol {
 
+    static var walletUIPageViewController:WalletUIPageViewController?
+    var walletIndex:Int?
+    
     @IBOutlet var charthView: ScrollableGraphView!
     
     let blurView = CustomUIView()
     var numberOfItems = 30
     lazy var plotOneData: [Double] = self.generateRandomData(self.numberOfItems, max: 100, shouldIncludeOutliers: true)
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +79,13 @@ class RatesViewController: UIViewController, ScrollableGraphViewDataSource {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    static func RefreshData(index:Int)->Int{   //доработать
+        AllCardsViewController.walletIndex = index
+        print(AllCardsViewController.walletIndex)
+        return index
+    }
+    
     //temp
     private func generateRandomData(_ numberOfItems: Int, max: Double, shouldIncludeOutliers: Bool = true) -> [Double] {
         var data = [Double]()

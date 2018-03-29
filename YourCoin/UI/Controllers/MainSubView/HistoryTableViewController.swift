@@ -13,12 +13,11 @@ extension String {
         return (self as NSString).floatValue
     }
 }
-class HistoryTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HistoryTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, WalletUIPageProtocol {
 
-    var historyArray = [String]()
-    
     static var walletUIPageViewController:WalletUIPageViewController?
-    static var walletIndex:Int?
+    var walletIndex:Int?
+    var historyArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,8 +61,10 @@ class HistoryTableViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
-    static func RefreshData(some:String){  //доработать
-        print(some)
+    static func RefreshData(index:Int)->Int{   //доработать
+        AllCardsViewController.walletIndex = index
+        print(AllCardsViewController.walletIndex)
+        return index
     }
 
     /*

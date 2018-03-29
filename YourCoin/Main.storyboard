@@ -415,10 +415,10 @@
             </objects>
             <point key="canvasLocation" x="2389" y="-712"/>
         </scene>
-        <!--View Controller-->
+        <!--All Transactions View Controller-->
         <scene sceneID="fGy-0j-bDM">
             <objects>
-                <viewController id="CkO-fa-aBC" sceneMemberID="viewController">
+                <viewController id="CkO-fa-aBC" customClass="AllTransactionsViewController" customModule="YourCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Q5-go-WS0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
