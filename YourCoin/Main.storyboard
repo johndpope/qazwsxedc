@@ -105,7 +105,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="RgB-8o-yVU" firstAttribute="centerX" secondItem="0PI-tx-gWU" secondAttribute="centerX" id="81X-gb-iJ5"/>
@@ -510,7 +510,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEH-AW-i7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="-549"/>
+            <point key="canvasLocation" x="855" y="-548"/>
         </scene>
     </scenes>
     <resources>

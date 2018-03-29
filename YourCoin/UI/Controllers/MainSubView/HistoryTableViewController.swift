@@ -17,6 +17,9 @@ class HistoryTableViewController: UIViewController, UITableViewDelegate, UITable
 
     var historyArray = [String]()
     
+    static var walletUIPageViewController:WalletUIPageViewController?
+    static var walletIndex:Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,6 +62,9 @@ class HistoryTableViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
+    static func RefreshData(some:String){  //доработать
+        print(some)
+    }
 
     /*
     // Override to support conditional editing of the table view.

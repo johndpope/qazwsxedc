@@ -17,15 +17,16 @@ class AllCardsViewController: UIViewController {
     @IBOutlet weak var SendReceiveUIView: UIView!
     @IBOutlet weak var RateUIView: UIView!
     @IBOutlet weak var TransactionsUIView: UIView!
-    // static var walletCards:WalletUIPageViewController?
-    static var TempCount:Int?
+    
+    static var walletCards:WalletUIPageViewController?
+    static var walletIndex:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SendReceiveUIView.isHidden = false
         RateUIView.isHidden = true
         TransactionsUIView.isHidden = true
-        print(AllCardsViewController.TempCount ?? "nil")
+        print(AllCardsViewController.walletIndex ?? "nil")
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -37,7 +38,7 @@ class AllCardsViewController: UIViewController {
     }
     
        override func viewWillAppear(_ animated: Bool) {
-        
+
       }
     @IBAction func ClickPageMenu(_ sender: UIButton) {
         print("->Click Page menu:")
@@ -62,7 +63,7 @@ class AllCardsViewController: UIViewController {
         }
     }
     
-    static func RefreshData(some:String){
+    static func RefreshData(some:String){  //доработать 
         print(some)
     }
 }
